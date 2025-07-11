@@ -64,8 +64,61 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, observerOptions);
 
-// Observe elements for animation
+// Contact form handling with mailto
 document.addEventListener("DOMContentLoaded", () => {
+  // Contact form submission
+  const contactForm = document.getElementById("contactForm");
+  if (contactForm) {
+    contactForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      // Get form data
+      const formData = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        phone: document.getElementById("phone").value,
+        subject: document.getElementById("subject").value,
+        message: document.getElementById("message").value,
+      };
+
+      // Generate mailto URL with form content as template
+      const mailtoUrl = generateMailtoUrl(formData);
+
+      // Open default email client
+      window.location.href = mailtoUrl;
+    });
+  }
+
+  // Function to generate mailto URL with form content
+  function generateMailtoUrl(formData) {
+    const to = "myynti@acrengas.com";
+    const subject = formData.subject
+      ? `Rengasmarket - ${formData.subject}`
+      : "Rengasmarket - Yhteydenotto";
+
+    // Create email body template
+    let body = `Hei Rengasmarket,\n\n`;
+    body += `Olen kiinnostunut rengaspalveluistanne.\n\n`;
+    body += `Yhteystietoni:\n`;
+    body += `Nimi: ${formData.name}\n`;
+    body += `Sähköposti: ${formData.email}\n`;
+    if (formData.phone) {
+      body += `Puhelin: ${formData.phone}\n`;
+    }
+    if (formData.subject) {
+      body += `Aihe: ${formData.subject}\n`;
+    }
+    body += `\nViesti:\n${formData.message}\n\n`;
+    body += `Ystävällisin terveisin,\n${formData.name}`;
+
+    // Encode parameters for URL
+    const encodedSubject = encodeURIComponent(subject);
+    const encodedBody = encodeURIComponent(body);
+
+    return `mailto:${to}?subject=${encodedSubject}&body=${encodedBody}`;
+  }
+
+  // Observe elements for animation
   const animateElements = document.querySelectorAll(
     ".feature-card, .brand-item"
   );
