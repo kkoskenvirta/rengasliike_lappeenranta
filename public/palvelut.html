@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Palvelut - Rengasmarket Lappeenranta</title>
+    <title data-i18n="services.title">Palvelut - Rengasmarket Lappeenranta</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
@@ -20,22 +20,28 @@
                 
                 <ul class="navbar-menu">
                     <li class="navbar-item">
-                        <a href="index.html" class="navbar-link">Etusivu</a>
+                        <a href="index.html" class="navbar-link" data-i18n="nav.home">Etusivu</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="palvelut.html" class="navbar-link active">Palvelut</a>
+                        <a href="palvelut.html" class="navbar-link active" data-i18n="nav.services">Palvelut</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="tietoa-meista.html" class="navbar-link">Tietoa meistä</a>
+                        <a href="tietoa-meista.html" class="navbar-link" data-i18n="nav.about">Tietoa meistä</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="yhteystiedot.html" class="navbar-link">Yhteystiedot</a>
+                        <a href="yhteystiedot.html" class="navbar-link" data-i18n="nav.contact">Yhteystiedot</a>
+                    </li>
+                    <li class="navbar-item">
+                        <div class="language-switcher">
+                            <button class="lang-btn active" onclick="changeLanguage('fi')">FI</button>
+                            <button class="lang-btn" onclick="changeLanguage('en')">EN</button>
+                        </div>
                     </li>
                     <li class="navbar-item mobile-contact">
                         <a href="tel:0440323388" class="navbar-link contact-link">
                             <span class="contact-icon">📞</span>
                             <div class="contact-content">
-                                <span class="contact-cta">Soita nyt</span>
+                                <span class="contact-cta" data-i18n="nav.callNow">Soita nyt</span>
                                 <span class="contact-detail">044 032 3388</span>
                             </div>
                         </a>
@@ -44,7 +50,7 @@
                         <a href="mailto:myynti@acrengas.com" class="navbar-link contact-link">
                             <span class="contact-icon">📧</span>
                             <div class="contact-content">
-                                <span class="contact-cta">Lähetä viesti</span>
+                                <span class="contact-cta" data-i18n="nav.sendMessage">Lähetä viesti</span>
                                 <span class="contact-detail">myynti@acrengas.com</span>
                             </div>
                         </a>
@@ -63,11 +69,11 @@
     <main>
         <section class="hero">
             <div class="hero-content">
-                <h2>Kattavat rengaspalvelut</h2>
-                <p>Tarjoamme ammattitaitoista palvelua kaikille ajoneuvoille - henkilöautot, pakettiautot ja kuorma-autot</p>
+                <h2 data-i18n="services.title">Kattavat rengaspalvelut</h2>
+                <p data-i18n="services.subtitle">Tarjoamme ammattitaitoista palvelua kaikille ajoneuvoille - henkilöautot, pakettiautot ja kuorma-autot</p>
                 <div class="hero-buttons">
-                    <a href="#services" class="btn btn-primary">Katso palvelut</a>
-                    <a href="yhteystiedot.html#contact" class="btn btn-secondary">Ota yhteyttä</a>
+                    <a href="#services" class="btn btn-primary" data-i18n="services.viewServices">Katso palvelut</a>
+                    <a href="yhteystiedot.html#contact" class="btn btn-secondary" data-i18n="services.contactUs">Ota yhteyttä</a>
                 </div>
             </div>
             <div class="hero-image">
@@ -75,7 +81,7 @@
                 <div class="hero-overlay">
                     <div class="tire-badge">
                         <span class="tire-icon">🔧</span>
-                        <span class="tire-text">Ammattipalvelu</span>
+                        <span class="tire-text" data-i18n="services.professionalServices">Ammattipalvelu</span>
                     </div>
                 </div>
             </div>
@@ -83,8 +89,8 @@
 
         <section class="services" id="services">
             <div class="container">
-                <h3>Ammattitaitoiset rengaspalvelut</h3>
-                <p class="services-intro">Tarjoamme edulliset, laadukkaat ja ammattitaitoiset rengaspalvelut kaikille ajoneuvoille. Palveluihimme kuuluvat renkaiden vaihdot, tasapainotukset, paikkaukset sekä asiantunteva neuvonta.</p>
+                <h3 data-i18n="services.professionalTireServices">Ammattitaitoiset rengaspalvelut</h3>
+                <p class="services-intro" data-i18n="services.servicesIntro">Tarjoamme edulliset, laadukkaat ja ammattitaitoiset rengaspalvelut kaikille ajoneuvoille. Palveluihimme kuuluvat renkaiden vaihdot, tasapainotukset, paikkaukset sekä asiantunteva neuvonta.</p>
                 
                 <div class="services-grid">
                     <div class="service-card">
@@ -188,40 +194,40 @@
 
         <section class="pricing">
             <div class="container">
-                <h3>Kilpailukykyiset hinnat</h3>
+                <h3 data-i18n="services.competitivePrices">Kilpailukykyiset hinnat</h3>
                 <div class="pricing-grid">
                     <div class="pricing-card">
-                        <h4>Rengashotelli</h4>
+                        <h4 data-i18n="serviceNames.tireHotel">Rengashotelli</h4>
                         <div class="price">Alkaen [HINTA]€/kpl</div>
                         <p>Turvallinen säilytys vaihtokauden ajaksi</p>
                     </div>
                     <div class="pricing-card">
-                        <h4>Renkaanvaihto</h4>
+                        <h4 data-i18n="serviceNames.tireChange">Renkaanvaihto</h4>
                         <div class="price">Alkaen [HINTA]€/kpl</div>
                         <p>Sisältää pesun, paineiden tarkistuksen ja asennuksen</p>
                     </div>
                     <div class="pricing-card">
-                        <h4>Henkilöautojen renkaat</h4>
+                        <h4 data-i18n="serviceNames.passengerCarTires">Henkilöautojen renkaat</h4>
                         <div class="price">Alkaen [HINTA]€/kpl</div>
                         <p>Kesä- ja talvirenkaat kaikille henkilöautoille</p>
                     </div>
                     <div class="pricing-card">
-                        <h4>Renkaan paikkaus</h4>
+                        <h4 data-i18n="serviceNames.tireRepair">Renkaan paikkaus</h4>
                         <div class="price">Alkaen [HINTA]€/kpl</div>
                         <p>Laadukkailla materiaaleilla tehty paikkaus</p>
                     </div>
                     <div class="pricing-card">
-                        <h4>Tasapainoitus</h4>
+                        <h4 data-i18n="serviceNames.balancing">Tasapainoitus</h4>
                         <div class="price">Alkaen [HINTA]€/kpl</div>
                         <p>Ammattitaitoinen tasapainoitus tarkkuuslaiteella</p>
                     </div>
                     <div class="pricing-card">
-                        <h4>Pakettiautojen renkaat</h4>
+                        <h4 data-i18n="serviceNames.vanTires">Pakettiautojen renkaat</h4>
                         <div class="price">Alkaen [HINTA]€/kpl</div>
                         <p>Kestävät renkaat pakettiautoihin</p>
                     </div>
                 </div>
-                <p class="pricing-note">* Hinnat sisältävät ALV:n. Tarkat hinnat riippuvat rengasmerkistä, koosta ja palvelun laajuudesta. Pyydä henkilökohtainen tarjous!</p>
+                <p class="pricing-note" data-i18n="services.pricingNote">* Hinnat sisältävät ALV:n. Tarkat hinnat riippuvat rengasmerkistä, koosta ja palvelun laajuudesta. Pyydä henkilökohtainen tarjous!</p>
             </div>
         </section>
     </main>
@@ -256,7 +262,8 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="localization.js"></script>
     <script src="prices.js"></script>
+    <script src="script.js"></script>
 </body>
 </html> 

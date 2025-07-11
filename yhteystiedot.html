@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yhteystiedot - Rengasmarket Lappeenranta</title>
+    <title data-i18n="contact.title">Yhteystiedot - Rengasmarket Lappeenranta</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
@@ -20,16 +20,22 @@
                 
                 <ul class="navbar-menu">
                     <li class="navbar-item">
-                        <a href="index.html" class="navbar-link">Etusivu</a>
+                        <a href="index.html" class="navbar-link" data-i18n="nav.home">Etusivu</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="palvelut.html" class="navbar-link">Palvelut</a>
+                        <a href="palvelut.html" class="navbar-link" data-i18n="nav.services">Palvelut</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="yhteystiedot.html" class="navbar-link active">Yhteystiedot</a>
+                        <a href="yhteystiedot.html" class="navbar-link active" data-i18n="nav.contact">Yhteystiedot</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="tietoa-meista.html" class="navbar-link">Tietoa meistä</a>
+                        <a href="tietoa-meista.html" class="navbar-link" data-i18n="nav.about">Tietoa meistä</a>
+                    </li>
+                    <li class="navbar-item">
+                        <div class="language-switcher">
+                            <button class="lang-btn active" onclick="changeLanguage('fi')">FI</button>
+                            <button class="lang-btn" onclick="changeLanguage('en')">EN</button>
+                        </div>
                     </li>
                     <li class="navbar-item mobile-contact">
                         <a href="tel:0440323388" class="navbar-link contact-link">
@@ -63,11 +69,11 @@
     <main>
         <section class="hero">
             <div class="hero-content">
-                <h2>Yhteystiedot</h2>
-                <p>Ota yhteyttä ja saat henkilökohtaista palvelua. Olemme aina valmiita auttamaan rengasasioissa</p>
+                <h2 data-i18n="contact.title">Yhteystiedot</h2>
+                <p data-i18n="contact.subtitle">Ota yhteyttä ja saat henkilökohtaista palvelua. Olemme aina valmiita auttamaan rengasasioissa</p>
                 <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">Ota yhteyttä</a>
-                    <a href="palvelut.html" class="btn btn-secondary">Katso palvelut</a>
+                    <a href="#contact" class="btn btn-primary" data-i18n="contact.contactUs">Ota yhteyttä</a>
+                    <a href="palvelut.html" class="btn btn-secondary" data-i18n="contact.viewServices">Katso palvelut</a>
                 </div>
             </div>
             <div class="hero-image">
@@ -75,7 +81,7 @@
                 <div class="hero-overlay">
                     <div class="tire-badge">
                         <span class="tire-icon">📞</span>
-                        <span class="tire-text">Aina saatavilla</span>
+                        <span class="tire-text" data-i18n="contact.alwaysAvailable">Aina saatavilla</span>
                     </div>
                 </div>
             </div>
@@ -83,50 +89,50 @@
 
         <section class="contact" id="contact">
             <div class="container">
-                <h3>Ota yhteyttä</h3>
+                <h3 data-i18n="contact.contact">Ota yhteyttä</h3>
                 <div class="contact-grid">
                     <div class="contact-info">
-                        <h3>Yhteystiedot</h3>
+                        <h3 data-i18n="contact.contactInfo">Yhteystiedot</h3>
                         <div class="contact-item">
                             <div class="contact-icon">📍</div>
                             <div>
-                                <h4>Osoite</h4>
-                                <p>Ratakatu 28<br>53100 Lappeenranta<br>Suomi</p>
+                                <h4 data-i18n="contact.address">Osoite</h4>
+                                <p data-i18n="contact.addressValue">Ratakatu 28 53100 Lappeenranta Suomi</p>
                             </div>
                         </div>
                         <div class="contact-item">
                             <div class="contact-icon">📞</div>
                             <div>
-                                <h4>Puhelin</h4>
+                                <h4 data-i18n="contact.phone">Puhelin</h4>
                                 <p><a href="tel:0440323388" class="contact-link">044 032 3388</a></p>
                             </div>
                         </div>
                         <div class="contact-item">
                             <div class="contact-icon">📧</div>
                             <div>
-                                <h4>Sähköposti</h4>
+                                <h4 data-i18n="contact.email">Sähköposti</h4>
                                 <p><a href="mailto:myynti@acrengas.com" class="contact-link">myynti@acrengas.com</a></p>
                             </div>
                         </div>
                         <div class="contact-item">
                             <div class="contact-icon">🌐</div>
                             <div>
-                                <h4>Nettisivut</h4>
+                                <h4 data-i18n="contact.website">Nettisivut</h4>
                                 <p>www.rengasmarketlappeenranta.fi</p>
                             </div>
                         </div>
                         <div class="contact-item">
                             <div class="contact-icon">🏢</div>
                             <div>
-                                <h4>Yritystiedot</h4>
-                                <p>AC Rengas / Kc Enterprise Oy<br>Y-tunnus: 2165495-1<br>Sivutoimipaikka</p>
+                                <h4 data-i18n="contact.businessInfo">Yritystiedot</h4>
+                                <p data-i18n="contact.businessInfoValue">AC Rengas / Kc Enterprise Oy<br>Y-tunnus: 2165495-1<br>Sivutoimipaikka</p>
                             </div>
                         </div>
                         <div class="contact-item">
                             <div class="contact-icon">🕒</div>
                             <div>
-                                <h4>Aukioloajat</h4>
-                                <p>Maanantai - Perjantai: 8:00 - 18:00<br>
+                                <h4 data-i18n="contact.openingHours">Aukioloajat</h4>
+                                <p data-i18n="contact.openingHoursValue">Maanantai - Perjantai: 8:00 - 18:00<br>
                                 Lauantai: 9:00 - 15:00<br>
                                 Sunnuntai: Suljettu</p>
                             </div>
@@ -134,35 +140,35 @@
                     </div>
 
                     <div class="contact-form">
-                        <h3>Lähetä viesti</h3>
+                        <h3 data-i18n="contact.sendMessage">Lähetä viesti</h3>
                         <form id="contactForm">
                             <div class="form-group">
-                                <label for="name">Nimi *</label>
+                                <label for="name" data-i18n="contact.name">Nimi *</label>
                                 <input type="text" id="name" name="name" required>
                             </div>
                             <div class="form-group">
-                                <label for="email">Sähköposti *</label>
+                                <label for="email" data-i18n="contact.emailField">Sähköposti *</label>
                                 <input type="email" id="email" name="email" required>
                             </div>
                             <div class="form-group">
-                                <label for="phone">Puhelin</label>
+                                <label for="phone" data-i18n="contact.phoneField">Puhelin</label>
                                 <input type="tel" id="phone" name="phone">
                             </div>
                             <div class="form-group">
-                                <label for="subject">Aihe</label>
+                                <label for="subject" data-i18n="contact.subject">Aihe</label>
                                 <select id="subject" name="subject">
-                                    <option value="">Valitse aihe</option>
-                                    <option value="rengastarjous">Rengastarjous</option>
-                                    <option value="palvelut">Palvelut</option>
-                                    <option value="yhteistyö">Yhteistyö</option>
-                                    <option value="muu">Muu</option>
+                                    <option value="" data-i18n="contact.selectSubject">Valitse aihe</option>
+                                    <option value="rengastarjous" data-i18n="contact.tireQuote">Rengastarjous</option>
+                                    <option value="palvelut" data-i18n="contact.services">Palvelut</option>
+                                    <option value="yhteistyö" data-i18n="contact.cooperation">Yhteistyö</option>
+                                    <option value="muu" data-i18n="contact.other">Muu</option>
                                 </select>
                             </div>
                             <div class="form-group">
-                                <label for="message">Viesti *</label>
+                                <label for="message" data-i18n="contact.message">Viesti *</label>
                                 <textarea id="message" name="message" rows="5" required></textarea>
                             </div>
-                            <button type="submit" class="btn btn-primary">Lähetä viesti</button>
+                            <button type="submit" class="btn btn-primary" data-i18n="contact.sendMessageBtn">Lähetä viesti</button>
                         </form>
                     </div>
                 </div>
@@ -171,7 +177,7 @@
 
         <section class="map-section">
             <div class="container">
-                <h3>Sijaintimme</h3>
+                <h3 data-i18n="contact.ourLocation">Sijaintimme</h3>
                 <div class="map-container">
                     <iframe 
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d482.81250556925994!2d28.196878669750593!3d61.05010369846833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4690957602b52b41%3A0xff39d0ade9cda645!2sRengasmarket%20Lappeenranta!5e0!3m2!1sen!2sfi!4v1752240516909!5m2!1sen!2sfi" 
@@ -217,6 +223,7 @@
         </div>
     </footer>
 
+    <script src="localization.js"></script>
     <script src="script.js"></script>
 </body>
 </html> 

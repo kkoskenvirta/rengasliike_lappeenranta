@@ -5,7 +5,10 @@ const PRICES = {
     price: 90,
     currency: "€",
     unit: "kpl",
-    description: "Turvallinen säilytys vaihtokauden ajaksi",
+    description: {
+      fi: "Turvallinen säilytys vaihtokauden ajaksi",
+      en: "Safe storage for the change season",
+    },
   },
 
   // Renkaanvaihto (Tire Change)
@@ -13,7 +16,10 @@ const PRICES = {
     price: 15,
     currency: "€",
     unit: "kpl",
-    description: "Sisältää pesun, paineiden tarkistuksen ja asennuksen",
+    description: {
+      fi: "Sisältää pesun, paineiden tarkistuksen ja asennuksen",
+      en: "Includes washing, pressure check and installation",
+    },
   },
 
   // Henkilöautojen renkaat (Passenger Car Tires)
@@ -21,7 +27,10 @@ const PRICES = {
     price: 80,
     currency: "€",
     unit: "kpl",
-    description: "Kesä- ja talvirenkaat kaikille henkilöautoille",
+    description: {
+      fi: "Kesä- ja talvirenkaat kaikille henkilöautoille",
+      en: "Summer and winter tires for all passenger cars",
+    },
   },
 
   // Renkaan paikkaus (Tire Repair)
@@ -29,7 +38,10 @@ const PRICES = {
     price: 25,
     currency: "€",
     unit: "kpl",
-    description: "Laadukkailla materiaaleilla tehty paikkaus",
+    description: {
+      fi: "Laadukkailla materiaaleilla tehty paikkaus",
+      en: "Repair made with quality materials",
+    },
   },
 
   // Tasapainoitus (Balancing)
@@ -37,7 +49,10 @@ const PRICES = {
     price: 10,
     currency: "€",
     unit: "kpl",
-    description: "Ammattitaitoinen tasapainoitus tarkkuuslaiteella",
+    description: {
+      fi: "Ammattitaitoinen tasapainoitus tarkkuuslaiteella",
+      en: "Professional balancing with precision equipment",
+    },
   },
 
   // Pakettiautojen renkaat (Van Tires)
@@ -45,49 +60,76 @@ const PRICES = {
     price: 120,
     currency: "€",
     unit: "kpl",
-    description: "Kestävät renkaat pakettiautoihin",
+    description: {
+      fi: "Kestävät renkaat pakettiautoihin",
+      en: "Durable tires for vans",
+    },
   },
 };
 
 // Function to format price with currency and unit
-function formatPrice(priceData) {
-  return `Alkaen ${priceData.price}${priceData.currency}/${priceData.unit}`;
+function formatPrice(priceData, lang = "fi") {
+  const unit = lang === "en" ? "pc" : "kpl";
+  const prefix = lang === "en" ? "From" : "Alkaen";
+  return `${prefix} ${priceData.price}${priceData.currency}/${unit}`;
+}
+
+// Function to get localized description
+function getDescription(priceData, lang = "fi") {
+  if (typeof priceData.description === "string") {
+    return priceData.description; // Fallback for old format
+  }
+  return priceData.description[lang] || priceData.description.fi;
 }
 
 // Function to inject prices into the pricing section
 function injectPrices() {
   const pricingCards = document.querySelectorAll(".pricing-card");
+  const currentLang = document.documentElement.lang || "fi";
 
   pricingCards.forEach((card) => {
     const title = card.querySelector("h4").textContent.trim();
     const priceElement = card.querySelector(".price");
+    const descriptionElement = card.querySelector("p");
 
     // Map Finnish titles to price constants
     let priceKey = null;
 
     switch (title) {
       case "Rengashotelli":
+      case "Tire Hotel":
         priceKey = "TIRE_HOTEL";
         break;
       case "Renkaanvaihto":
+      case "Tire Change":
         priceKey = "TIRE_CHANGE";
         break;
       case "Henkilöautojen renkaat":
+      case "Passenger Car Tires":
         priceKey = "PASSENGER_CAR_TIRES";
         break;
       case "Renkaan paikkaus":
+      case "Tire Repair":
         priceKey = "TIRE_REPAIR";
         break;
       case "Tasapainoitus":
+      case "Balancing":
         priceKey = "BALANCING";
         break;
       case "Pakettiautojen renkaat":
+      case "Van Tires":
         priceKey = "VAN_TIRES";
         break;
     }
 
     if (priceKey && PRICES[priceKey]) {
-      priceElement.textContent = formatPrice(PRICES[priceKey]);
+      priceElement.textContent = formatPrice(PRICES[priceKey], currentLang);
+      if (descriptionElement) {
+        descriptionElement.textContent = getDescription(
+          PRICES[priceKey],
+          currentLang
+        );
+      }
     }
   });
 }
@@ -97,5 +139,5 @@ document.addEventListener("DOMContentLoaded", injectPrices);
 
 // Export for use in other scripts
 if (typeof module !== "undefined" && module.exports) {
-  module.exports = { PRICES, formatPrice, injectPrices };
+  module.exports = { PRICES, formatPrice, getDescription, injectPrices };
 }

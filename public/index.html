@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rengasmarket Lappeenranta - Laadukkaat renkaat ja palvelut</title>
+    <title data-i18n="home.title">Rengasmarket Lappeenranta - Laadukkaat renkaat ja palvelut</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
@@ -20,22 +20,28 @@
                 
                 <ul class="navbar-menu">
                     <li class="navbar-item">
-                        <a href="index.html" class="navbar-link active">Etusivu</a>
+                        <a href="index.html" class="navbar-link active" data-i18n="nav.home">Etusivu</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="palvelut.html" class="navbar-link">Palvelut</a>
+                        <a href="palvelut.html" class="navbar-link" data-i18n="nav.services">Palvelut</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="tietoa-meista.html" class="navbar-link">Tietoa meistä</a>
+                        <a href="tietoa-meista.html" class="navbar-link" data-i18n="nav.about">Tietoa meistä</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="yhteystiedot.html" class="navbar-link">Yhteystiedot</a>
+                        <a href="yhteystiedot.html" class="navbar-link" data-i18n="nav.contact">Yhteystiedot</a>
+                    </li>
+                    <li class="navbar-item">
+                        <div class="language-switcher">
+                            <button class="lang-btn active" onclick="changeLanguage('fi')">FI</button>
+                            <button class="lang-btn" onclick="changeLanguage('en')">EN</button>
+                        </div>
                     </li>
                     <li class="navbar-item mobile-contact">
                         <a href="tel:0440323388" class="navbar-link contact-link">
                             <span class="contact-icon">📞</span>
                             <div class="contact-content">
-                                <span class="contact-cta">Soita nyt</span>
+                                <span class="contact-cta" data-i18n="nav.callNow">Soita nyt</span>
                                 <span class="contact-detail">044 032 3388</span>
                             </div>
                         </a>
@@ -44,7 +50,7 @@
                         <a href="mailto:myynti@acrengas.com" class="navbar-link contact-link">
                             <span class="contact-icon">📧</span>
                             <div class="contact-content">
-                                <span class="contact-cta">Lähetä viesti</span>
+                                <span class="contact-cta" data-i18n="nav.sendMessage">Lähetä viesti</span>
                                 <span class="contact-detail">myynti@acrengas.com</span>
                             </div>
                         </a>
@@ -63,11 +69,11 @@
     <main>
         <section class="hero">
             <div class="hero-content">
-                <h2>Laadukkaat renkaat ja ammattitaitoinen palvelu</h2>
-                <p>Rengasmarket Lappeenranta tarjoaa laajan valikoiman renkaita ja ammattitaitoista palvelua kaikille ajoneuvoille</p>
+                <h2 data-i18n="home.title">Laadukkaat renkaat ja ammattitaitoinen palvelu</h2>
+                <p data-i18n="home.subtitle">Rengasmarket Lappeenranta tarjoaa laajan valikoiman renkaita ja ammattitaitoista palvelua kaikille ajoneuvoille</p>
                 <div class="hero-buttons">
-                    <a href="palvelut.html" class="btn btn-primary">Katso palvelut</a>
-                    <a href="yhteystiedot.html#contact" class="btn btn-secondary">Ota yhteyttä</a>
+                    <a href="palvelut.html" class="btn btn-primary" data-i18n="home.viewServices">Katso palvelut</a>
+                    <a href="yhteystiedot.html#contact" class="btn btn-secondary" data-i18n="home.contactUs">Ota yhteyttä</a>
                 </div>
             </div>
             <div class="hero-image">
@@ -75,7 +81,7 @@
                 <div class="hero-overlay">
                     <div class="tire-badge">
                         <span class="tire-icon">🛞</span>
-                        <span class="tire-text">Ammattitaitoinen palvelu</span>
+                        <span class="tire-text" data-i18n="home.professionalService">Ammattitaitoinen palvelu</span>
                     </div>
                 </div>
             </div>
@@ -83,22 +89,22 @@
 
         <section class="features">
             <div class="container">
-                <h3>Miksi valita Rengasmarket Lappeenranta?</h3>
+                <h3 data-i18n="home.whyChooseUs">Miksi valita Rengasmarket Lappeenranta?</h3>
                 <div class="features-grid">
                     <div class="feature-card">
                         <div class="feature-icon">🚗</div>
-                        <h4>Laaja valikoima</h4>
-                        <p>Renkaat kaikille ajoneuvoille - henkilöautot, pakettiautot, kuorma-autot</p>
+                        <h4 data-i18n="home.wideSelection">Laaja valikoima</h4>
+                        <p data-i18n="home.wideSelectionDesc">Renkaat kaikille ajoneuvoille - henkilöautot, pakettiautot, kuorma-autot</p>
                     </div>
                     <div class="feature-card">
                         <div class="feature-icon">🔧</div>
-                        <h4>Ammattitaitoinen palvelu</h4>
-                        <p>Kokenut henkilökunta auttaa löytämään juuri sinulle sopivat renkaat</p>
+                        <h4 data-i18n="home.professionalServiceTitle">Ammattitaitoinen palvelu</h4>
+                        <p data-i18n="home.professionalServiceDesc">Kokenut henkilökunta auttaa löytämään juuri sinulle sopivat renkaat</p>
                     </div>
                     <div class="feature-card">
                         <div class="feature-icon">💰</div>
-                        <h4>Kilpailukykyiset hinnat</h4>
-                        <p>Laadukkaat renkaat edulliseen hintaan</p>
+                        <h4 data-i18n="home.competitivePrices">Kilpailukykyiset hinnat</h4>
+                        <p data-i18n="home.competitivePricesDesc">Laadukkaat renkaat edulliseen hintaan</p>
                     </div>
                 </div>
             </div>
@@ -106,7 +112,7 @@
 
         <section class="brands">
             <div class="container">
-                <h3>Suosituimmat rengasmerkit</h3>
+                <h3 data-i18n="home.popularBrands">Suosituimmat rengasmerkit</h3>
                 <div class="brands-grid">
                     <div class="brand-item">
                         <img src="images/michelin.png" alt="Michelin" class="brand-logo">
@@ -132,7 +138,7 @@
 
         <section class="testimonials">
             <div class="container">
-                <h3>Asiakkaidemme kokemukset</h3>
+                <h3 data-i18n="home.customerExperiences">Asiakkaidemme kokemukset</h3>
                 <div class="testimonials-grid">
                     <div class="testimonial-card">
                         <div class="testimonial-stars">★★★★★</div>
@@ -196,9 +202,9 @@
 
         <section class="cta">
             <div class="container">
-                <h3>Valitse renkaasi jo tänään</h3>
-                <p>Ota yhteyttä ja saat henkilökohtaista neuvontaa</p>
-                <a href="yhteystiedot.html#contact" class="btn btn-primary">Ota yhteyttä</a>
+                <h3 data-i18n="home.chooseTiresToday">Valitse renkaasi jo tänään</h3>
+                <p data-i18n="home.contactForPersonalAdvice">Ota yhteyttä ja saat henkilökohtaista neuvontaa</p>
+                <a href="yhteystiedot.html#contact" class="btn btn-primary" data-i18n="home.contactUs">Ota yhteyttä</a>
             </div>
         </section>
     </main>
@@ -207,32 +213,33 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h4>Rengasmarket Lappeenranta</h4>
-                    <p>AC Rengas / Kc Enterprise Oy</p>
-                    <p>Laadukkaat renkaat ja ammattitaitoinen palvelu</p>
-                    <p class="business-info">Y-tunnus: 2165495-1</p>
+                    <h4 data-i18n="footer.companyName">Rengasmarket Lappeenranta</h4>
+                    <p data-i18n="footer.companyDesc">AC Rengas / Kc Enterprise Oy</p>
+                    <p data-i18n="footer.companySlogan">Laadukkaat renkaat ja ammattitaitoinen palvelu</p>
+                    <p class="business-info" data-i18n="footer.businessId">Y-tunnus: 2165495-1</p>
                 </div>
                 <div class="footer-section">
-                    <h4>Yhteystiedot</h4>
+                    <h4 data-i18n="footer.contactInfo">Yhteystiedot</h4>
                     <p><a href="tel:0440323388" class="footer-link">📞 044 032 3388</a></p>
                     <p><a href="mailto:myynti@acrengas.com" class="footer-link">📧 myynti@acrengas.com</a></p>
                     <p>📍 Ratakatu 28, 53100 Lappeenranta</p>
                     <p>🌐 www.rengasmarketlappeenranta.fi</p>
                 </div>
                 <div class="footer-section">
-                    <h4>Aukioloajat</h4>
-                    <p>Ma-Pe: 8:00-18:00</p>
-                    <p>La: 9:00-15:00</p>
-                    <p>Su: Suljettu</p>
-                    <p class="business-info">Sivutoimipaikka</p>
+                    <h4 data-i18n="footer.openingHours">Aukioloajat</h4>
+                    <p data-i18n="footer.monFri">Ma-Pe: 8:00-18:00</p>
+                    <p data-i18n="footer.sat">La: 9:00-15:00</p>
+                    <p data-i18n="footer.sun">Su: Suljettu</p>
+                    <p class="business-info" data-i18n="footer.branchOffice">Sivutoimipaikka</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Rengasmarket Lappeenranta / AC Rengas. Kaikki oikeudet pidätetään.</p>
+                <p data-i18n="footer.copyright">&copy; 2024 Rengasmarket Lappeenranta / AC Rengas. Kaikki oikeudet pidätetään.</p>
             </div>
         </div>
     </footer>
 
+    <script src="localization.js"></script>
     <script src="script.js"></script>
 </body>
 </html> 

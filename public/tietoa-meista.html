@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tietoa meistä - Rengasmarket Lappeenranta</title>
+    <title data-i18n="about.title">Tietoa meistä - Rengasmarket Lappeenranta</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
@@ -20,16 +20,22 @@
                 
                 <ul class="navbar-menu">
                     <li class="navbar-item">
-                        <a href="index.html" class="navbar-link">Etusivu</a>
+                        <a href="index.html" class="navbar-link" data-i18n="nav.home">Etusivu</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="palvelut.html" class="navbar-link">Palvelut</a>
+                        <a href="palvelut.html" class="navbar-link" data-i18n="nav.services">Palvelut</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="yhteystiedot.html" class="navbar-link">Yhteystiedot</a>
+                        <a href="yhteystiedot.html" class="navbar-link" data-i18n="nav.contact">Yhteystiedot</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="tietoa-meista.html" class="navbar-link active">Tietoa meistä</a>
+                        <a href="tietoa-meista.html" class="navbar-link active" data-i18n="nav.about">Tietoa meistä</a>
+                    </li>
+                    <li class="navbar-item">
+                        <div class="language-switcher">
+                            <button class="lang-btn active" onclick="changeLanguage('fi')">FI</button>
+                            <button class="lang-btn" onclick="changeLanguage('en')">EN</button>
+                        </div>
                     </li>
                     <li class="navbar-item mobile-contact">
                         <a href="tel:0440323388" class="navbar-link contact-link">
@@ -63,11 +69,11 @@
     <main>
         <section class="hero">
             <div class="hero-content">
-                <h2>Tietoa meistä</h2>
-                <p>Rengasmarket Lappeenranta - luotettava kumppani rengasasioissa yli 20 vuoden kokemuksella</p>
+                <h2 data-i18n="about.title">Tietoa meistä</h2>
+                <p data-i18n="about.subtitle">Rengasmarket Lappeenranta - luotettava kumppani rengasasioissa yli 20 vuoden kokemuksella</p>
                 <div class="hero-buttons">
-                    <a href="#about" class="btn btn-primary">Lue lisää</a>
-                    <a href="yhteystiedot.html#contact" class="btn btn-secondary">Ota yhteyttä</a>
+                    <a href="#about" class="btn btn-primary" data-i18n="about.readMore">Lue lisää</a>
+                    <a href="yhteystiedot.html#contact" class="btn btn-secondary" data-i18n="about.contactUs">Ota yhteyttä</a>
                 </div>
             </div>
             <div class="hero-image">
@@ -75,7 +81,7 @@
                 <div class="hero-overlay">
                     <div class="tire-badge">
                         <span class="tire-icon">🏆</span>
-                        <span class="tire-text">20+ vuotta</span>
+                        <span class="tire-text" data-i18n="about.yearsExperience">20+ vuotta</span>
                     </div>
                 </div>
             </div>
@@ -83,19 +89,19 @@
 
         <section class="about" id="about">
             <div class="container">
-                <h3>Meidän tarinamme</h3>
+                <h3 data-i18n="about.ourStory">Meidän tarinamme</h3>
                 <div class="about-grid">
                     <div class="about-content">
-                        <p>Rengasmarket Lappeenranta on perustettu vuonna 2008 paikallisen yrittäjän toimesta. Yli 20 vuoden kokemuksella olemme palvelleet asiakkaitamme Lappeenrannassa ja sen ympäristössä, rakentaneet luottamuksellisia suhteita ja varmistaneet, että jokainen asiakas saa henkilökohtaista huomiota ja ammattitaitoista palvelua.</p>
+                        <p data-i18n="about.story1">Rengasmarket Lappeenranta on perustettu vuonna 2008 paikallisen yrittäjän toimesta. Yli 20 vuoden kokemuksella olemme palvelleet asiakkaitamme Lappeenrannassa ja sen ympäristössä, rakentaneet luottamuksellisia suhteita ja varmistaneet, että jokainen asiakas saa henkilökohtaista huomiota ja ammattitaitoista palvelua.</p>
                         
-                        <p>Olemme erikoistuneet kaikenlaisiin rengasratkaisuihin - henkilöautoista kuorma-autoihin. Sijaitsemme Lappeenrannan Ratakadulla kulkuyhteyksien läheisyydessä, mikä tekee meistä helposti saavutettavan valinnan kaikille Lappeenrannan ja sen ympäristön asukkaille. Paikallisena yrittäjänä ymmärrämme yhteisömme tarpeet ja olemme sitoutuneet tarjoamaan luotettavia, ystävällisiä palveluita kilpailukykyiseen hintaan.</p>
+                        <p data-i18n="about.story2">Olemme erikoistuneet kaikenlaisiin rengasratkaisuihin - henkilöautoista kuorma-autoihin. Sijaitsemme Lappeenrannan Ratakadulla kulkuyhteyksien läheisyydessä, mikä tekee meistä helposti saavutettavan valinnan kaikille Lappeenrannan ja sen ympäristön asukkaille. Paikallisena yrittäjänä ymmärrämme yhteisömme tarpeet ja olemme sitoutuneet tarjoamaan luotettavia, ystävällisiä palveluita kilpailukykyiseen hintaan.</p>
                         
-                        <h4>Arvomme</h4>
+                        <h4 data-i18n="about.ourValues">Arvomme</h4>
                         <ul>
-                            <li><strong>Luotettavuus:</strong> 20 vuoden kokemus ja sitoutuminen laatuun</li>
-                            <li><strong>Ystävällisyys:</strong> Henkilökohtainen ja lähestyttävä asiakaspalvelu</li>
-                            <li><strong>Paikallisuus:</strong> Paikallinen yrittäjä, joka tuntee yhteisön</li>
-                            <li><strong>Rehellisyys:</strong> Suosittelemme aina parasta ratkaisua sinulle</li>
+                            <li><strong data-i18n="about.reliability">Luotettavuus:</strong> <span data-i18n="about.reliabilityDesc">20 vuoden kokemus ja sitoutuminen laatuun</span></li>
+                            <li><strong data-i18n="about.friendliness">Ystävällisyys:</strong> <span data-i18n="about.friendlinessDesc">Henkilökohtainen ja lähestyttävä asiakaspalvelu</span></li>
+                            <li><strong data-i18n="about.localness">Paikallisuus:</strong> <span data-i18n="about.localnessDesc">Paikallinen yrittäjä, joka tuntee yhteisön</span></li>
+                            <li><strong data-i18n="about.honesty">Rehellisyys:</strong> <span data-i18n="about.honestyDesc">Suosittelemme aina parasta ratkaisua sinulle</span></li>
                         </ul>
                     </div>
                     <div class="about-image">
@@ -109,19 +115,19 @@
 
         <section class="stats">
             <div class="container">
-                <h3>Numeromme puhuvat puolestaan</h3>
+                <h3 data-i18n="about.numbersSpeak">Numeromme puhuvat puolestaan</h3>
                 <div class="stats-grid">
                     <div class="stat-item">
                         <div class="stat-number">20+</div>
-                        <div class="stat-label">Vuotta kokemusta</div>
+                        <div class="stat-label" data-i18n="about.yearsExperience">Vuotta kokemusta</div>
                     </div>
                     <div class="stat-item">
                         <div class="stat-number">5000+</div>
-                        <div class="stat-label">Tyydyttynyttä asiakasta</div>
+                        <div class="stat-label" data-i18n="about.satisfiedCustomers">Tyydyttynyttä asiakasta</div>
                     </div>
                     <div class="stat-item">
                         <div class="stat-number">50+</div>
-                        <div class="stat-label">Rengasmerkkiä</div>
+                        <div class="stat-label" data-i18n="about.tireBrands">Rengasmerkkiä</div>
                     </div>
                     
                 </div>
@@ -130,19 +136,19 @@
 
         <section class="certifications">
             <div class="container">
-                <h3>Sertifikaatit ja kumppanuudet</h3>
+                <h3 data-i18n="about.certifications">Sertifikaatit ja kumppanuudet</h3>
                 <div class="cert-grid">
                     <div class="cert-item">
-                        <h4>🔧 Ammattitaito</h4>
-                        <p>Kaikki tekniikkomme ovat sertifioituja rengasasentajia</p>
+                        <h4>🔧 <span data-i18n="about.expertise">Ammattitaito</span></h4>
+                        <p data-i18n="about.expertiseDesc">Kaikki tekniikkomme ovat sertifioituja rengasasentajia</p>
                     </div>
                     <div class="cert-item">
-                        <h4>🏆 Laadun tae</h4>
-                        <p>Vain parhaat rengasmerkit ja takuut</p>
+                        <h4>🏆 <span data-i18n="about.qualityGuarantee">Laadun tae</span></h4>
+                        <p data-i18n="about.qualityGuaranteeDesc">Vain parhaat rengasmerkit ja takuut</p>
                     </div>
                     <div class="cert-item">
-                        <h4>🤝 Luotettavat kumppanit</h4>
-                        <p>Yhteistyössä maailman johtavien rengasmerkkien kanssa</p>
+                        <h4>🤝 <span data-i18n="about.trustedPartners">Luotettavat kumppanit</span></h4>
+                        <p data-i18n="about.trustedPartnersDesc">Yhteistyössä maailman johtavien rengasmerkkien kanssa</p>
                     </div>
                 </div>
             </div>
@@ -179,6 +185,7 @@
         </div>
     </footer>
 
+    <script src="localization.js"></script>
     <script src="script.js"></script>
 </body>
 </html> 
