@@ -148,7 +148,7 @@ best-drive-website/
 
 ## 🚀 Live Demo
 
-Visit the live demo: [https://yourusername.github.io/best-drive-website](https://yourusername.github.io/best-drive-website)
+Visit the live demo: [https://kkoskenvirta.github.io/lappeenrannan_rengaspalvelu](https://kkoskenvirta.github.io/lappeenrannan_rengaspalvelu)
 
 ## Deployment
 
@@ -185,8 +185,7 @@ This site is automatically deployed to GitHub Pages via GitHub Actions.
    ```
 
 3. **Access your site:**
-   - Your site will be available at: `https://yourusername.github.io/best-drive-website`
-   - Replace `yourusername` with your actual GitHub username
+   - Your site will be available at: `https://kkoskenvirta.github.io/lappeenrannan_rengaspalvelu`
 
 #### Manual Build (if needed):
 
