@@ -31,6 +31,24 @@
                     <li class="navbar-item">
                         <a href="yhteystiedot.html" class="navbar-link active">Yhteystiedot</a>
                     </li>
+                    <li class="navbar-item mobile-contact">
+                        <a href="tel:0440323388" class="navbar-link contact-link">
+                            <span class="contact-icon">📞</span>
+                            <div class="contact-content">
+                                <span class="contact-cta">Soita nyt</span>
+                                <span class="contact-detail">044 032 3388</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="navbar-item mobile-contact">
+                        <a href="mailto:myynti@acrengas.com" class="navbar-link contact-link">
+                            <span class="contact-icon">📧</span>
+                            <div class="contact-content">
+                                <span class="contact-cta">Lähetä viesti</span>
+                                <span class="contact-detail">myynti@acrengas.com</span>
+                            </div>
+                        </a>
+                    </li>
                 </ul>
                 
                 <button class="navbar-toggle" aria-label="Toggle navigation">
@@ -80,14 +98,14 @@
                             <div class="contact-icon">📞</div>
                             <div>
                                 <h4>Puhelin</h4>
-                                <p>044 032 3388</p>
+                                <p><a href="tel:0440323388" class="contact-link">044 032 3388</a></p>
                             </div>
                         </div>
                         <div class="contact-item">
                             <div class="contact-icon">📧</div>
                             <div>
                                 <h4>Sähköposti</h4>
-                                <p>myynti@acrengas.com</p>
+                                <p><a href="mailto:myynti@acrengas.com" class="contact-link">myynti@acrengas.com</a></p>
                             </div>
                         </div>
                         <div class="contact-item">
@@ -154,18 +172,16 @@
         <section class="map-section">
             <div class="container">
                 <h3>Sijaintimme</h3>
-                <div class="map-placeholder">
-                                    <div class="map-content">
-                    <h4>Rengasmarket Lappeenranta</h4>
-                    <p>Ratakatu 28, 53100 Lappeenranta</p>
-                    <p>Helposti löydettävissä keskustasta</p>
-                        <div class="map-directions">
-                            <h5>Ohjeet:</h5>
-                            <p>• Keskustasta itään päin</p>
-                            <p>• Pysäköinti saatavilla</p>
-                            <p>• Bussiliikenteen lähellä</p>
-                        </div>
-                    </div>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d482.81250556925994!2d28.196878669750593!3d61.05010369846833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4690957602b52b41%3A0xff39d0ade9cda645!2sRengasmarket%20Lappeenranta!5e0!3m2!1sen!2sfi!4v1752240516909!5m2!1sen!2sfi" 
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
                 </div>
             </div>
         </section>
@@ -182,8 +198,8 @@
                 </div>
                 <div class="footer-section">
                     <h4>Yhteystiedot</h4>
-                    <p>📞 044 032 3388</p>
-                    <p>📧 myynti@acrengas.com</p>
+                    <p><a href="tel:0440323388" class="footer-link">📞 044 032 3388</a></p>
+                    <p><a href="mailto:myynti@acrengas.com" class="footer-link">📧 myynti@acrengas.com</a></p>
                     <p>📍 Ratakatu 28, 53100 Lappeenranta</p>
                     <p>🌐 www.rengasmarketlappeenranta.fi</p>
                 </div>
