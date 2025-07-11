@@ -1,17 +1,17 @@
 // Mobile menu functionality
-const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".nav-menu");
+const navbarToggle = document.querySelector(".navbar-toggle");
+const navbarMenu = document.querySelector(".navbar-menu");
 
-hamburger.addEventListener("click", () => {
-  hamburger.classList.toggle("active");
-  navMenu.classList.toggle("active");
+navbarToggle.addEventListener("click", () => {
+  navbarToggle.classList.toggle("active");
+  navbarMenu.classList.toggle("active");
 });
 
 // Close mobile menu when clicking on a link
-document.querySelectorAll(".nav-link").forEach((link) => {
+document.querySelectorAll(".navbar-link").forEach((link) => {
   link.addEventListener("click", () => {
-    hamburger.classList.remove("active");
-    navMenu.classList.remove("active");
+    navbarToggle.classList.remove("active");
+    navbarMenu.classList.remove("active");
   });
 });
 
@@ -43,7 +43,7 @@ window.addEventListener("scroll", () => {
 
 // Add active class to current nav link
 const currentLocation = location.pathname;
-document.querySelectorAll(".nav-link").forEach((link) => {
+document.querySelectorAll(".navbar-link").forEach((link) => {
   if (link.getAttribute("href") === currentLocation) {
     link.classList.add("active");
   }
