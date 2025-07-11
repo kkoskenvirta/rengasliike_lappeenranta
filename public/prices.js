@@ -13,7 +13,7 @@ const PRICES = {
 
   // Renkaanvaihto (Tire Change)
   TIRE_CHANGE: {
-    price: 15,
+    price: 50,
     currency: "€",
     unit: "kpl",
     description: {
