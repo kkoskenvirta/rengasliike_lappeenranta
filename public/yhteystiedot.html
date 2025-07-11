@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yhteystiedot - Rengasmarket Lappeenranta</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="logo">
+                    <h1>Rengasmarket Lappeenranta</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="/" class="nav-link">Etusivu</a></li>
+                    <li><a href="/palvelut" class="nav-link">Palvelut</a></li>
+                    <li><a href="/tietoa-meista" class="nav-link">Tietoa meistä</a></li>
+                    <li><a href="/yhteystiedot" class="nav-link active">Yhteystiedot</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h2>Yhteystiedot</h2>
+                <p>Ota yhteyttä ja saat henkilökohtaista palvelua</p>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>Yhteystiedot</h3>
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div>
+                                <h4>Osoite</h4>
+                                <p>Rengaskatu 15<br>53100 Lappeenranta<br>Suomi</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div>
+                                <h4>Puhelin</h4>
+                                <p>020 123 4567</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div>
+                                <h4>Sähköposti</h4>
+                                <p>info@rengasmarket.fi</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">🕒</div>
+                            <div>
+                                <h4>Aukioloajat</h4>
+                                <p>Maanantai - Perjantai: 8:00 - 18:00<br>
+                                Lauantai: 9:00 - 15:00<br>
+                                Sunnuntai: Suljettu</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form">
+                        <h3>Lähetä viesti</h3>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Nimi *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Sähköposti *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Puhelin</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Aihe</label>
+                                <select id="subject" name="subject">
+                                    <option value="">Valitse aihe</option>
+                                    <option value="rengastarjous">Rengastarjous</option>
+                                    <option value="palvelut">Palvelut</option>
+                                    <option value="yhteistyö">Yhteistyö</option>
+                                    <option value="muu">Muu</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Viesti *</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Lähetä viesti</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="map-section">
+            <div class="container">
+                <h3>Sijaintimme</h3>
+                <div class="map-placeholder">
+                    <div class="map-content">
+                        <h4>Rengasmarket Lappeenranta</h4>
+                        <p>Rengaskatu 15, 53100 Lappeenranta</p>
+                        <p>Helposti löydettävissä keskustasta</p>
+                        <div class="map-directions">
+                            <h5>Ohjeet:</h5>
+                            <p>• Keskustasta itään päin</p>
+                            <p>• Pysäköinti saatavilla</p>
+                            <p>• Bussiliikenteen lähellä</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Rengasmarket Lappeenranta</h4>
+                    <p>Laadukkaat renkaat ja ammattitaitoinen palvelu</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Yhteystiedot</h4>
+                    <p>📞 020 123 4567</p>
+                    <p>📧 info@rengasmarket.fi</p>
+                    <p>📍 Lappeenranta, Suomi</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Aukioloajat</h4>
+                    <p>Ma-Pe: 8:00-18:00</p>
+                    <p>La: 9:00-15:00</p>
+                    <p>Su: Suljettu</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Rengasmarket Lappeenranta. Kaikki oikeudet pidätetään.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
