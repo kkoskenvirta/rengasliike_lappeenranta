@@ -5,118 +5,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yhteystiedot - Rengasmarket Lappeenranta</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <nav class="navbar">
-            <div class="navbar-container">
-                <div class="navbar-brand">
-                    <a href="index.html" class="navbar-logo">
-                        <span class="logo-text">Rengasmarket</span>
-                        <span class="logo-subtitle">Lappeenranta</span>
+    <header class="bg-white/95 backdrop-blur-10 shadow-sm fixed w-full top-0 z-50 transition-all duration-300">
+        <nav class="p-0">
+            <div class="flex justify-between items-center px-8 max-w-6xl mx-auto h-18">
+                <div class="flex items-center">
+                    <a href="index.html" class="no-underline flex flex-col items-start">
+                        <span class="text-2xl font-extrabold text-primary uppercase tracking-wider leading-none">Rengasmarket</span>
+                        <span class="text-xs font-normal text-gray-500 uppercase tracking-widest -mt-0.5">Lappeenranta</span>
                     </a>
                 </div>
                 
-                <ul class="navbar-menu">
-                    <li class="navbar-item">
+                <ul class="flex list-none m-0 p-0 gap-10 items-center">
+                    <li class="m-0">
                         <a href="index.html" class="navbar-link">Etusivu</a>
                     </li>
-                    <li class="navbar-item">
+                    <li class="m-0">
                         <a href="palvelut.html" class="navbar-link">Palvelut</a>
                     </li>
-                    <li class="navbar-item">
+                    <li class="m-0">
                         <a href="tietoa-meista.html" class="navbar-link">Tietoa meistä</a>
                     </li>
-                    <li class="navbar-item">
+                    <li class="m-0">
                         <a href="yhteystiedot.html" class="navbar-link active">Yhteystiedot</a>
                     </li>
                 </ul>
                 
-                <button class="navbar-toggle" aria-label="Toggle navigation">
-                    <span class="hamburger-line"></span>
-                    <span class="hamburger-line"></span>
-                    <span class="hamburger-line"></span>
+                <button class="hidden flex-col bg-transparent border-none cursor-pointer p-2 gap-1" aria-label="Toggle navigation">
+                    <span class="w-6 h-0.5 bg-secondary transition-all duration-300 rounded-sm"></span>
+                    <span class="w-6 h-0.5 bg-secondary transition-all duration-300 rounded-sm"></span>
+                    <span class="w-6 h-0.5 bg-secondary transition-all duration-300 rounded-sm"></span>
                 </button>
             </div>
         </nav>
     </header>
 
     <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h2>Yhteystiedot</h2>
-                <p>Ota yhteyttä ja saat henkilökohtaista palvelua. Olemme aina valmiita auttamaan rengasasioissa</p>
-                <div class="hero-buttons">
+        <section class="grid grid-cols-1 lg:grid-cols-2 gap-16 pt-32 pb-16 px-16 bg-gradient-hero min-h-screen items-center relative overflow-hidden">
+            <div class="relative z-10">
+                <h2 class="text-5xl lg:text-6xl font-extrabold text-white mb-4 leading-tight drop-shadow-lg">Yhteystiedot</h2>
+                <p class="text-xl text-slate-300 mb-8 font-light">Ota yhteyttä ja saat henkilökohtaista palvelua. Olemme aina valmiita auttamaan rengasasioissa</p>
+                <div class="flex gap-4 flex-wrap">
                     <a href="#contact" class="btn btn-primary">Ota yhteyttä</a>
                     <a href="palvelut.html" class="btn btn-secondary">Katso palvelut</a>
                 </div>
             </div>
-            <div class="hero-image">
+            <div class="relative flex items-center justify-center">
                 <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Rengasmarket toimisto" class="hero-car-image">
-                <div class="hero-overlay">
+                <div class="absolute top-5 right-5 z-20">
                     <div class="tire-badge">
-                        <span class="tire-icon">📞</span>
-                        <span class="tire-text">Aina saatavilla</span>
+                        <span class="text-xl">📞</span>
+                        <span class="text-sm font-medium text-gray-700">Aina saatavilla</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="contact" id="contact">
+        <section class="py-20 bg-gray-50 relative" id="contact">
             <div class="container">
-                <h3>Ota yhteyttä</h3>
-                <div class="contact-grid">
-                    <div class="contact-info">
-                        <h3>Yhteystiedot</h3>
+                <h3 class="text-4xl font-bold text-center mb-16 text-gray-900">Ota yhteyttä</h3>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-8 text-gray-900">Yhteystiedot</h3>
                         <div class="contact-item">
                             <div class="contact-icon">📍</div>
                             <div>
-                                <h4>Osoite</h4>
-                                <p>Ratakatu 28<br>53100 Lappeenranta<br>Suomi</p>
+                                <h4 class="text-lg font-bold mb-2 text-gray-900">Osoite</h4>
+                                <p class="text-gray-600">Ratakatu 28<br>53100 Lappeenranta<br>Suomi</p>
                             </div>
                         </div>
                         <div class="contact-item">
                             <div class="contact-icon">📞</div>
                             <div>
-                                <h4>Puhelin</h4>
-                                <p>044 032 3388</p>
+                                <h4 class="text-lg font-bold mb-2 text-gray-900">Puhelin</h4>
+                                <p class="text-gray-600">044 032 3388</p>
                             </div>
                         </div>
                         <div class="contact-item">
                             <div class="contact-icon">📧</div>
                             <div>
-                                <h4>Sähköposti</h4>
-                                <p>myynti@acrengas.com</p>
+                                <h4 class="text-lg font-bold mb-2 text-gray-900">Sähköposti</h4>
+                                <p class="text-gray-600">myynti@acrengas.com</p>
                             </div>
                         </div>
                         <div class="contact-item">
                             <div class="contact-icon">🌐</div>
                             <div>
-                                <h4>Nettisivut</h4>
-                                <p>www.rengasmarketlappeenranta.fi</p>
+                                <h4 class="text-lg font-bold mb-2 text-gray-900">Nettisivut</h4>
+                                <p class="text-gray-600">www.rengasmarketlappeenranta.fi</p>
                             </div>
                         </div>
                         <div class="contact-item">
                             <div class="contact-icon">🏢</div>
                             <div>
-                                <h4>Yritystiedot</h4>
-                                <p>AC Rengas / Kc Enterprise Oy<br>Y-tunnus: 2165495-1<br>Sivutoimipaikka</p>
+                                <h4 class="text-lg font-bold mb-2 text-gray-900">Yritystiedot</h4>
+                                <p class="text-gray-600">AC Rengas / Kc Enterprise Oy<br>Y-tunnus: 2165495-1<br>Sivutoimipaikka</p>
                             </div>
                         </div>
                         <div class="contact-item">
                             <div class="contact-icon">🕒</div>
                             <div>
-                                <h4>Aukioloajat</h4>
-                                <p>Maanantai - Perjantai: 8:00 - 18:00<br>
+                                <h4 class="text-lg font-bold mb-2 text-gray-900">Aukioloajat</h4>
+                                <p class="text-gray-600">Maanantai - Perjantai: 8:00 - 18:00<br>
                                 Lauantai: 9:00 - 15:00<br>
                                 Sunnuntai: Suljettu</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="contact-form">
-                        <h3>Lähetä viesti</h3>
+                    <div class="bg-white rounded-2xl p-8 shadow-lg relative">
+                        <h3 class="text-2xl font-bold mb-8 text-gray-900">Lähetä viesti</h3>
                         <form id="contactForm">
                             <div class="form-group">
                                 <label for="name">Nimi *</label>
@@ -151,19 +150,19 @@
             </div>
         </section>
 
-        <section class="map-section">
+        <section class="py-20 bg-white relative">
             <div class="container">
-                <h3>Sijaintimme</h3>
-                <div class="map-placeholder">
-                                    <div class="map-content">
-                    <h4>Rengasmarket Lappeenranta</h4>
-                    <p>Ratakatu 28, 53100 Lappeenranta</p>
-                    <p>Helposti löydettävissä keskustasta</p>
-                        <div class="map-directions">
-                            <h5>Ohjeet:</h5>
-                            <p>• Keskustasta itään päin</p>
-                            <p>• Pysäköinti saatavilla</p>
-                            <p>• Bussiliikenteen lähellä</p>
+                <h3 class="text-4xl font-bold text-center mb-16 text-gray-900">Sijaintimme</h3>
+                <div class="bg-gray-100 rounded-2xl p-8 text-center">
+                    <div class="max-w-2xl mx-auto">
+                        <h4 class="text-2xl font-bold mb-4 text-gray-900">Rengasmarket Lappeenranta</h4>
+                        <p class="text-lg text-gray-600 mb-4">Ratakatu 28, 53100 Lappeenranta</p>
+                        <p class="text-gray-600 mb-8">Helposti löydettävissä keskustasta</p>
+                        <div class="text-left max-w-md mx-auto">
+                            <h5 class="text-lg font-bold mb-4 text-gray-900">Ohjeet:</h5>
+                            <p class="text-gray-600 mb-2">• Keskustasta itään päin</p>
+                            <p class="text-gray-600 mb-2">• Pysäköinti saatavilla</p>
+                            <p class="text-gray-600">• Bussiliikenteen lähellä</p>
                         </div>
                     </div>
                 </div>
@@ -171,31 +170,31 @@
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="bg-gray-900 text-white py-16 relative">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>Rengasmarket Lappeenranta</h4>
-                    <p>AC Rengas / Kc Enterprise Oy</p>
-                    <p>Laadukkaat renkaat ja ammattitaitoinen palvelu</p>
-                    <p class="business-info">Y-tunnus: 2165495-1</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Rengasmarket Lappeenranta</h4>
+                    <p class="mb-2">AC Rengas / Kc Enterprise Oy</p>
+                    <p class="mb-2">Laadukkaat renkaat ja ammattitaitoinen palvelu</p>
+                    <p class="text-sm text-gray-400">Y-tunnus: 2165495-1</p>
                 </div>
-                <div class="footer-section">
-                    <h4>Yhteystiedot</h4>
-                    <p>📞 044 032 3388</p>
-                    <p>📧 myynti@acrengas.com</p>
-                    <p>📍 Ratakatu 28, 53100 Lappeenranta</p>
-                    <p>🌐 www.rengasmarketlappeenranta.fi</p>
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Yhteystiedot</h4>
+                    <p class="mb-2">📞 044 032 3388</p>
+                    <p class="mb-2">📧 myynti@acrengas.com</p>
+                    <p class="mb-2">📍 Ratakatu 28, 53100 Lappeenranta</p>
+                    <p class="mb-2">🌐 www.rengasmarketlappeenranta.fi</p>
                 </div>
-                <div class="footer-section">
-                    <h4>Aukioloajat</h4>
-                    <p>Ma-Pe: 8:00-18:00</p>
-                    <p>La: 9:00-15:00</p>
-                    <p>Su: Suljettu</p>
-                    <p class="business-info">Sivutoimipaikka</p>
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Aukioloajat</h4>
+                    <p class="mb-2">Ma-Pe: 8:00-18:00</p>
+                    <p class="mb-2">La: 9:00-15:00</p>
+                    <p class="mb-2">Su: Suljettu</p>
+                    <p class="text-sm text-gray-400">Sivutoimipaikka</p>
                 </div>
             </div>
-            <div class="footer-bottom">
+            <div class="border-t border-gray-700 pt-8 text-center">
                 <p>&copy; 2024 Rengasmarket Lappeenranta / AC Rengas. Kaikki oikeudet pidätetään.</p>
             </div>
         </div>

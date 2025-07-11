@@ -5,235 +5,265 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Palvelut - Rengasmarket Lappeenranta</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <nav class="navbar">
-            <div class="navbar-container">
-                <div class="navbar-brand">
-                    <a href="index.html" class="navbar-logo">
-                        <span class="logo-text">Rengasmarket</span>
-                        <span class="logo-subtitle">Lappeenranta</span>
+    <header class="navbar fixed w-full top-0 z-50 transition-all duration-300">
+        <nav class="p-0">
+            <div class="flex justify-between items-center px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto h-18">
+                <div class="flex items-center">
+                    <a href="index.html" class="no-underline flex flex-col items-start">
+                        <span class="text-2xl font-extrabold text-primary-600 uppercase tracking-wider leading-none">Rengasmarket</span>
+                        <span class="text-xs font-normal text-gray-500 uppercase tracking-widest -mt-0.5">Lappeenranta</span>
                     </a>
                 </div>
                 
-                <ul class="navbar-menu">
-                    <li class="navbar-item">
+                <ul class="hidden lg:flex list-none m-0 p-0 gap-8 items-center">
+                    <li class="m-0">
                         <a href="index.html" class="navbar-link">Etusivu</a>
                     </li>
-                    <li class="navbar-item">
+                    <li class="m-0">
                         <a href="palvelut.html" class="navbar-link active">Palvelut</a>
                     </li>
-                    <li class="navbar-item">
+                    <li class="m-0">
                         <a href="tietoa-meista.html" class="navbar-link">Tietoa meistä</a>
                     </li>
-                    <li class="navbar-item">
+                    <li class="m-0">
                         <a href="yhteystiedot.html" class="navbar-link">Yhteystiedot</a>
                     </li>
                 </ul>
                 
-                <button class="navbar-toggle" aria-label="Toggle navigation">
-                    <span class="hamburger-line"></span>
-                    <span class="hamburger-line"></span>
-                    <span class="hamburger-line"></span>
+                <button class="lg:hidden flex flex-col bg-transparent border-none cursor-pointer p-2 gap-1" aria-label="Toggle navigation" id="mobile-menu-btn">
+                    <span class="w-6 h-0.5 bg-gray-700 transition-all duration-300 rounded-sm"></span>
+                    <span class="w-6 h-0.5 bg-gray-700 transition-all duration-300 rounded-sm"></span>
+                    <span class="w-6 h-0.5 bg-gray-700 transition-all duration-300 rounded-sm"></span>
                 </button>
             </div>
         </nav>
     </header>
 
+    <!-- Mobile Menu -->
+    <div class="mobile-menu hidden lg:hidden" id="mobile-menu">
+        <div class="flex justify-between items-center p-4 border-b border-gray-200">
+            <a href="index.html" class="no-underline flex flex-col items-start">
+                <span class="text-xl font-extrabold text-primary-600 uppercase tracking-wider leading-none">Rengasmarket</span>
+                <span class="text-xs font-normal text-gray-500 uppercase tracking-widest -mt-0.5">Lappeenranta</span>
+            </a>
+            <button class="bg-transparent border-none cursor-pointer p-2" id="close-menu">
+                <span class="text-2xl text-gray-700">&times;</span>
+            </button>
+        </div>
+        <ul class="p-4 space-y-4">
+            <li><a href="index.html" class="block text-lg font-medium text-gray-700 hover:text-primary-600 py-2">Etusivu</a></li>
+            <li><a href="palvelut.html" class="block text-lg font-medium text-gray-700 hover:text-primary-600 py-2">Palvelut</a></li>
+            <li><a href="tietoa-meista.html" class="block text-lg font-medium text-gray-700 hover:text-primary-600 py-2">Tietoa meistä</a></li>
+            <li><a href="yhteystiedot.html" class="block text-lg font-medium text-gray-700 hover:text-primary-600 py-2">Yhteystiedot</a></li>
+        </ul>
+    </div>
+
     <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h2>Kattavat rengaspalvelut</h2>
-                <p>Tarjoamme ammattitaitoista palvelua kaikille ajoneuvoille - henkilöautot, pakettiautot ja kuorma-autot</p>
-                <div class="hero-buttons">
+        <section class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 pt-32 pb-16 px-4 sm:px-6 lg:px-8 bg-gradient-hero min-h-screen items-center relative overflow-hidden">
+            <div class="relative z-10">
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-white mb-6 leading-tight drop-shadow-lg text-balance">Kattavat rengaspalvelut</h1>
+                <p class="text-lg lg:text-xl text-slate-300 mb-8 font-light leading-relaxed">Tarjoamme ammattitaitoista palvelua kaikille ajoneuvoille - henkilöautot, pakettiautot ja kuorma-autot. Luotamme vain parhaisiin merkeihin ja tarjoamme asiantuntevaa neuvontaa.</p>
+                <div class="flex flex-col sm:flex-row gap-4">
                     <a href="#services" class="btn btn-primary">Katso palvelut</a>
                     <a href="yhteystiedot.html" class="btn btn-secondary">Ota yhteyttä</a>
                 </div>
             </div>
-            <div class="hero-image">
+            <div class="relative flex items-center justify-center">
                 <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Rengaspalvelut ja huolto" class="hero-car-image">
-                <div class="hero-overlay">
+                <div class="absolute top-5 right-5 z-20">
                     <div class="tire-badge">
-                        <span class="tire-icon">🔧</span>
-                        <span class="tire-text">Ammattipalvelu</span>
+                        <span class="text-xl">🔧</span>
+                        <span class="text-sm font-medium text-gray-700">Ammattipalvelu</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="services" id="services">
+        <section class="section-padding bg-gradient-subtle relative" id="services">
             <div class="container">
-                <h3>Ammattitaitoiset rengaspalvelut</h3>
-                <p class="services-intro">Tarjoamme edulliset, laadukkaat ja ammattitaitoiset rengaspalvelut kaikille ajoneuvoille. Palveluihimme kuuluvat renkaiden vaihdot, tasapainotukset, paikkaukset sekä asiantunteva neuvonta.</p>
+                <h2 class="section-title">Ammattitaitoiset rengaspalvelut</h2>
+                <p class="section-subtitle">Tarjoamme edulliset, laadukkaat ja ammattitaitoiset rengaspalvelut kaikille ajoneuvoille. Palveluihimme kuuluvat renkaiden vaihdot, tasapainotukset, paikkaukset sekä asiantunteva neuvonta.</p>
                 
-                <div class="services-grid">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
                     <div class="service-card">
-                        <div class="service-icon">🔄</div>
-                        <h3>Renkaanvaihto</h3>
-                        <p>Täydellinen renkaanvaihtopalvelu, joka sisältää renkaiden pesun, paineiden tarkistuksen ja lisäyksen sekä ammattitaitoisen asennuksen alle.</p>
-                        <ul>
-                            <li>Renkaiden pesu ja puhdistus</li>
-                            <li>Paineiden tarkistus ja säätö</li>
-                            <li>Ammattitaitoinen asennus</li>
-                            <li>Venttiilien vaihto tarvittaessa</li>
+                        <div class="text-4xl mb-6">🔄</div>
+                        <h3 class="text-xl font-bold mb-4 text-gray-900">Renkaanvaihto</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">Täydellinen renkaanvaihtopalvelu, joka sisältää renkaiden pesun, paineiden tarkistuksen ja lisäyksen sekä ammattitaitoisen asennuksen alle.</p>
+                        <ul class="list-none space-y-3">
+                            <li class="flex items-start gap-3"><span class="text-primary-600 font-bold">•</span> <span class="text-gray-600">Renkaiden pesu ja puhdistus</span></li>
+                            <li class="flex items-start gap-3"><span class="text-primary-600 font-bold">•</span> <span class="text-gray-600">Paineiden tarkistus ja säätö</span></li>
+                            <li class="flex items-start gap-3"><span class="text-primary-600 font-bold">•</span> <span class="text-gray-600">Ammattitaitoinen asennus</span></li>
+                            <li class="flex items-start gap-3"><span class="text-primary-600 font-bold">•</span> <span class="text-gray-600">Venttiilien vaihto tarvittaessa</span></li>
                         </ul>
                     </div>
 
                     <div class="service-card">
-                        <div class="service-icon">🔧</div>
-                        <h3>Renkaan paikkaus ja korjaus</h3>
-                        <p>Renkaan paikkaus tehdään ammattitaidolla ja laadukkailla materiaaleilla. Hyvin paikattu rengas pidentää renkaan käyttöikää ja säästää rahaa.</p>
-                        <ul>
-                            <li>Ammattitaitoinen paikkaus</li>
-                            <li>Laadukkaat korjausmateriaalit</li>
-                            <li>Käyttöiän pidentäminen</li>
-                            <li>Kustannustehokas ratkaisu</li>
+                        <div class="text-4xl mb-6">🔧</div>
+                        <h3 class="text-xl font-bold mb-4 text-gray-900">Renkaan paikkaus ja korjaus</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">Renkaan paikkaus tehdään ammattitaidolla ja laadukkailla materiaaleilla. Hyvin paikattu rengas pidentää renkaan käyttöikää ja säästää rahaa.</p>
+                        <ul class="list-none space-y-3">
+                            <li class="flex items-start gap-3"><span class="text-primary-600 font-bold">•</span> <span class="text-gray-600">Ammattitaitoinen paikkaus</span></li>
+                            <li class="flex items-start gap-3"><span class="text-primary-600 font-bold">•</span> <span class="text-gray-600">Laadukkaat korjausmateriaalit</span></li>
+                            <li class="flex items-start gap-3"><span class="text-primary-600 font-bold">•</span> <span class="text-gray-600">Käyttöiän pidentäminen</span></li>
+                            <li class="flex items-start gap-3"><span class="text-primary-600 font-bold">•</span> <span class="text-gray-600">Kustannustehokas ratkaisu</span></li>
                         </ul>
                     </div>
 
                     <div class="service-card">
-                        <div class="service-icon">⚖️</div>
-                        <h3>Tasapainoitukset</h3>
-                        <p>Ammattilaisen tekemä tasapainoitus turvaa ajomukavuuden ja ohjattavuuden. Tarkka tasapainoitus poistaa tärinät ja parantaa ajokokemusta.</p>
-                        <ul>
-                            <li>Tarkka tasapainoitus</li>
-                            <li>Ajomukavuuden parantaminen</li>
-                            <li>Tärinöiden poisto</li>
-                            <li>Renkaiden tasainen kuluminen</li>
+                        <div class="text-4xl mb-6">⚖️</div>
+                        <h3 class="text-xl font-bold mb-4 text-gray-900">Tasapainoitukset</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">Ammattilaisen tekemä tasapainoitus turvaa ajomukavuuden ja ohjattavuuden. Tarkka tasapainoitus poistaa tärinät ja parantaa ajokokemusta.</p>
+                        <ul class="list-none space-y-3">
+                            <li class="flex items-start gap-3"><span class="text-primary-600 font-bold">•</span> <span class="text-gray-600">Tarkka tasapainoitus</span></li>
+                            <li class="flex items-start gap-3"><span class="text-primary-600 font-bold">•</span> <span class="text-gray-600">Ajomukavuuden parantaminen</span></li>
+                            <li class="flex items-start gap-3"><span class="text-primary-600 font-bold">•</span> <span class="text-gray-600">Tärinöiden poisto</span></li>
+                            <li class="flex items-start gap-3"><span class="text-primary-600 font-bold">•</span> <span class="text-gray-600">Renkaiden tasainen kuluminen</span></li>
                         </ul>
                     </div>
 
                     <div class="service-card">
-                        <div class="service-icon">📊</div>
-                        <h3>Rengaspainevalvonta</h3>
-                        <p>TPMS-järjestelmän toiminnan tarkastus, tarvittaessa korjaus ja rikkinäisten antureiden vaihto. Säännöllinen painevalvonta turvaa turvallisuuden.</p>
-                        <ul>
-                            <li>TPMS-järjestelmän tarkistus</li>
-                            <li>Antureiden korjaus ja vaihto</li>
-                            <li>Painevalvonta</li>
-                            <li>Turvallisuuden varmistaminen</li>
+                        <div class="text-4xl mb-6">📊</div>
+                        <h3 class="text-xl font-bold mb-4 text-gray-900">Rengaspainevalvonta</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">TPMS-järjestelmän toiminnan tarkastus, tarvittaessa korjaus ja rikkinäisten antureiden vaihto. Säännöllinen painevalvonta turvaa turvallisuuden.</p>
+                        <ul class="list-none space-y-3">
+                            <li class="flex items-start gap-3"><span class="text-primary-600 font-bold">•</span> <span class="text-gray-600">TPMS-järjestelmän tarkistus</span></li>
+                            <li class="flex items-start gap-3"><span class="text-primary-600 font-bold">•</span> <span class="text-gray-600">Antureiden korjaus ja vaihto</span></li>
+                            <li class="flex items-start gap-3"><span class="text-primary-600 font-bold">•</span> <span class="text-gray-600">Painevalvonta</span></li>
+                            <li class="flex items-start gap-3"><span class="text-primary-600 font-bold">•</span> <span class="text-gray-600">Turvallisuuden varmistaminen</span></li>
                         </ul>
                     </div>
 
                     <div class="service-card">
-                        <div class="service-icon">🚗</div>
-                        <h3>Henkilöautojen renkaat</h3>
-                        <p>Laaja valikoima kesä-, talvi- ja kausirenkaita henkilöautoihin. Kaikki suosituimmat merkit ja koot saatavilla kilpailukykyiseen hintaan.</p>
-                        <ul>
-                            <li>Kesä- ja talvirenkaat</li>
-                            <li>Kausirenkaat</li>
-                            <li>Runflat-renkaat</li>
-                            <li>Kaikki suosituimmat merkit</li>
+                        <div class="text-4xl mb-6">🚗</div>
+                        <h3 class="text-xl font-bold mb-4 text-gray-900">Henkilöautojen renkaat</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">Laaja valikoima kesä-, talvi- ja kausirenkaita henkilöautoihin. Kaikki suosituimmat merkit ja koot saatavilla kilpailukykyiseen hintaan.</p>
+                        <ul class="list-none space-y-3">
+                            <li class="flex items-start gap-3"><span class="text-primary-600 font-bold">•</span> <span class="text-gray-600">Kesä- ja talvirenkaat</span></li>
+                            <li class="flex items-start gap-3"><span class="text-primary-600 font-bold">•</span> <span class="text-gray-600">Kausirenkaat</span></li>
+                            <li class="flex items-start gap-3"><span class="text-primary-600 font-bold">•</span> <span class="text-gray-600">Runflat-renkaat</span></li>
+                            <li class="flex items-start gap-3"><span class="text-primary-600 font-bold">•</span> <span class="text-gray-600">Kaikki suosituimmat merkit</span></li>
                         </ul>
                     </div>
 
                     <div class="service-card">
-                        <div class="service-icon">🚐</div>
-                        <h3>Pakettiautojen renkaat</h3>
-                        <p>Kestävät ja luotettavat renkaat pakettiautoihin ja tila-autoihin. Optimoitu kuormankantavuuteen ja pitkään käyttöikään.</p>
-                        <ul>
-                            <li>Kantavuusrenkaat</li>
-                            <li>Kulutuskestävät mallit</li>
-                            <li>Erikoiskoot</li>
-                            <li>Kuormankantavuusoptimoitu</li>
+                        <div class="text-4xl mb-6">🚐</div>
+                        <h3 class="text-xl font-bold mb-4 text-gray-900">Pakettiautojen renkaat</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">Kestävät ja luotettavat renkaat pakettiautoihin ja tila-autoihin. Optimoitu kuormankantavuuteen ja pitkään käyttöikään.</p>
+                        <ul class="list-none space-y-3">
+                            <li class="flex items-start gap-3"><span class="text-primary-600 font-bold">•</span> <span class="text-gray-600">Kantavuusrenkaat</span></li>
+                            <li class="flex items-start gap-3"><span class="text-primary-600 font-bold">•</span> <span class="text-gray-600">Kulutuskestävät mallit</span></li>
+                            <li class="flex items-start gap-3"><span class="text-primary-600 font-bold">•</span> <span class="text-gray-600">Erikoiskoot</span></li>
+                            <li class="flex items-start gap-3"><span class="text-primary-600 font-bold">•</span> <span class="text-gray-600">Kuormankantavuusoptimoitu</span></li>
                         </ul>
                     </div>
 
                     <div class="service-card">
-                        <div class="service-icon">🚛</div>
-                        <h3>Kuorma-autojen renkaat</h3>
-                        <p>Ammattimaiset renkaat kuorma-autoihin ja rekkoihin. Korkealaatuiset merkit ja nopea toimitus ammattikäyttöön.</p>
-                        <ul>
-                            <li>Ohjaustelarenkaat</li>
-                            <li>Vetotelarenkaat</li>
-                            <li>Trailerirenkaat</li>
-                            <li>Ammattikäyttöön optimoidut</li>
+                        <div class="text-4xl mb-6">🚛</div>
+                        <h3 class="text-xl font-bold mb-4 text-gray-900">Kuorma-autojen renkaat</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">Ammattimaiset renkaat kuorma-autoihin ja rekkoihin. Korkealaatuiset merkit ja nopea toimitus ammattikäyttöön.</p>
+                        <ul class="list-none space-y-3">
+                            <li class="flex items-start gap-3"><span class="text-primary-600 font-bold">•</span> <span class="text-gray-600">Ohjaustelarenkaat</span></li>
+                            <li class="flex items-start gap-3"><span class="text-primary-600 font-bold">•</span> <span class="text-gray-600">Vetotelarenkaat</span></li>
+                            <li class="flex items-start gap-3"><span class="text-primary-600 font-bold">•</span> <span class="text-gray-600">Trailerirenkaat</span></li>
+                            <li class="flex items-start gap-3"><span class="text-primary-600 font-bold">•</span> <span class="text-gray-600">Ammattikäyttöön optimoidut</span></li>
                         </ul>
                     </div>
 
                     <div class="service-card">
-                        <div class="service-icon">🏨</div>
-                        <h3>Rengashotelli</h3>
-                        <p>Turvallinen säilytys renkaillesi vaihtokauden ajaksi. Rengashotelli tarjoaa optimaaliset olosuhteet renkaiden säilyttämiseen.</p>
-                        <ul>
-                            <li>Turvallinen säilytys</li>
-                            <li>Optimaaliset olosuhteet</li>
-                            <li>Vaihtokauden palvelu</li>
-                            <li>Rengasrekisteri</li>
+                        <div class="text-4xl mb-6">🏨</div>
+                        <h3 class="text-xl font-bold mb-4 text-gray-900">Rengashotelli</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">Turvallinen säilytys renkaillesi vaihtokauden ajaksi. Rengashotelli tarjoaa optimaaliset olosuhteet renkaiden säilyttämiseen.</p>
+                        <ul class="list-none space-y-3">
+                            <li class="flex items-start gap-3"><span class="text-primary-600 font-bold">•</span> <span class="text-gray-600">Turvallinen säilytys</span></li>
+                            <li class="flex items-start gap-3"><span class="text-primary-600 font-bold">•</span> <span class="text-gray-600">Optimaaliset olosuhteet</span></li>
+                            <li class="flex items-start gap-3"><span class="text-primary-600 font-bold">•</span> <span class="text-gray-600">Vaihtokauden palvelu</span></li>
+                            <li class="flex items-start gap-3"><span class="text-primary-600 font-bold">•</span> <span class="text-gray-600">Rengasrekisteri</span></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="pricing">
+        <section class="section-padding bg-white relative">
             <div class="container">
-                <h3>Kilpailukykyiset hinnat</h3>
-                <div class="pricing-grid">
+                <h2 class="section-title">Kilpailukykyiset hinnat</h2>
+                <p class="section-subtitle">Edulliset hinnat laadukkaasta palvelusta. Kaikki hinnat sisältävät ALV:n.</p>
+                <div class="grid-responsive">
                     <div class="pricing-card">
-                        <h4>Renkaanvaihto</h4>
-                        <div class="price">Alkaen 15€/kpl</div>
-                        <p>Sisältää pesun, paineiden tarkistuksen ja asennuksen</p>
+                        <h4 class="text-xl font-bold mb-4 text-gray-900">Renkaanvaihto</h4>
+                        <div class="text-3xl font-bold text-primary-600 mb-4">Alkaen 15€/kpl</div>
+                        <p class="text-gray-600 leading-relaxed">Sisältää pesun, paineiden tarkistuksen ja asennuksen</p>
                     </div>
                     <div class="pricing-card">
-                        <h4>Tasapainoitus</h4>
-                        <div class="price">Alkaen 10€/kpl</div>
-                        <p>Ammattitaitoinen tasapainoitus tarkkuuslaiteella</p>
+                        <h4 class="text-xl font-bold mb-4 text-gray-900">Tasapainoitus</h4>
+                        <div class="text-3xl font-bold text-primary-600 mb-4">Alkaen 10€/kpl</div>
+                        <p class="text-gray-600 leading-relaxed">Ammattitaitoinen tasapainoitus tarkkuuslaiteella</p>
                     </div>
                     <div class="pricing-card">
-                        <h4>Renkaan paikkaus</h4>
-                        <div class="price">Alkaen 25€/kpl</div>
-                        <p>Laadukkailla materiaaleilla tehty paikkaus</p>
+                        <h4 class="text-xl font-bold mb-4 text-gray-900">Renkaan paikkaus</h4>
+                        <div class="text-3xl font-bold text-primary-600 mb-4">Alkaen 25€/kpl</div>
+                        <p class="text-gray-600 leading-relaxed">Laadukkailla materiaaleilla tehty paikkaus</p>
                     </div>
                     <div class="pricing-card">
-                        <h4>Henkilöautojen renkaat</h4>
-                        <div class="price">Alkaen 80€/kpl</div>
-                        <p>Kesä- ja talvirenkaat kaikille henkilöautoille</p>
+                        <h4 class="text-xl font-bold mb-4 text-gray-900">Henkilöautojen renkaat</h4>
+                        <div class="text-3xl font-bold text-primary-600 mb-4">Alkaen 80€/kpl</div>
+                        <p class="text-gray-600 leading-relaxed">Kesä- ja talvirenkaat kaikille henkilöautoille</p>
                     </div>
                     <div class="pricing-card">
-                        <h4>Pakettiautojen renkaat</h4>
-                        <div class="price">Alkaen 120€/kpl</div>
-                        <p>Kestävät renkaat pakettiautoihin</p>
+                        <h4 class="text-xl font-bold mb-4 text-gray-900">Pakettiautojen renkaat</h4>
+                        <div class="text-3xl font-bold text-primary-600 mb-4">Alkaen 120€/kpl</div>
+                        <p class="text-gray-600 leading-relaxed">Kestävät renkaat pakettiautoihin</p>
                     </div>
                     <div class="pricing-card">
-                        <h4>Rengashotelli</h4>
-                        <div class="price">Alkaen 30€/kpl</div>
-                        <p>Turvallinen säilytys vaihtokauden ajaksi</p>
+                        <h4 class="text-xl font-bold mb-4 text-gray-900">Rengashotelli</h4>
+                        <div class="text-3xl font-bold text-primary-600 mb-4">Alkaen 30€/kpl</div>
+                        <p class="text-gray-600 leading-relaxed">Turvallinen säilytys vaihtokauden ajaksi</p>
                     </div>
                 </div>
-                <p class="pricing-note">* Hinnat sisältävät ALV:n. Tarkat hinnat riippuvat rengasmerkistä, koosta ja palvelun laajuudesta. Pyydä henkilökohtainen tarjous!</p>
+            </div>
+        </section>
+
+        <section class="section-padding bg-gradient-hero relative">
+            <div class="container text-center">
+                <h2 class="text-3xl lg:text-4xl font-bold mb-6 text-white">Tarvitsetko apua renkaiden valinnassa?</h2>
+                <p class="text-lg lg:text-xl text-slate-300 mb-8 max-w-2xl mx-auto">Ota yhteyttä ja saat henkilökohtaista neuvontaa. Autamme sinua löytämään täydelliset renkaat ajoneuvollesi.</p>
+                <a href="yhteystiedot.html" class="btn btn-primary">Ota yhteyttä</a>
             </div>
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="bg-gray-900 text-white py-16 relative">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>Rengasmarket Lappeenranta</h4>
-                    <p>AC Rengas / Kc Enterprise Oy</p>
-                    <p>Laadukkaat renkaat ja ammattitaitoinen palvelu</p>
-                    <p class="business-info">Y-tunnus: 2165495-1</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Rengasmarket Lappeenranta</h4>
+                    <p class="mb-2 text-gray-300">AC Rengas / Kc Enterprise Oy</p>
+                    <p class="mb-2 text-gray-300">Laadukkaat renkaat ja ammattitaitoinen palvelu</p>
+                    <p class="text-sm text-gray-400">Y-tunnus: 2165495-1</p>
                 </div>
-                <div class="footer-section">
-                    <h4>Yhteystiedot</h4>
-                    <p>📞 044 032 3388</p>
-                    <p>📧 myynti@acrengas.com</p>
-                    <p>📍 Ratakatu 28, 53100 Lappeenranta</p>
-                    <p>🌐 www.rengasmarketlappeenranta.fi</p>
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Yhteystiedot</h4>
+                    <div class="space-y-2 text-gray-300">
+                        <p>📞 044 032 3388</p>
+                        <p>📧 myynti@acrengas.com</p>
+                        <p>📍 Ratakatu 28, 53100 Lappeenranta</p>
+                        <p>🌐 www.rengasmarketlappeenranta.fi</p>
+                    </div>
                 </div>
-                <div class="footer-section">
-                    <h4>Aukioloajat</h4>
-                    <p>Ma-Pe: 8:00-18:00</p>
-                    <p>La: 9:00-15:00</p>
-                    <p>Su: Suljettu</p>
-                    <p class="business-info">Sivutoimipaikka</p>
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Aukioloajat</h4>
+                    <div class="space-y-2 text-gray-300">
+                        <p>Ma-Pe: 8:00-18:00</p>
+                        <p>La: 9:00-15:00</p>
+                        <p>Su: Suljettu</p>
+                        <p class="text-sm text-gray-400">Sivutoimipaikka</p>
+                    </div>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Rengasmarket Lappeenranta / AC Rengas. Kaikki oikeudet pidätetään.</p>
+            <div class="border-t border-gray-700 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2024 Rengasmarket Lappeenranta / AC Rengas. Kaikki oikeudet pidätetään.</p>
             </div>
         </div>
     </footer>

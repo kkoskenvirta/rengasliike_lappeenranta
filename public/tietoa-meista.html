@@ -5,190 +5,194 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tietoa meistä - Rengasmarket Lappeenranta</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <nav class="navbar">
-            <div class="navbar-container">
-                <div class="navbar-brand">
-                    <a href="index.html" class="navbar-logo">
-                        <span class="logo-text">Rengasmarket</span>
-                        <span class="logo-subtitle">Lappeenranta</span>
+    <header class="bg-white/95 backdrop-blur-10 shadow-sm fixed w-full top-0 z-50 transition-all duration-300">
+        <nav class="p-0">
+            <div class="flex justify-between items-center px-8 max-w-6xl mx-auto h-18">
+                <div class="flex items-center">
+                    <a href="index.html" class="no-underline flex flex-col items-start">
+                        <span class="text-2xl font-extrabold text-primary uppercase tracking-wider leading-none">Rengasmarket</span>
+                        <span class="text-xs font-normal text-gray-500 uppercase tracking-widest -mt-0.5">Lappeenranta</span>
                     </a>
                 </div>
                 
-                <ul class="navbar-menu">
-                    <li class="navbar-item">
+                <ul class="flex list-none m-0 p-0 gap-10 items-center">
+                    <li class="m-0">
                         <a href="index.html" class="navbar-link">Etusivu</a>
                     </li>
-                    <li class="navbar-item">
+                    <li class="m-0">
                         <a href="palvelut.html" class="navbar-link">Palvelut</a>
                     </li>
-                    <li class="navbar-item">
+                    <li class="m-0">
                         <a href="tietoa-meista.html" class="navbar-link active">Tietoa meistä</a>
                     </li>
-                    <li class="navbar-item">
+                    <li class="m-0">
                         <a href="yhteystiedot.html" class="navbar-link">Yhteystiedot</a>
                     </li>
                 </ul>
                 
-                <button class="navbar-toggle" aria-label="Toggle navigation">
-                    <span class="hamburger-line"></span>
-                    <span class="hamburger-line"></span>
-                    <span class="hamburger-line"></span>
+                <button class="hidden flex-col bg-transparent border-none cursor-pointer p-2 gap-1" aria-label="Toggle navigation">
+                    <span class="w-6 h-0.5 bg-secondary transition-all duration-300 rounded-sm"></span>
+                    <span class="w-6 h-0.5 bg-secondary transition-all duration-300 rounded-sm"></span>
+                    <span class="w-6 h-0.5 bg-secondary transition-all duration-300 rounded-sm"></span>
                 </button>
             </div>
         </nav>
     </header>
 
     <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h2>Tietoa meistä</h2>
-                <p>Rengasmarket Lappeenranta - luotettava kumppani rengasasioissa yli 10 vuoden kokemuksella</p>
-                <div class="hero-buttons">
+        <section class="grid grid-cols-1 lg:grid-cols-2 gap-16 pt-32 pb-16 px-16 bg-gradient-hero min-h-screen items-center relative overflow-hidden">
+            <div class="relative z-10">
+                <h2 class="text-5xl lg:text-6xl font-extrabold text-white mb-4 leading-tight drop-shadow-lg">Tietoa meistä</h2>
+                <p class="text-xl text-slate-300 mb-8 font-light">Rengasmarket Lappeenranta - luotettava kumppani rengasasioissa yli 10 vuoden kokemuksella</p>
+                <div class="flex gap-4 flex-wrap">
                     <a href="#about" class="btn btn-primary">Lue lisää</a>
                     <a href="yhteystiedot.html" class="btn btn-secondary">Ota yhteyttä</a>
                 </div>
             </div>
-            <div class="hero-image">
+            <div class="relative flex items-center justify-center">
                 <img src="https://images.unsplash.com/photo-1563720223185-11003d516935?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Rengasmarket tiimi" class="hero-car-image">
-                <div class="hero-overlay">
+                <div class="absolute top-5 right-5 z-20">
                     <div class="tire-badge">
-                        <span class="tire-icon">🏆</span>
-                        <span class="tire-text">10+ vuotta</span>
+                        <span class="text-xl">🏆</span>
+                        <span class="text-sm font-medium text-gray-700">10+ vuotta</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="about" id="about">
+        <section class="py-20 bg-white relative" id="about">
             <div class="container">
-                <h3>Meidän tarinamme</h3>
-                <div class="about-grid">
-                    <div class="about-content">
-                        <p>Rengasmarket Lappeenranta on perustettu vuonna 2010 ja olemme palvelleet asiakkaitamme Lappeenrannassa ja sen ympäristössä yli 10 vuoden ajan. Alusta asti tavoitteenamme on ollut tarjota laadukkaita renkaita ja ammattitaitoista palvelua kilpailukykyiseen hintaan.</p>
+                <h3 class="text-4xl font-bold text-center mb-16 text-gray-900">Meidän tarinamme</h3>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    <div>
+                        <p class="text-lg text-gray-600 mb-6">Rengasmarket Lappeenranta on perustettu vuonna 2010 ja olemme palvelleet asiakkaitamme Lappeenrannassa ja sen ympäristössä yli 10 vuoden ajan. Alusta asti tavoitteenamme on ollut tarjota laadukkaita renkaita ja ammattitaitoista palvelua kilpailukykyiseen hintaan.</p>
                         
-                        <p>Olemme erikoistuneet kaikenlaisiin rengasratkaisuihin - henkilöautoista kuorma-autoihin. Tiimimme koostuu kokenusta henkilökunnasta, joka tuntee rengasalalla olevat uusimmat trendit ja teknologiat.</p>
+                        <p class="text-lg text-gray-600 mb-8">Olemme erikoistuneet kaikenlaisiin rengasratkaisuihin - henkilöautoista kuorma-autoihin. Tiimimme koostuu kokenusta henkilökunnasta, joka tuntee rengasalalla olevat uusimmat trendit ja teknologiat.</p>
                         
-                        <h4>Arvomme</h4>
-                        <ul>
-                            <li><strong>Laatu:</strong> Tarjoamme vain parhaita rengasmerkkejä</li>
-                            <li><strong>Luotettavuus:</strong> Olemme aina paikalla kun tarvitset apua</li>
-                            <li><strong>Rehellisyys:</strong> Suosittelemme aina parasta ratkaisua sinulle</li>
-                            <li><strong>Asiakaspalvelu:</strong> Henkilökohtainen huomio jokaiselle asiakkaalle</li>
+                        <h4 class="text-2xl font-bold mb-6 text-gray-900">Arvomme</h4>
+                        <ul class="space-y-4">
+                            <li class="flex items-start gap-3"><span class="text-primary font-bold">Laatu:</span> <span class="text-gray-600">Tarjoamme vain parhaita rengasmerkkejä</span></li>
+                            <li class="flex items-start gap-3"><span class="text-primary font-bold">Luotettavuus:</span> <span class="text-gray-600">Olemme aina paikalla kun tarvitset apua</span></li>
+                            <li class="flex items-start gap-3"><span class="text-primary font-bold">Rehellisyys:</span> <span class="text-gray-600">Suosittelemme aina parasta ratkaisua sinulle</span></li>
+                            <li class="flex items-start gap-3"><span class="text-primary font-bold">Asiakaspalvelu:</span> <span class="text-gray-600">Henkilökohtainen huomio jokaiselle asiakkaalle</span></li>
                         </ul>
                     </div>
-                    <div class="about-image">
-                        <div class="about-showcase"></div>
+                    <div class="relative">
+                        <div class="w-full h-96 bg-gradient-to-br from-primary to-accent rounded-3xl shadow-2xl relative overflow-hidden">
+                            <div class="absolute inset-0 bg-black/20"></div>
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <span class="text-8xl">🚗</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="team">
+        <section class="py-20 bg-gray-50 relative">
             <div class="container">
-                <h3>Tiimimme</h3>
-                <div class="team-grid">
+                <h3 class="text-4xl font-bold text-center mb-16 text-gray-900">Tiimimme</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     <div class="team-member">
                         <div class="member-avatar">👨‍🔧</div>
-                        <h4>Matti Virtanen</h4>
-                        <p class="member-role">Toimitusjohtaja</p>
-                        <p>15 vuotta rengasalalla. Erikoistunut henkilöautojen renkaisiin.</p>
+                        <h4 class="text-xl font-bold mb-2 text-gray-900">Matti Virtanen</h4>
+                        <p class="text-primary font-semibold mb-4">Toimitusjohtaja</p>
+                        <p class="text-gray-600">15 vuotta rengasalalla. Erikoistunut henkilöautojen renkaisiin.</p>
                     </div>
                     <div class="team-member">
                         <div class="member-avatar">👩‍🔧</div>
-                        <h4>Anna Korhonen</h4>
-                        <p class="member-role">Myyntipäällikkö</p>
-                        <p>Asiakaspalvelu on hänen erikoisalaansa. Auttaa löytämään täydelliset renkaat.</p>
+                        <h4 class="text-xl font-bold mb-2 text-gray-900">Anna Korhonen</h4>
+                        <p class="text-primary font-semibold mb-4">Myyntipäällikkö</p>
+                        <p class="text-gray-600">Asiakaspalvelu on hänen erikoisalaansa. Auttaa löytämään täydelliset renkaat.</p>
                     </div>
                     <div class="team-member">
                         <div class="member-avatar">👨‍🔧</div>
-                        <h4>Jari Mäkinen</h4>
-                        <p class="member-role">Teknikko</p>
-                        <p>Kokenut rengasteknikko. Hoitaa kaikki asennukset ja huoltotyöt.</p>
+                        <h4 class="text-xl font-bold mb-2 text-gray-900">Jari Mäkinen</h4>
+                        <p class="text-primary font-semibold mb-4">Teknikko</p>
+                        <p class="text-gray-600">Kokenut rengasteknikko. Hoitaa kaikki asennukset ja huoltotyöt.</p>
                     </div>
                     <div class="team-member">
                         <div class="member-avatar">👩‍💼</div>
-                        <h4>Liisa Salminen</h4>
-                        <p class="member-role">Asiakaspalvelija</p>
-                        <p>Vastaa tilauksista ja asiakaspalvelusta. Aina hymyillen!</p>
+                        <h4 class="text-xl font-bold mb-2 text-gray-900">Liisa Salminen</h4>
+                        <p class="text-primary font-semibold mb-4">Asiakaspalvelija</p>
+                        <p class="text-gray-600">Vastaa tilauksista ja asiakaspalvelusta. Aina hymyillen!</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="stats">
+        <section class="py-20 bg-gradient-hero relative">
             <div class="container">
-                <h3>Numeromme puhuvat puolestaan</h3>
-                <div class="stats-grid">
+                <h3 class="text-4xl font-bold text-center mb-16 text-white">Numeromme puhuvat puolestaan</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
                     <div class="stat-item">
                         <div class="stat-number">10+</div>
-                        <div class="stat-label">Vuotta kokemusta</div>
+                        <div class="text-white text-lg">Vuotta kokemusta</div>
                     </div>
                     <div class="stat-item">
                         <div class="stat-number">5000+</div>
-                        <div class="stat-label">Tyydyttynyttä asiakasta</div>
+                        <div class="text-white text-lg">Tyydyttynyttä asiakasta</div>
                     </div>
                     <div class="stat-item">
                         <div class="stat-number">50+</div>
-                        <div class="stat-label">Rengasmerkkiä</div>
+                        <div class="text-white text-lg">Rengasmerkkiä</div>
                     </div>
                     <div class="stat-item">
                         <div class="stat-number">24/7</div>
-                        <div class="stat-label">Hätäpalvelu</div>
+                        <div class="text-white text-lg">Hätäpalvelu</div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="certifications">
+        <section class="py-20 bg-white relative">
             <div class="container">
-                <h3>Sertifikaatit ja kumppanuudet</h3>
-                <div class="cert-grid">
+                <h3 class="text-4xl font-bold text-center mb-16 text-gray-900">Sertifikaatit ja kumppanuudet</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <div class="cert-item">
-                        <h4>🔧 Ammattitaito</h4>
-                        <p>Kaikki tekniikkomme ovat sertifioituja rengasasentajia</p>
+                        <h4 class="text-xl font-bold mb-4 text-gray-900">🔧 Ammattitaito</h4>
+                        <p class="text-gray-600">Kaikki tekniikkomme ovat sertifioituja rengasasentajia</p>
                     </div>
                     <div class="cert-item">
-                        <h4>🏆 Laadun tae</h4>
-                        <p>Vain parhaat rengasmerkit ja takuut</p>
+                        <h4 class="text-xl font-bold mb-4 text-gray-900">🏆 Laadun tae</h4>
+                        <p class="text-gray-600">Vain parhaat rengasmerkit ja takuut</p>
                     </div>
                     <div class="cert-item">
-                        <h4>🤝 Luotettavat kumppanit</h4>
-                        <p>Yhteistyössä maailman johtavien rengasmerkkien kanssa</p>
+                        <h4 class="text-xl font-bold mb-4 text-gray-900">🤝 Luotettavat kumppanit</h4>
+                        <p class="text-gray-600">Yhteistyössä maailman johtavien rengasmerkkien kanssa</p>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="bg-gray-900 text-white py-16 relative">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>Rengasmarket Lappeenranta</h4>
-                    <p>AC Rengas / Kc Enterprise Oy</p>
-                    <p>Laadukkaat renkaat ja ammattitaitoinen palvelu</p>
-                    <p class="business-info">Y-tunnus: 2165495-1</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Rengasmarket Lappeenranta</h4>
+                    <p class="mb-2">AC Rengas / Kc Enterprise Oy</p>
+                    <p class="mb-2">Laadukkaat renkaat ja ammattitaitoinen palvelu</p>
+                    <p class="text-sm text-gray-400">Y-tunnus: 2165495-1</p>
                 </div>
-                <div class="footer-section">
-                    <h4>Yhteystiedot</h4>
-                    <p>📞 044 032 3388</p>
-                    <p>📧 myynti@acrengas.com</p>
-                    <p>📍 Ratakatu 28, 53100 Lappeenranta</p>
-                    <p>🌐 www.rengasmarketlappeenranta.fi</p>
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Yhteystiedot</h4>
+                    <p class="mb-2">📞 044 032 3388</p>
+                    <p class="mb-2">📧 myynti@acrengas.com</p>
+                    <p class="mb-2">📍 Ratakatu 28, 53100 Lappeenranta</p>
+                    <p class="mb-2">🌐 www.rengasmarketlappeenranta.fi</p>
                 </div>
-                <div class="footer-section">
-                    <h4>Aukioloajat</h4>
-                    <p>Ma-Pe: 8:00-18:00</p>
-                    <p>La: 9:00-15:00</p>
-                    <p>Su: Suljettu</p>
-                    <p class="business-info">Sivutoimipaikka</p>
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Aukioloajat</h4>
+                    <p class="mb-2">Ma-Pe: 8:00-18:00</p>
+                    <p class="mb-2">La: 9:00-15:00</p>
+                    <p class="mb-2">Su: Suljettu</p>
+                    <p class="text-sm text-gray-400">Sivutoimipaikka</p>
                 </div>
             </div>
-            <div class="footer-bottom">
+            <div class="border-t border-gray-700 pt-8 text-center">
                 <p>&copy; 2024 Rengasmarket Lappeenranta / AC Rengas. Kaikki oikeudet pidätetään.</p>
             </div>
         </div>
