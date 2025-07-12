@@ -33,6 +33,15 @@ const LOCALIZATION = {
       chooseTiresToday: "Valitse renkaasi jo tänään",
       contactForPersonalAdvice:
         "Ota yhteyttä ja saat henkilökohtaista neuvontaa",
+      goodyearBadge: "Virallinen Goodyear-jälleenmyyjä",
+      goodyearTitle: "Goodyearin laadukkaat renkaat",
+      goodyearDescription:
+        "Tutustu Goodyearin laajaan valikoimaan kesä- ja talvirenkaita. Laadukkaat renkaat turvalliseen ajoon kaikissa olosuhteissa.",
+      summerTires: "✓ Kesärenkaat",
+      winterTires: "✓ Talvirenkaat",
+      allSeasonTires: "✓ Ympärivuotiset",
+      viewGoodyearSelection: "Katso Goodyearin valikoima",
+      exploreTires: "Tutustu renkaisiin",
     },
 
     // Services page
@@ -182,6 +191,15 @@ const LOCALIZATION = {
       customerExperiences: "Customer Experiences",
       chooseTiresToday: "Choose Your Tires Today",
       contactForPersonalAdvice: "Contact us for personal advice",
+      goodyearBadge: "Official Goodyear Dealer",
+      goodyearTitle: "Quality Goodyear Tires",
+      goodyearDescription:
+        "Discover Goodyear's extensive selection of summer and winter tires. Quality tires for safe driving in all conditions.",
+      summerTires: "✓ Summer Tires",
+      winterTires: "✓ Winter Tires",
+      allSeasonTires: "✓ All-Season Tires",
+      viewGoodyearSelection: "View Goodyear Selection",
+      exploreTires: "Explore Tires",
     },
 
     // Services page

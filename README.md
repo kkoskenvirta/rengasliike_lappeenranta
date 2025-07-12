@@ -1,213 +1,97 @@
-# Rengasmarket Lappeenranta
+# Rengasmarket Lappeenranta Website
 
-Modern tire company website built with HTML, CSS, JavaScript, and Node.js. Fully responsive and optimized for Finnish market.
-
-## Features
-
-- 🚗 **Modern Design**: Clean, professional design with Finnish aesthetic
-- 📱 **Fully Responsive**: Works perfectly on all devices
-- 🎨 **Interactive Elements**: Smooth animations and hover effects
-- 📄 **Multiple Pages**: Home, Services, About Us, Contact
-- 🔧 **Simple Stack**: No complex frameworks, easy to maintain
-- 🇫🇮 **Finnish Content**: All content in Finnish language
-
-## Pages
-
-- **Etusivu** (`/`) - Homepage with hero section, features, and call-to-action
-- **Palvelut** (`/palvelut`) - Services page with detailed tire services and pricing
-- **Tietoa meistä** (`/tietoa-meista`) - About us page with company history and team
-- **Yhteystiedot** (`/yhteystiedot`) - Contact page with form and location info
-
-## Tech Stack
-
-- **Frontend**: HTML5, CSS3, Vanilla JavaScript
-- **Backend**: Node.js with Express
-- **Styling**: Custom CSS with modern design patterns
-- **Fonts**: Inter (Google Fonts)
-- **Icons**: Emoji icons for simplicity
-
-## Quick Start
-
-### Prerequisites
-
-- Node.js (version 14 or higher)
-- npm (comes with Node.js)
-
-### Installation
-
-1. Clone or download the project
-2. Navigate to the project directory:
-
-   ```bash
-   cd best-drive-website
-   ```
-
-3. Install dependencies:
-
-   ```bash
-   npm install
-   ```
-
-4. Start the development server:
-
-   ```bash
-   npm run dev
-   ```
-
-5. Open your browser and visit:
-   ```
-   http://localhost:3000
-   ```
-
-### Production
-
-To run in production mode:
-
-```bash
-npm start
-```
-
-## Project Structure
-
-```
-best-drive-website/
-├── public/                 # Static files
-│   ├── index.html         # Homepage
-│   ├── palvelut.html      # Services page
-│   ├── tietoa-meista.html # About us page
-│   ├── yhteystiedot.html  # Contact page
-│   ├── styles.css         # Main stylesheet
-│   └── script.js          # JavaScript functionality
-├── server.js              # Express server
-├── package.json           # Dependencies and scripts
-└── README.md             # This file
-```
-
-## Customization
-
-### Content
-
-- Edit HTML files in `public/` directory to change content
-- All text is in Finnish and can be easily modified
-
-### Styling
-
-- Main styles are in `public/styles.css`
-- Uses CSS Grid and Flexbox for modern layouts
-- Color scheme: Blue (#1e40af) and gray tones
-
-### Images
-
-- Currently uses CSS-generated placeholders
-- Replace with actual tire/company images as needed
+A modern, responsive website for Rengasmarket Lappeenranta tire shop with dual theme support.
 
 ## Features
 
-### Responsive Design
+- **Dual Theme Support**: Toggle between default red theme and Goodyear blue theme
+- **Responsive Design**: Works on all devices
+- **Multi-language Support**: Finnish and English
+- **Modern UI**: Clean, professional design with smooth animations
+- **Contact Integration**: Direct email and phone integration
 
-- Mobile-first approach
-- Breakpoints at 768px for tablets/mobile
-- Hamburger menu for mobile navigation
+## Theme Toggle
 
-### Interactive Elements
+The website includes a theme toggle button that allows users to switch between:
 
-- Smooth scrolling navigation
-- Hover effects on cards and buttons
-- Mobile menu toggle
-- Form validation (frontend only)
+1. **Default Theme**: Red color scheme (original design)
+2. **Goodyear Theme**: Blue color scheme using Goodyear brand colors
 
-### Performance
+### Goodyear Theme Colors
 
-- Lightweight (no heavy frameworks)
-- Fast loading times
-- Optimized CSS and JavaScript
+- Primary Blue: `rgb(0 78 168)`
+- Primary Dark: `rgb(14 43 108)`
+- Primary Light: `rgb(38 99 161)`
+- Primary Extra Light: `rgb(230 237 244)`
+- Secondary Yellow: `rgb(254 219 0)`
+- Secondary Light: `rgb(230 199 0)`
 
-## Browser Support
+### How to Use Theme Toggle
 
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-- Mobile browsers
+1. Look for the theme toggle button in the top-right corner of the page
+2. Click to switch between "Default Theme" and "Goodyear Theme"
+3. Your preference is saved in localStorage and will persist across sessions
+
+## File Structure
+
+```
+├── public/
+│   ├── index.html              # Home page
+│   ├── palvelut.html           # Services page
+│   ├── tietoa-meista.html      # About page
+│   ├── yhteystiedot.html       # Contact page
+│   ├── styles.css              # Default theme styles
+│   ├── goodyear-theme.css      # Goodyear theme styles
+│   ├── script.js               # Main JavaScript (includes theme toggle)
+│   ├── localization.js         # Multi-language support
+│   └── images/                 # Brand logos and images
+├── script.js                   # Root level script (for development)
+└── README.md                   # This file
+```
 
 ## Development
 
-### Adding New Pages
-
-1. Create new HTML file in `public/` directory
-2. Add route in `server.js`
-3. Update navigation in all HTML files
-4. Add corresponding CSS styles
-
-### Styling Guidelines
-
-- Use CSS Grid for layouts
-- Use Flexbox for alignment
-- Follow BEM-like naming conventions
-- Keep colors consistent with design system
-
-## 🚀 Live Demo
-
-Visit the live demo: [https://kkoskenvirta.github.io/lappeenrannan_rengaspalvelu](https://kkoskenvirta.github.io/lappeenrannan_rengaspalvelu)
-
-## Deployment
-
-### Local Development
-
-```bash
-npm run dev
-```
-
-### Production Build
+### Running the Server
 
 ```bash
 npm start
 ```
 
-### GitHub Pages Deployment
+The website will be available at `http://localhost:3000`
 
-This site is automatically deployed to GitHub Pages via GitHub Actions.
+### Theme Implementation
 
-#### Setup Instructions:
+The theme toggle functionality is implemented in `script.js`:
 
-1. **Enable GitHub Pages:**
+- Uses CSS variables for consistent theming
+- Dynamically loads/unloads theme stylesheets
+- Persists user preference in localStorage
+- Works across all pages
 
-   - Go to your repository settings
-   - Navigate to "Pages" section
-   - Set source to "GitHub Actions"
+### Adding New Themes
 
-2. **Deploy:**
+To add a new theme:
 
-   ```bash
-   git add .
-   git commit -m "Setup GitHub Pages"
-   git push origin main
-   ```
+1. Create a new CSS file (e.g., `new-theme.css`)
+2. Define CSS variables for the theme colors
+3. Update the theme toggle logic in `script.js`
+4. Add the new theme option to the toggle button
 
-3. **Access your site:**
-   - Your site will be available at: `https://kkoskenvirta.github.io/lappeenrannan_rengaspalvelu`
+## Technologies Used
 
-#### Manual Build (if needed):
+- HTML5
+- CSS3 (with CSS Variables)
+- Vanilla JavaScript
+- Responsive Design
+- Local Storage for theme persistence
 
-```bash
-npm run build
-```
+## Browser Support
 
-### Other Deployment Options
-
-- **Vercel**: Connect GitHub repository
-- **Netlify**: Drag and drop `public/` folder
-- **Heroku**: Deploy with Node.js buildpack
-- **Traditional hosting**: Upload files to web server
+- Chrome (recommended)
+- Firefox
+- Safari
+- Edge
 
 ## License
 
-MIT License - feel free to use and modify as needed.
-
-## Contact
-
-For questions or support, contact the development team.
-
----
-
-**Rengasmarket Lappeenranta** - Laadukkaat renkaat ja ammattitaitoinen palvelu
+This project is proprietary to Rengasmarket Lappeenranta.
