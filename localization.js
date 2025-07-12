@@ -98,16 +98,16 @@ const LOCALIZATION = {
       contact: "Ota yhteyttä",
       contactInfo: "Yhteystiedot",
       address: "Osoite",
-      addressValue: "Ratakatu 28 53100 Lappeenranta Suomi",
+      addressValue: "Ratakatu 28<br>53100 Lappeenranta<br>Suomi",
       phone: "Puhelin",
       email: "Sähköposti",
       website: "Nettisivut",
       businessInfo: "Yritystiedot",
       businessInfoValue:
-        "AC Rengas / Kc Enterprise Oy Y-tunnus: 2165495-1 Sivutoimipaikka",
+        "AC Rengas / Kc Enterprise Oy<br>Y-tunnus: 2165495-1<br>Sivutoimipaikka",
       openingHours: "Aukioloajat",
       openingHoursValue:
-        "Maanantai - Perjantai: 8:00 - 18:00 Lauantai: 9:00 - 15:00 Sunnuntai: Suljettu",
+        "Maanantai - Perjantai: 8:00 - 18:00<br>Lauantai: 9:00 - 15:00<br>Sunnuntai: Suljettu",
       sendMessage: "Lähetä viesti",
       name: "Nimi",
       emailField: "Sähköposti",
@@ -345,7 +345,12 @@ function updatePageContent() {
     if (element.tagName === "INPUT" || element.tagName === "TEXTAREA") {
       element.placeholder = text;
     } else {
-      element.textContent = text;
+      // Check if text contains HTML tags
+      if (text.includes("<br>") || text.includes("<") || text.includes(">")) {
+        element.innerHTML = text;
+      } else {
+        element.textContent = text;
+      }
     }
   });
 

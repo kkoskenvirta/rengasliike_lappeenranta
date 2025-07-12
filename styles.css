@@ -1,3 +1,22 @@
+/* Goodyear Theme - Default CSS Variables */
+:root {
+  --color-brand-primary: rgb(0 78 168);
+  --color-brand-primary-dark: rgb(14 43 108);
+  --color-brand-primary-light: rgb(38 99 161);
+  --color-brand-primary-extra-light: rgb(230 237 244);
+  --color-brand-secondary: rgb(254 219 0);
+  --color-brand-secondary-light: rgb(230 199 0);
+
+  /* Additional derived colors */
+  --color-text-primary: #1a1a1a;
+  --color-text-secondary: #64748b;
+  --color-background: #ffffff;
+  --color-background-light: #f8fafc;
+  --color-border: #e2e8f0;
+  --color-shadow: rgba(0, 78, 168, 0.1);
+  --color-shadow-dark: rgba(0, 78, 168, 0.2);
+}
+
 /* Reset and base styles */
 * {
   margin: 0;
@@ -8,8 +27,8 @@
 body {
   font-family: "Outfit", sans-serif;
   line-height: 1.6;
-  color: #1a1a1a;
-  background-color: #fff;
+  color: var(--color-text-primary);
+  background-color: var(--color-background);
   font-weight: 400;
 }
 
@@ -60,7 +79,7 @@ body {
 .logo-text {
   font-size: 1.5rem;
   font-weight: 800;
-  color: #dc2626;
+  color: var(--color-brand-primary);
   text-transform: uppercase;
   letter-spacing: 0.5px;
   line-height: 1;
@@ -69,7 +88,7 @@ body {
 .logo-subtitle {
   font-size: 0.75rem;
   font-weight: 400;
-  color: #6b7280;
+  color: var(--color-text-secondary);
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-top: -2px;
@@ -92,10 +111,49 @@ body {
 .language-switcher {
   display: flex;
   gap: 0.25rem;
-  background: #f3f4f6;
+  background: var(--color-background-light);
   border-radius: 6px;
   padding: 0.25rem;
-  border: 1px solid #e5e7eb;
+  border: 1px solid var(--color-border);
+}
+
+/* Theme Toggle Button in Navbar */
+.theme-toggle-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--color-background-light);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-width: 100px;
+  justify-content: center;
+}
+
+.theme-toggle-nav:hover {
+  background: var(--color-border);
+  color: var(--color-text-primary);
+  border-color: var(--color-brand-primary);
+}
+
+.theme-toggle-nav.active {
+  background: var(--color-brand-primary);
+  color: white;
+  border-color: var(--color-brand-primary);
+}
+
+.theme-icon {
+  font-size: 1rem;
+}
+
+.theme-text {
+  font-size: 0.8rem;
+  font-weight: 500;
 }
 
 .lang-btn {
@@ -105,7 +163,7 @@ body {
   border-radius: 4px;
   font-size: 0.875rem;
   font-weight: 600;
-  color: #6b7280;
+  color: var(--color-text-secondary);
   cursor: pointer;
   transition: all 0.2s ease;
   min-width: 40px;
@@ -113,18 +171,18 @@ body {
 }
 
 .lang-btn:hover {
-  background: #e5e7eb;
-  color: #374151;
+  background: var(--color-border);
+  color: var(--color-text-primary);
 }
 
 .lang-btn.active {
-  background: #dc2626;
+  background: var(--color-brand-primary);
   color: white;
 }
 
 .navbar-link {
   text-decoration: none;
-  color: #374151;
+  color: var(--color-text-primary);
   font-weight: 500;
   font-size: 0.95rem;
   transition: all 0.3s ease;
@@ -143,13 +201,13 @@ body {
   left: 0;
   width: 0;
   height: 2px;
-  background: #dc2626;
+  background: var(--color-brand-primary);
   transition: width 0.3s ease;
 }
 
 .navbar-link:hover,
 .navbar-link.active {
-  color: #dc2626;
+  color: var(--color-brand-primary);
 }
 
 .navbar-link:hover::after,
@@ -181,22 +239,30 @@ body {
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
   padding: 8rem 4rem 4rem;
-  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
   min-height: 80vh;
+  max-width: 1600px;
   align-items: center;
   position: relative;
   overflow: hidden;
-  max-width: 800px;
   margin: 0 auto;
 }
 
-.hero::before {
+.hero-section {
+  display: flex;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-section::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+  width: 100%;
   background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="rgba(255,255,255,0.03)"/><circle cx="75" cy="75" r="1" fill="rgba(255,255,255,0.03)"/><circle cx="50" cy="10" r="0.5" fill="rgba(255,255,255,0.02)"/><circle cx="10" cy="60" r="0.5" fill="rgba(255,255,255,0.02)"/><circle cx="90" cy="40" r="0.5" fill="rgba(255,255,255,0.02)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
   pointer-events: none;
 }
@@ -233,16 +299,24 @@ body {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%);
+  background: linear-gradient(
+    135deg,
+    var(--color-brand-primary) 0%,
+    var(--color-brand-primary-light) 100%
+  );
   color: white;
   border: none;
-  box-shadow: 0 4px 15px rgba(220, 38, 38, 0.3);
+  box-shadow: 0 4px 15px var(--color-shadow);
 }
 
 .btn-primary:hover {
-  background: linear-gradient(135deg, #b91c1c 0%, #dc2626 100%);
+  background: linear-gradient(
+    135deg,
+    var(--color-brand-primary-dark) 0%,
+    var(--color-brand-primary) 100%
+  );
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(220, 38, 38, 0.4);
+  box-shadow: 0 6px 20px var(--color-shadow-dark);
 }
 
 .btn-secondary {
@@ -255,7 +329,7 @@ body {
 .btn-secondary:hover {
   background: rgba(255, 255, 255, 0.1);
   color: white;
-  border-color: #dc2626;
+  border-color: var(--color-brand-primary);
 }
 
 .hero-image {
@@ -267,7 +341,7 @@ body {
 
 .hero-car-image {
   width: 100%;
-  height: 400px;
+  height: 500px;
   object-fit: cover;
   border-radius: 20px;
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
@@ -302,7 +376,7 @@ body {
 
 .tire-icon {
   font-size: 1.5rem;
-  color: #dc2626;
+  color: var(--color-brand-primary);
 }
 
 .tire-text {
@@ -310,7 +384,7 @@ body {
   font-size: 1rem;
   text-transform: none;
   letter-spacing: 0.3px;
-  color: #374151;
+  color: var(--color-text-primary);
 }
 
 /* Page Header - Alternative to hero for content pages */
@@ -364,7 +438,7 @@ body {
   background: linear-gradient(
     90deg,
     transparent 0%,
-    #dc2626 50%,
+    var(--color-brand-primary) 50%,
     transparent 100%
   );
 }
@@ -402,13 +476,17 @@ body {
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, #dc2626 0%, #ef4444 100%);
+  background: linear-gradient(
+    90deg,
+    var(--color-brand-primary) 0%,
+    var(--color-brand-primary-light) 100%
+  );
 }
 
 .feature-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-  border-color: #dc2626;
+  border-color: var(--color-brand-primary);
 }
 
 .feature-icon {
@@ -504,6 +582,174 @@ body {
 
 .brand-item:hover::before {
   opacity: 0.3;
+}
+
+/* Goodyear Showcase Section */
+.goodyear-showcase {
+  padding: 5rem 0;
+  background: linear-gradient(135deg, #f0f4f8 0%, #e2e8f0 100%);
+  position: relative;
+}
+
+.goodyear-showcase::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    #004ea8 50%,
+    transparent 100%
+  );
+}
+
+.goodyear-showcase-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.goodyear-showcase-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.goodyear-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: rgba(0, 78, 168, 0.1);
+  color: #004ea8;
+  padding: 0.75rem 1.25rem;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border: 1px solid rgba(0, 78, 168, 0.2);
+  width: fit-content;
+}
+
+.goodyear-icon {
+  font-size: 1.25rem;
+}
+
+.goodyear-showcase-text h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1e293b;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.goodyear-showcase-text p {
+  font-size: 1.1rem;
+  color: #64748b;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.goodyear-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.feature-tag {
+  background: white;
+  color: #004ea8;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: 1px solid rgba(0, 78, 168, 0.2);
+  box-shadow: 0 2px 4px rgba(0, 78, 168, 0.1);
+}
+
+.goodyear-showcase-visual {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+}
+
+.goodyear-showcase-button {
+  width: 100%;
+  max-width: 300px;
+}
+
+.btn-goodyear {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  background: linear-gradient(135deg, #004ea8 0%, #0e2b6c 100%);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 78, 168, 0.3);
+  border: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-goodyear::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transition: left 0.5s ease;
+}
+
+.btn-goodyear:hover::before {
+  left: 100%;
+}
+
+.btn-goodyear:hover {
+  background: linear-gradient(135deg, #0e2b6c 0%, #004ea8 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 78, 168, 0.4);
+}
+
+.btn-icon {
+  font-size: 1.2rem;
+}
+
+.btn-text {
+  font-weight: 600;
+}
+
+.btn-arrow {
+  font-size: 1.1rem;
+  transition: transform 0.3s ease;
+}
+
+.btn-goodyear:hover .btn-icon {
+  transform: scale(1.1);
+}
+
+.btn-goodyear:hover .btn-arrow {
+  transform: translateX(3px);
 }
 
 /* Testimonials Section */
@@ -640,7 +886,7 @@ body {
 
 .cta .btn-primary {
   background: white;
-  color: #dc2626;
+  color: var(--color-brand-primary);
   font-size: 1.1rem;
   padding: 1.2rem 2.5rem;
 }
@@ -649,6 +895,13 @@ body {
   background: #f8fafc;
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 /* Footer */
@@ -669,7 +922,7 @@ body {
   background: linear-gradient(
     90deg,
     transparent 0%,
-    #dc2626 50%,
+    var(--color-brand-primary) 50%,
     transparent 100%
   );
 }
@@ -685,7 +938,7 @@ body {
   font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 1rem;
-  color: #dc2626;
+  color: var(--color-brand-primary);
 }
 
 .footer-section p {
@@ -700,7 +953,7 @@ body {
 }
 
 .footer-link:hover {
-  color: #dc2626;
+  color: var(--color-brand-primary);
   text-decoration: underline;
 }
 
@@ -765,13 +1018,17 @@ body {
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, #dc2626 0%, #ef4444 100%);
+  background: linear-gradient(
+    90deg,
+    var(--color-brand-primary) 0%,
+    var(--color-brand-primary-light) 100%
+  );
 }
 
 .service-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-  border-color: #dc2626;
+  border-color: var(--color-brand-primary);
 }
 
 .service-card:hover::after {
@@ -813,7 +1070,7 @@ body {
   content: "✓";
   position: absolute;
   left: 0;
-  color: #dc2626;
+  color: var(--color-brand-primary);
   font-weight: bold;
 }
 
@@ -1423,6 +1680,14 @@ body {
     justify-content: center;
   }
 
+  /* Mobile theme toggle */
+  .theme-toggle-nav {
+    margin: 1rem 0;
+    justify-content: center;
+    width: 100%;
+    min-width: auto;
+  }
+
   .lang-btn {
     padding: 0.75rem 1rem;
     font-size: 1rem;
@@ -1444,7 +1709,6 @@ body {
   .hero {
     grid-template-columns: 1fr;
     gap: 2rem;
-    max-width: 800px;
     padding: 6rem 1rem 3rem;
   }
 
@@ -1471,6 +1735,11 @@ body {
 
   .hero-buttons {
     flex-direction: column;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
   }
 
   .features h3,
@@ -1502,6 +1771,29 @@ body {
   .about-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
+  }
+
+  /* Mobile Goodyear Showcase */
+  .goodyear-showcase-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+
+  .goodyear-showcase-text h3 {
+    font-size: 2rem;
+  }
+
+  .goodyear-showcase-text p {
+    font-size: 1rem;
+  }
+
+  .goodyear-features {
+    justify-content: center;
+  }
+
+  .goodyear-showcase-visual {
+    order: -1;
   }
 }
 

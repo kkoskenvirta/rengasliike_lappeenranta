@@ -1,3 +1,55 @@
+// Typography toggle functionality
+let currentTypography = localStorage.getItem("typography") || "outfit";
+
+function initTypography() {
+  const themeToggle = document.getElementById("themeToggle");
+
+  if (themeToggle) {
+    // Load initial typography (Goodyear theme is now default)
+    loadTypography(currentTypography);
+    updateTypographyButton(currentTypography);
+
+    // Typography toggle event listener
+    themeToggle.addEventListener("click", () => {
+      currentTypography = currentTypography === "outfit" ? "inter" : "outfit";
+      localStorage.setItem("typography", currentTypography);
+      loadTypography(currentTypography);
+      updateTypographyButton(currentTypography);
+    });
+  }
+}
+
+function updateTypographyButton(typography) {
+  const themeToggle = document.getElementById("themeToggle");
+  const themeText = themeToggle.querySelector(".theme-text");
+
+  if (typography === "inter") {
+    themeText.textContent = "Outfit";
+    themeToggle.classList.add("active");
+  } else {
+    themeText.textContent = "Inter";
+    themeToggle.classList.remove("active");
+  }
+}
+
+function loadTypography(typography) {
+  const existingTypography = document.getElementById("typography-theme");
+
+  if (typography === "inter") {
+    if (!existingTypography) {
+      const link = document.createElement("link");
+      link.id = "typography-theme";
+      link.rel = "stylesheet";
+      link.href = "typography-theme.css";
+      document.head.appendChild(link);
+    }
+  } else {
+    if (existingTypography) {
+      existingTypography.remove();
+    }
+  }
+}
+
 // Mobile menu functionality
 const navbarToggle = document.querySelector(".navbar-toggle");
 const navbarMenu = document.querySelector(".navbar-menu");
@@ -64,8 +116,64 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, observerOptions);
 
-// Observe elements for animation
+// Contact form handling with mailto
 document.addEventListener("DOMContentLoaded", () => {
+  // Initialize typography
+  initTypography();
+
+  // Contact form submission
+  const contactForm = document.getElementById("contactForm");
+  if (contactForm) {
+    contactForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      // Get form data
+      const formData = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        phone: document.getElementById("phone").value,
+        subject: document.getElementById("subject").value,
+        message: document.getElementById("message").value,
+      };
+
+      // Generate mailto URL with form content as template
+      const mailtoUrl = generateMailtoUrl(formData);
+
+      // Open default email client
+      window.location.href = mailtoUrl;
+    });
+  }
+
+  // Function to generate mailto URL with form content
+  function generateMailtoUrl(formData) {
+    const to = "myynti@acrengas.com";
+    const subject = formData.subject
+      ? `Rengasmarket - ${formData.subject}`
+      : "Rengasmarket - Yhteydenotto";
+
+    // Create email body template
+    let body = `Hei Rengasmarket,\n\n`;
+    body += `Olen kiinnostunut rengaspalveluistanne.\n\n`;
+    body += `Yhteystietoni:\n`;
+    body += `Nimi: ${formData.name}\n`;
+    body += `Sähköposti: ${formData.email}\n`;
+    if (formData.phone) {
+      body += `Puhelin: ${formData.phone}\n`;
+    }
+    if (formData.subject) {
+      body += `Aihe: ${formData.subject}\n`;
+    }
+    body += `\nViesti:\n${formData.message}\n\n`;
+    body += `Ystävällisin terveisin,\n${formData.name}`;
+
+    // Encode parameters for URL
+    const encodedSubject = encodeURIComponent(subject);
+    const encodedBody = encodeURIComponent(body);
+
+    return `mailto:${to}?subject=${encodedSubject}&body=${encodedBody}`;
+  }
+
+  // Observe elements for animation
   const animateElements = document.querySelectorAll(
     ".feature-card, .brand-item"
   );

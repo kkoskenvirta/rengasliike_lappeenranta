@@ -6,6 +6,7 @@
     <title data-i18n="home.title">Rengasmarket Lappeenranta - Laadukkaat renkaat ja palvelut</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
@@ -36,6 +37,12 @@
                             <button class="lang-btn active" onclick="changeLanguage('fi')">FI</button>
                             <button class="lang-btn" onclick="changeLanguage('en')">EN</button>
                         </div>
+                    </li>
+                    <li class="navbar-item">
+                        <button class="theme-toggle-nav" id="themeToggle">
+                            <span class="theme-icon">🔤</span>
+                            <span class="theme-text">Typography</span>
+                        </button>
                     </li>
                     <li class="navbar-item mobile-contact">
                         <a href="tel:0440323388" class="navbar-link contact-link">
@@ -138,6 +145,33 @@
             </div>
         </section>
 
+        <section class="goodyear-showcase">
+            <div class="container">
+                <div class="goodyear-showcase-content">
+                    <div class="goodyear-showcase-text">
+                        <div class="goodyear-badge">
+                            <span class="goodyear-icon">🛞</span>
+                            <span data-i18n="home.goodyearBadge">Virallinen Goodyear-jälleenmyyjä</span>
+                        </div>
+                        <h3 data-i18n="home.goodyearTitle">Goodyearin laadukkaat renkaat</h3>
+                        <p data-i18n="home.goodyearDescription">Tutustu Goodyearin laajaan valikoimaan kesä- ja talvirenkaita. Laadukkaat renkaat turvalliseen ajoon kaikissa olosuhteissa.</p>
+                        <div class="goodyear-features">
+                            <span class="feature-tag" data-i18n="home.summerTires">✓ Kesärenkaat</span>
+                            <span class="feature-tag" data-i18n="home.winterTires">✓ Talvirenkaat</span>
+                            <span class="feature-tag" data-i18n="home.allSeasonTires">✓ Ympärivuotiset</span>
+                        </div>
+                    </div>
+                    <div class="goodyear-showcase-visual">
+                        <div class="goodyear-showcase-button">
+                            <a href="https://www.goodyear.eu/fi_fi/consumer/all-dealers/lappeenranta/rengasmarket-lappeenrantaac-rengas-21447.html" target="_blank" rel="noopener noreferrer" class="btn btn-goodyear">
+                                <span class="btn-text" data-i18n="home.viewGoodyearSelection">Katso Goodyearin valikoima →</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="testimonials">
             <div class="container">
                 <h3 data-i18n="home.customerExperiences">Asiakkaidemme kokemukset</h3>
@@ -206,7 +240,10 @@
             <div class="container">
                 <h3 data-i18n="home.chooseTiresToday">Valitse renkaasi jo tänään</h3>
                 <p data-i18n="home.contactForPersonalAdvice">Ota yhteyttä ja saat henkilökohtaista neuvontaa</p>
-                <a href="yhteystiedot.html#contact" class="btn btn-primary" data-i18n="home.contactUs">Ota yhteyttä</a>
+                <div class="cta-buttons">
+                    <a href="yhteystiedot.html#contact" class="btn btn-primary" data-i18n="home.contactUs">Ota yhteyttä</a>
+                    <a href="https://www.goodyear.eu/fi_fi/consumer/all-dealers/lappeenranta/rengasmarket-lappeenrantaac-rengas-21447.html" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" data-i18n="home.exploreTires">Tutustu renkaisiin</a>
+                </div>
             </div>
         </section>
     </main>

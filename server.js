@@ -11,15 +11,6 @@ app.use(express.json());
 app.use(express.static("public"));
 app.use(cors());
 
-// Email transporter
-const transporter = nodemailer.createTransporter({
-  service: "gmail", // or your email service
-  auth: {
-    user: process.env.EMAIL_USER || "your-email@gmail.com",
-    pass: process.env.EMAIL_PASS || "your-app-password",
-  },
-});
-
 // Contact form endpoint
 app.post("/api/contact", async (req, res) => {
   try {

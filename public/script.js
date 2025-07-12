@@ -1,3 +1,55 @@
+// Typography toggle functionality
+let currentTypography = localStorage.getItem("typography") || "outfit";
+
+function initTypography() {
+  const themeToggle = document.getElementById("themeToggle");
+
+  if (themeToggle) {
+    // Load initial typography (Goodyear theme is now default)
+    loadTypography(currentTypography);
+    updateTypographyButton(currentTypography);
+
+    // Typography toggle event listener
+    themeToggle.addEventListener("click", () => {
+      currentTypography = currentTypography === "outfit" ? "inter" : "outfit";
+      localStorage.setItem("typography", currentTypography);
+      loadTypography(currentTypography);
+      updateTypographyButton(currentTypography);
+    });
+  }
+}
+
+function updateTypographyButton(typography) {
+  const themeToggle = document.getElementById("themeToggle");
+  const themeText = themeToggle.querySelector(".theme-text");
+
+  if (typography === "inter") {
+    themeText.textContent = "Outfit";
+    themeToggle.classList.add("active");
+  } else {
+    themeText.textContent = "Inter";
+    themeToggle.classList.remove("active");
+  }
+}
+
+function loadTypography(typography) {
+  const existingTypography = document.getElementById("typography-theme");
+
+  if (typography === "inter") {
+    if (!existingTypography) {
+      const link = document.createElement("link");
+      link.id = "typography-theme";
+      link.rel = "stylesheet";
+      link.href = "typography-theme.css";
+      document.head.appendChild(link);
+    }
+  } else {
+    if (existingTypography) {
+      existingTypography.remove();
+    }
+  }
+}
+
 // Mobile menu functionality
 const navbarToggle = document.querySelector(".navbar-toggle");
 const navbarMenu = document.querySelector(".navbar-menu");
@@ -66,6 +118,9 @@ const observer = new IntersectionObserver((entries) => {
 
 // Contact form handling with mailto
 document.addEventListener("DOMContentLoaded", () => {
+  // Initialize typography
+  initTypography();
+
   // Contact form submission
   const contactForm = document.getElementById("contactForm");
   if (contactForm) {
