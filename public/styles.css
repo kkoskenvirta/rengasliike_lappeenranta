@@ -775,6 +775,191 @@ body {
   transform: translateX(3px);
 }
 
+/* Wheels Showcase Section */
+.wheels-showcase {
+  padding: 5rem 0;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  position: relative;
+}
+
+.wheels-showcase::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    #004ea8 50%,
+    transparent 100%
+  );
+}
+
+.wheels-showcase-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.wheels-showcase-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.wheels-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: rgba(0, 78, 168, 0.1);
+  color: #004ea8;
+  padding: 0.75rem 1.25rem;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border: 1px solid rgba(0, 78, 168, 0.2);
+  width: fit-content;
+}
+
+.wheels-icon {
+  font-size: 1.25rem;
+}
+
+.wheels-showcase-text h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1e293b;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.wheels-showcase-text p {
+  font-size: 1.1rem;
+  color: #64748b;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.wheels-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.wheels-features .feature-tag {
+  background: white;
+  color: #1e293b;
+  padding: 0.75rem 1.25rem;
+  border-radius: 25px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  border: 1px solid rgba(0, 78, 168, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 78, 168, 0.08);
+  transition: all 0.3s ease;
+}
+
+.wheels-features .feature-tag:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 78, 168, 0.15);
+  border-color: rgba(0, 78, 168, 0.2);
+}
+
+.wheels-showcase-visual {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.wheels-partners {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.wheels-partner {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 78, 168, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 78, 168, 0.08);
+  transition: all 0.3s ease;
+}
+
+.wheels-partner:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 78, 168, 0.15);
+  border-color: rgba(0, 78, 168, 0.2);
+}
+
+.wheels-partner h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin: 0 0 0.75rem 0;
+}
+
+.wheels-partner p {
+  font-size: 0.95rem;
+  color: #64748b;
+  line-height: 1.5;
+  margin: 0 0 1rem 0;
+}
+
+.btn-wheels {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, #004ea8 0%, #0e2b6c 100%);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 78, 168, 0.2);
+  border: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-wheels::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transition: left 0.5s ease;
+}
+
+.btn-wheels:hover::before {
+  left: 100%;
+}
+
+.btn-wheels:hover {
+  background: linear-gradient(135deg, #0e2b6c 0%, #004ea8 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 78, 168, 0.3);
+}
+
+.btn-wheels .btn-text {
+  font-weight: 600;
+}
+
 /* Testimonials Section */
 .testimonials {
   padding: 5rem 0;
@@ -1926,6 +2111,29 @@ body {
 
   .goodyear-showcase-action {
     order: -1;
+  }
+
+  /* Mobile Wheels Showcase */
+  .wheels-showcase-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+
+  .wheels-showcase-text h3 {
+    font-size: 2rem;
+  }
+
+  .wheels-features {
+    flex-direction: column;
+  }
+
+  .wheels-partners {
+    gap: 1rem;
+  }
+
+  .wheels-partner {
+    padding: 1.25rem;
   }
 }
 
