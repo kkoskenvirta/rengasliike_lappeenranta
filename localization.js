@@ -13,11 +13,12 @@ const LOCALIZATION = {
 
     // Home page
     home: {
-      title: "Laadukkaat renkaat ja ammattitaitoinen palvelu",
+      title: "Laadukkaat renkaat, vanteet ja ammattitaitoinen palvelu",
       subtitle:
         "Rengasmarket Lappeenranta tarjoaa laajan valikoiman renkaita ja ammattitaitoista palvelua kaikille ajoneuvoille",
       viewServices: "Katso palvelut",
       contactUs: "Ota yhteyttä",
+      tiresAndWheels: "Renkaat ja Vanteet",
       professionalService: "Ammattitaitoinen palvelu",
       whyChooseUs: "Miksi valita Rengasmarket Lappeenranta?",
       wideSelection: "Laaja valikoima",
@@ -42,6 +43,13 @@ const LOCALIZATION = {
       allSeasonTires: "✓ Ympärivuotiset",
       viewGoodyearSelection: "Katso Goodyearin valikoima",
       exploreTires: "Tutustu renkaisiin",
+      wheelsBadge: "Laadukkaat vanteet",
+      wheelsTitle: "Kestävät ja näyttävät vanteet",
+      wheelsDescription:
+        "Vanteet ovat renkaiden kruunu. Valikoimaamme kuuluvat Alcarin, Rautamon ja Special Wheels -vanteet kaikenlaisiin ajoneuvoihin.",
+      steelWheels: "✓ Teräsvanteet",
+      alloyWheels: "✓ Alumiinivanteet",
+      offroadWheels: "✓ Offroad-vanteet",
     },
 
     // Services page
@@ -172,11 +180,12 @@ const LOCALIZATION = {
 
     // Home page
     home: {
-      title: "Quality tires and professional service",
+      title: "Quality tires, wheels and professional service",
       subtitle:
         "Rengasmarket Lappeenranta offers a wide selection of tires and professional service for all vehicles",
       viewServices: "View Services",
       contactUs: "Contact Us",
+      tiresAndWheels: "Tires and Wheels",
       professionalService: "Professional Service",
       whyChooseUs: "Why Choose Rengasmarket Lappeenranta?",
       wideSelection: "Wide Selection",
@@ -200,6 +209,13 @@ const LOCALIZATION = {
       allSeasonTires: "✓ All-Season Tires",
       viewGoodyearSelection: "View Goodyear Selection",
       exploreTires: "Explore Tires",
+      wheelsBadge: "Quality Wheels",
+      wheelsTitle: "Durable and Stylish Wheels",
+      wheelsDescription:
+        "Wheels are the crown of tires. Our selection includes Alcar, Rautamo and Special Wheels wheels for all types of vehicles.",
+      steelWheels: "✓ Steel Wheels",
+      alloyWheels: "✓ Alloy Wheels",
+      offroadWheels: "✓ Offroad Wheels",
     },
 
     // Services page
