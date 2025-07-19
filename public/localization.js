@@ -124,7 +124,7 @@ const LOCALIZATION = {
         "AC Rengas / Kc Enterprise Oy<br>Y-tunnus: 2165495-1<br>Sivutoimipaikka",
       openingHours: "Aukioloajat",
       openingHoursValue:
-        "Maanantai - Perjantai: 8:00 - 18:00<br>Lauantai: 9:00 - 15:00<br>Sunnuntai: Suljettu",
+        "Maanantai - Perjantai: 9:00 - 17:00<br>Lauantai: 9:00 - 13:00 (sesonkiaikana)<br>Sunnuntai: Suljettu",
       sendMessage: "Lähetä viesti",
       name: "Nimi",
       emailField: "Sähköposti",
@@ -148,8 +148,8 @@ const LOCALIZATION = {
       businessId: "Y-tunnus: 2165495-1",
       contactInfo: "Yhteystiedot",
       openingHours: "Aukioloajat",
-      monFri: "Ma-Pe: 8:00-18:00",
-      sat: "La: 9:00-15:00",
+      monFri: "Ma-Pe: 9:00-17:00",
+      sat: "La: 9:00-13:00 (sesonkiaikana)",
       sun: "Su: Suljettu",
       branchOffice: "Sivutoimipaikka",
       copyright:
@@ -289,7 +289,7 @@ const LOCALIZATION = {
         "AC Rengas / Kc Enterprise Oy<br>Business ID: 2165495-1<br>Branch Office",
       openingHours: "Opening Hours",
       openingHoursValue:
-        "Monday - Friday: 8:00 - 18:00<br>Saturday: 9:00 - 15:00<br>Sunday: Closed",
+        "Monday - Friday: 9:00 - 17:00<br>Saturday: 9:00 - 13:00 (seasonal)<br>Sunday: Closed",
       sendMessage: "Send Message",
       name: "Name",
       emailField: "Email",
@@ -313,8 +313,8 @@ const LOCALIZATION = {
       businessId: "Business ID: 2165495-1",
       contactInfo: "Contact Information",
       openingHours: "Opening Hours",
-      monFri: "Mon-Fri: 8:00-18:00",
-      sat: "Sat: 9:00-15:00",
+      monFri: "Mon-Fri: 9:00-17:00",
+      sat: "Sat: 9:00-13:00 (seasonal)",
       sun: "Sun: Closed",
       branchOffice: "Branch Office",
       copyright:
