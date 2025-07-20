@@ -155,7 +155,7 @@ get_header(); ?>
                 </div>
                 <div class="goodyear-showcase-visual">
                     <div class="goodyear-showcase-button">
-                        <a href="https://www.goodyear.eu/fi_fi/consumer/all-dealers/lappeenranta/rengasmarket-lappeenrantaac-rengas-21447.html" target="_blank" rel="noopener noreferrer" class="btn btn-goodyear">
+                        <a href="https://www.goodyear.eu/fi_fi/consumer/all-dealers/lappeenranta/rengasliike-lappeenrantaac-rengas-21447.html" target="_blank" rel="noopener noreferrer" class="btn btn-goodyear">
                             <span class="btn-text"><?php _e('Katso Goodyearin valikoima →', 'rengasliike-lappeenranta'); ?></span>
                         </a>
                     </div>

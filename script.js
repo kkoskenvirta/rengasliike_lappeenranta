@@ -148,11 +148,11 @@ document.addEventListener("DOMContentLoaded", () => {
   function generateMailtoUrl(formData) {
     const to = "myynti@acrengas.com";
     const subject = formData.subject
-      ? `Rengasmarket - ${formData.subject}`
-      : "Rengasmarket - Yhteydenotto";
+      ? `Rengasliike - ${formData.subject}`
+      : "Rengasliike - Yhteydenotto";
 
     // Create email body template
-    let body = `Hei Rengasmarket,\n\n`;
+    let body = `Hei Rengasliike,\n\n`;
     body += `Olen kiinnostunut rengaspalveluistanne.\n\n`;
     body += `Yhteystietoni:\n`;
     body += `Nimi: ${formData.name}\n`;

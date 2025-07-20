@@ -1,7 +1,7 @@
 {
-  "name": "rengasmarket-lappeenranta",
+  "name": "rengasliike-lappeenranta",
   "version": "1.0.0",
-  "description": "Rengasmarket Lappeenranta - Modern tire company website",
+  "description": "Rengasliike Lappeenranta - Modern tire company website",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
@@ -23,6 +23,6 @@
     "finnish",
     "lappeenranta"
   ],
-  "author": "Rengasmarket Lappeenranta",
+  "author": "Rengasliike Lappeenranta",
   "license": "MIT"
 }
