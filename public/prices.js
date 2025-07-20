@@ -1,4 +1,4 @@
-// Pricing constants for Rengasmarket Lappeenranta
+// Pricing constants for Rengasliike Lappeenranta
 const PRICES = {
   // Rengashotelli (Tire Hotel)
   TIRE_HOTEL: {

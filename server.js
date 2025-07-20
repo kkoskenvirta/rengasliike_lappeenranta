@@ -21,7 +21,7 @@ app.post("/api/contact", async (req, res) => {
       to: "myynti@acrengas.com",
       subject: `Uusi viesti: ${subject || "Yhteystiedot"}`,
       html: `
-        <h3>Uusi viesti Rengasmarket Lappeenranta -sivustolta</h3>
+        <h3>Uusi viesti Rengasliike Lappeenranta -sivustolta</h3>
         <p><strong>Nimi:</strong> ${name}</p>
         <p><strong>Sähköposti:</strong> ${email}</p>
         <p><strong>Puhelin:</strong> ${phone || "Ei annettu"}</p>
@@ -60,6 +60,6 @@ app.get("/tietoa-meista", (req, res) => {
 
 app.listen(PORT, () => {
   console.log(
-    `Rengasmarket Lappeenranta server running on http://localhost:${PORT}`
+    `Rengasliike Lappeenranta server running on http://localhost:${PORT}`
   );
 });

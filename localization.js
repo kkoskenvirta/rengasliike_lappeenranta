@@ -1,4 +1,4 @@
-// Localization data for Rengasmarket Lappeenranta
+// Localization data for Rengasliike Lappeenranta
 const LOCALIZATION = {
   fi: {
     // Navigation
@@ -15,12 +15,12 @@ const LOCALIZATION = {
     home: {
       title: "Laadukkaat renkaat, vanteet ja ammattitaitoinen palvelu",
       subtitle:
-        "Rengasmarket Lappeenranta tarjoaa laajan valikoiman renkaita ja ammattitaitoista palvelua kaikille ajoneuvoille",
+        "Rengasliike Lappeenranta tarjoaa laajan valikoiman renkaita ja ammattitaitoista palvelua kaikille ajoneuvoille",
       viewServices: "Katso palvelut",
       contactUs: "Ota yhteyttä",
       tiresAndWheels: "Renkaat ja Vanteet",
       professionalService: "Ammattitaitoinen palvelu",
-      whyChooseUs: "Miksi valita Rengasmarket Lappeenranta?",
+      whyChooseUs: "Miksi valita Rengasliike Lappeenranta?",
       wideSelection: "Laaja valikoima",
       wideSelectionDesc:
         "Renkaat kaikille ajoneuvoille - henkilöautot, pakettiautot, kuorma-autot",
@@ -72,13 +72,13 @@ const LOCALIZATION = {
     about: {
       title: "Tietoa meistä",
       subtitle:
-        "Rengasmarket Lappeenranta - luotettava kumppani rengasasioissa yli 20 vuoden kokemuksella",
+        "Rengasliike Lappeenranta - luotettava kumppani rengasasioissa yli 20 vuoden kokemuksella",
       readMore: "Lue lisää",
       contactUs: "Ota yhteyttä",
       yearsExperience: "20+ vuotta",
       ourStory: "Meidän tarinamme",
       story1:
-        "Rengasmarket Lappeenranta on perustettu vuonna 2008 paikallisen yrittäjän toimesta. Yli 20 vuoden kokemuksella olemme palvelleet asiakkaitamme Lappeenrannassa ja sen ympäristössä, rakentaneet luottamuksellisia suhteita ja varmistaneet, että jokainen asiakas saa henkilökohtaista huomiota ja ammattitaitoista palvelua.",
+        "Rengasliike Lappeenranta on perustettu vuonna 2008 paikallisen yrittäjän toimesta. Yli 20 vuoden kokemuksella olemme palvelleet asiakkaitamme Lappeenrannassa ja sen ympäristössä, rakentaneet luottamuksellisia suhteita ja varmistaneet, että jokainen asiakas saa henkilökohtaista huomiota ja ammattitaitoista palvelua.",
       story2:
         "Olemme erikoistuneet kaikenlaisiin rengasratkaisuihin - henkilöautoista kuorma-autoihin. Sijaitsemme Lappeenrannan Ratakadulla kulkuyhteyksien läheisyydessä, mikä tekee meistä helposti saavutettavan valinnan kaikille Lappeenrannan ja sen ympäristön asukkaille. Paikallisena yrittäjänä ymmärrämme yhteisömme tarpeet ja olemme sitoutuneet tarjoamaan luotettavia, ystävällisiä palveluita kilpailukykyiseen hintaan.",
       ourValues: "Arvomme",
@@ -142,7 +142,7 @@ const LOCALIZATION = {
 
     // Footer
     footer: {
-      companyName: "Rengasmarket Lappeenranta",
+      companyName: "Rengasliike Lappeenranta",
       companyDesc: "AC Rengas / Kc Enterprise Oy",
       companySlogan: "Laadukkaat renkaat ja ammattitaitoinen palvelu",
       businessId: "Y-tunnus: 2165495-1",
@@ -153,7 +153,7 @@ const LOCALIZATION = {
       sun: "Su: Suljettu",
       branchOffice: "Sivutoimipaikka",
       copyright:
-        "© 2024 Rengasmarket Lappeenranta / AC Rengas. Kaikki oikeudet pidätetään.",
+        "© 2024 Rengasliike Lappeenranta / AC Rengas. Kaikki oikeudet pidätetään.",
     },
 
     // Service names
@@ -182,12 +182,12 @@ const LOCALIZATION = {
     home: {
       title: "Quality tires, wheels and professional service",
       subtitle:
-        "Rengasmarket Lappeenranta offers a wide selection of tires and professional service for all vehicles",
+        "Rengasliike Lappeenranta offers a wide selection of tires and professional service for all vehicles",
       viewServices: "View Services",
       contactUs: "Contact Us",
       tiresAndWheels: "Tires and Wheels",
       professionalService: "Professional Service",
-      whyChooseUs: "Why Choose Rengasmarket Lappeenranta?",
+      whyChooseUs: "Why Choose Rengasliike Lappeenranta?",
       wideSelection: "Wide Selection",
       wideSelectionDesc:
         "Tires for all vehicles - passenger cars, vans, trucks",
@@ -238,13 +238,13 @@ const LOCALIZATION = {
     about: {
       title: "About Us",
       subtitle:
-        "Rengasmarket Lappeenranta - a reliable partner in tire matters with over 20 years of experience",
+        "Rengasliike Lappeenranta - a reliable partner in tire matters with over 20 years of experience",
       readMore: "Read More",
       contactUs: "Contact Us",
       yearsExperience: "20+ Years",
       ourStory: "Our Story",
       story1:
-        "Rengasmarket Lappeenranta was founded in 2008 by a local entrepreneur. With over 20 years of experience, we have served our customers in Lappeenranta and its surroundings, building trusting relationships and ensuring that every customer receives personal attention and professional service.",
+        "Rengasliike Lappeenranta was founded in 2008 by a local entrepreneur. With over 20 years of experience, we have served our customers in Lappeenranta and its surroundings, building trusting relationships and ensuring that every customer receives personal attention and professional service.",
       story2:
         "We specialize in all kinds of tire solutions - from passenger cars to trucks. We are located on Ratakatu in Lappeenranta near transportation connections, making us an easily accessible choice for all residents of Lappeenranta and its surroundings. As a local entrepreneur, we understand our community's needs and are committed to providing reliable, friendly services at competitive prices.",
       ourValues: "Our Values",
@@ -307,7 +307,7 @@ const LOCALIZATION = {
 
     // Footer
     footer: {
-      companyName: "Rengasmarket Lappeenranta",
+      companyName: "Rengasliike Lappeenranta",
       companyDesc: "AC Rengas / Kc Enterprise Oy",
       companySlogan: "Quality tires and professional service",
       businessId: "Business ID: 2165495-1",
@@ -318,7 +318,7 @@ const LOCALIZATION = {
       sun: "Sun: Closed",
       branchOffice: "Branch Office",
       copyright:
-        "© 2024 Rengasmarket Lappeenranta / AC Rengas. All rights reserved.",
+        "© 2024 Rengasliike Lappeenranta / AC Rengas. All rights reserved.",
     },
 
     // Service names

@@ -1,0 +1,14 @@
+This file is a placeholder for the theme screenshot.
+
+To complete the theme, you need to:
+
+1. Create a screenshot.png file (1200x900 pixels) showing your theme's homepage
+2. Replace this .txt file with the actual screenshot.png
+
+The screenshot should showcase:
+- Hero section with branding
+- Services grid
+- Contact information
+- Overall design aesthetic
+
+This screenshot will appear in the WordPress admin when selecting themes. 

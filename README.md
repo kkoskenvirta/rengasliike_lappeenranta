@@ -1,6 +1,6 @@
-# Rengasmarket Lappeenranta Website
+# Rengasliike Lappeenranta Website
 
-A modern, responsive website for Rengasmarket Lappeenranta tire shop with dual theme support.
+A modern, responsive website for Rengasliike Lappeenranta tire shop with dual theme support.
 
 ## Features
 
@@ -94,4 +94,4 @@ To add a new theme:
 
 ## License
 
-This project is proprietary to Rengasmarket Lappeenranta.
+This project is proprietary to Rengasliike Lappeenranta.

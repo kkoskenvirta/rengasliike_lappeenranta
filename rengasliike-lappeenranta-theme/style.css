@@ -1,0 +1,78 @@
+/*
+Theme Name: Rengasliike Lappeenranta
+Description: A modern WordPress theme for Rengasliike Lappeenranta tire shop website
+Version: 1.0
+Author: Best Drive
+Text Domain: rengasliike-lappeenranta
+*/
+
+/* Import existing styles */
+@import url("assets/css/styles.css");
+
+/* WordPress-specific styles */
+.wp-block-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.aligncenter {
+  text-align: center;
+}
+
+.alignleft {
+  float: left;
+  margin-right: 1rem;
+}
+
+.alignright {
+  float: right;
+  margin-left: 1rem;
+}
+
+.wp-caption {
+  max-width: 100%;
+}
+
+.wp-caption-text {
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  margin-top: 0.5rem;
+}
+
+/* WordPress editor styles */
+.editor-styles-wrapper {
+  font-family: "Outfit", sans-serif;
+  color: var(--color-text-primary);
+}
+
+.editor-styles-wrapper h1,
+.editor-styles-wrapper h2,
+.editor-styles-wrapper h3,
+.editor-styles-wrapper h4,
+.editor-styles-wrapper h5,
+.editor-styles-wrapper h6 {
+  color: var(--color-text-primary);
+  font-weight: 600;
+}
+
+.editor-styles-wrapper .btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.editor-styles-wrapper .btn-primary {
+  background: var(--color-brand-primary);
+  color: white;
+}
+
+.editor-styles-wrapper .btn-secondary {
+  background: var(--color-background-light);
+  color: var(--color-text-primary);
+  border: 1px solid var(--color-border);
+}
