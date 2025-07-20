@@ -1,0 +1,957 @@
+# Copyright (C) 2024 Rengasliike Lappeenranta
+# This file is distributed under the same license as the Rengasliike Lappeenranta package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Rengasliike Lappeenranta 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/rengasliike-lappeenranta\n"
+"POT-Creation-Date: 2024-01-01 12:00+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2024-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: functions.php:31
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:32
+msgid "Footer Menu"
+msgstr ""
+
+#: functions.php:52
+msgid "Footer Widget Area"
+msgstr ""
+
+#: functions.php:53
+msgid "Add widgets here to appear in footer"
+msgstr ""
+
+#: functions.php:67
+msgid "Services"
+msgstr ""
+
+#: functions.php:68
+msgid "Service"
+msgstr ""
+
+#: functions.php:69
+msgid "Add New Service"
+msgstr ""
+
+#: functions.php:70
+msgid "Add New Service"
+msgstr ""
+
+#: functions.php:71
+msgid "Edit Service"
+msgstr ""
+
+#: functions.php:72
+msgid "New Service"
+msgstr ""
+
+#: functions.php:73
+msgid "View Service"
+msgstr ""
+
+#: functions.php:74
+msgid "Search Services"
+msgstr ""
+
+#: functions.php:75
+msgid "No services found"
+msgstr ""
+
+#: functions.php:76
+msgid "No services found in trash"
+msgstr ""
+
+#: functions.php:87
+msgid "Brands"
+msgstr ""
+
+#: functions.php:88
+msgid "Brand"
+msgstr ""
+
+#: functions.php:89
+msgid "Add New Brand"
+msgstr ""
+
+#: functions.php:90
+msgid "Add New Brand"
+msgstr ""
+
+#: functions.php:91
+msgid "Edit Brand"
+msgstr ""
+
+#: functions.php:92
+msgid "New Brand"
+msgstr ""
+
+#: functions.php:93
+msgid "View Brand"
+msgstr ""
+
+#: functions.php:94
+msgid "Search Brands"
+msgstr ""
+
+#: functions.php:95
+msgid "No brands found"
+msgstr ""
+
+#: functions.php:96
+msgid "No brands found in trash"
+msgstr ""
+
+#: functions.php:107
+msgid "Testimonials"
+msgstr ""
+
+#: functions.php:108
+msgid "Testimonial"
+msgstr ""
+
+#: functions.php:109
+msgid "Add New Testimonial"
+msgstr ""
+
+#: functions.php:110
+msgid "Add New Testimonial"
+msgstr ""
+
+#: functions.php:111
+msgid "Edit Testimonial"
+msgstr ""
+
+#: functions.php:112
+msgid "New Testimonial"
+msgstr ""
+
+#: functions.php:113
+msgid "View Testimonial"
+msgstr ""
+
+#: functions.php:114
+msgid "Search Testimonials"
+msgstr ""
+
+#: functions.php:115
+msgid "No testimonials found"
+msgstr ""
+
+#: functions.php:116
+msgid "No testimonials found in trash"
+msgstr ""
+
+#: functions.php:130
+msgid "Service Details"
+msgstr ""
+
+#: functions.php:142
+msgid "Brand Details"
+msgstr ""
+
+#: functions.php:154
+msgid "Testimonial Details"
+msgstr ""
+
+#: functions.php:169
+msgid "Service Icon (emoji)"
+msgstr ""
+
+#: functions.php:172
+msgid "Price"
+msgstr ""
+
+#: functions.php:175
+msgid "Features (one per line)"
+msgstr ""
+
+#: functions.php:182
+msgid "Brand Website URL"
+msgstr ""
+
+#: functions.php:192
+msgid "Author Name"
+msgstr ""
+
+#: functions.php:195
+msgid "Source (e.g., Google, Facebook)"
+msgstr ""
+
+#: functions.php:198
+msgid "Rating (1-5)"
+msgstr ""
+
+#: functions.php:235
+msgid "Contact Information"
+msgstr ""
+
+#: functions.php:242
+msgid "Phone Number"
+msgstr ""
+
+#: functions.php:250
+msgid "Email Address"
+msgstr ""
+
+#: functions.php:258
+msgid "Address"
+msgstr ""
+
+#: functions.php:266
+msgid "Appointment Booking URL"
+msgstr ""
+
+#: functions.php:285
+msgid "Hero Image"
+msgstr ""
+
+#: functions.php:286
+msgid "Service Thumbnail"
+msgstr ""
+
+#: functions.php:287
+msgid "Brand Logo"
+msgstr ""
+
+#: header.php:25
+msgid "Toggle navigation"
+msgstr ""
+
+#: front-page.php:15
+msgid "Laadukkaat renkaat, vanteet ja ammattitaitoinen palvelu"
+msgstr ""
+
+#: front-page.php:18
+msgid "Rengasliike Lappeenranta tarjoaa laajan valikoiman renkaita, vanteita ja ammattitaitoista palvelua kaikille ajoneuvoille"
+msgstr ""
+
+#: front-page.php:21
+msgid "Katso palvelut"
+msgstr ""
+
+#: front-page.php:22
+msgid "Renkaat ja Vanteet"
+msgstr ""
+
+#: front-page.php:23
+msgid "Ota yhteyttä"
+msgstr ""
+
+#: front-page.php:30
+msgid "Laadukas auto renkailla"
+msgstr ""
+
+#: front-page.php:35
+msgid "Ammattitaitoinen palvelu"
+msgstr ""
+
+#: front-page.php:42
+msgid "Miksi valita Rengasliike Lappeenranta?"
+msgstr ""
+
+#: front-page.php:46
+msgid "Laaja valikoima"
+msgstr ""
+
+#: front-page.php:47
+msgid "Renkaat kaikille ajoneuvoille - henkilöautot, pakettiautot"
+msgstr ""
+
+#: front-page.php:51
+msgid "Ammattitaitoinen palvelu"
+msgstr ""
+
+#: front-page.php:52
+msgid "Kokenut henkilökunta auttaa löytämään juuri sinulle sopivat renkaat"
+msgstr ""
+
+#: front-page.php:56
+msgid "Kilpailukykyiset hinnat"
+msgstr ""
+
+#: front-page.php:57
+msgid "Laadukkaat renkaat edulliseen hintaan"
+msgstr ""
+
+#: front-page.php:63
+msgid "Varaa aika palveluun"
+msgstr ""
+
+#: front-page.php:64
+msgid "Varaa aika renkaiden vaihtoon tai muuhun palveluun verkossa"
+msgstr ""
+
+#: front-page.php:67
+msgid "Varaa aika verkossa →"
+msgstr ""
+
+#: front-page.php:73
+msgid "Suosituimmat rengasmerkit"
+msgstr ""
+
+#: front-page.php:89
+msgid "Virallinen Goodyear-jälleenmyyjä"
+msgstr ""
+
+#: front-page.php:91
+msgid "Goodyearin laadukkaat renkaat"
+msgstr ""
+
+#: front-page.php:92
+msgid "Tutustu Goodyearin laajaan valikoimaan kesä- ja talvirenkaita. Laadukkaat renkaat turvalliseen ajoon kaikissa olosuhteissa."
+msgstr ""
+
+#: front-page.php:95
+msgid "Kesärenkaat"
+msgstr ""
+
+#: front-page.php:96
+msgid "Talvirenkaat"
+msgstr ""
+
+#: front-page.php:97
+msgid "Ympärivuotiset"
+msgstr ""
+
+#: front-page.php:102
+msgid "Katso Goodyearin valikoima →"
+msgstr ""
+
+#: front-page.php:109
+msgid "Laadukkaat vanteet"
+msgstr ""
+
+#: front-page.php:111
+msgid "Kestävät ja näyttävät vanteet"
+msgstr ""
+
+#: front-page.php:112
+msgid "Vanteet ovat renkaiden kruunu. Valikoimaamme kuuluvat Alcarin, Rautamon ja Special Wheels -vanteet kaikenlaisiin ajoneuvoihin."
+msgstr ""
+
+#: front-page.php:115
+msgid "Teräsvanteet"
+msgstr ""
+
+#: front-page.php:116
+msgid "Alumiinivanteet"
+msgstr ""
+
+#: front-page.php:117
+msgid "Offroad-vanteet"
+msgstr ""
+
+#: front-page.php:123
+msgid "Alcar-vanteet"
+msgstr ""
+
+#: front-page.php:124
+msgid "ALCAR kehittää ja valmistaa tyylikkäitä teräs-, alumiini- ja offroad-vanteita kaikenlaisiin ajoneuvoihin."
+msgstr ""
+
+#: front-page.php:130
+msgid "Rautamo-vanteet"
+msgstr ""
+
+#: front-page.php:131
+msgid "Rautamo tuo maahan BBS, Vossen, R-Series, Rial, GMP, Brock, Spath, Alutec, Arcasting, Stance, Vertini, Oxigin, ST ja KW -vanteita."
+msgstr ""
+
+#: front-page.php:137
+msgid "Special Wheels-vanteet"
+msgstr ""
+
+#: front-page.php:138
+msgid "Pohjoismaiden suurin itsenäisen vannetoimittajan. Valikoimasta löytyy laatuvanteita kaikenlaisiin autoihin."
+msgstr ""
+
+#: front-page.php:147
+msgid "Asiakkaidemme kokemukset"
+msgstr ""
+
+#: searchform.php:3
+msgid "Search for:"
+msgstr ""
+
+#: searchform.php:4
+msgid "Etsi palveluita..."
+msgstr ""
+
+#: searchform.php:7
+msgid "Search"
+msgstr ""
+
+#: search.php:8
+msgid "Hakutulokset: %s"
+msgstr ""
+
+#: search.php:9
+msgid "%s hakutulos löytyi"
+msgid_plural "%s hakutulosta löytyi"
+msgstr[0] ""
+msgstr[1] ""
+
+#: search.php:25
+msgid "Palvelu"
+msgstr ""
+
+#: search.php:28
+msgid "Rengasmerkki"
+msgstr ""
+
+#: search.php:31
+msgid "Asiakaskokemus"
+msgstr ""
+
+#: search.php:34
+msgid "Sivu"
+msgstr ""
+
+#: search.php:44
+msgid "Lue lisää"
+msgstr ""
+
+#: search.php:52
+msgid "Edellinen"
+msgstr ""
+
+#: search.php:53
+msgid "Seuraava"
+msgstr ""
+
+#: search.php:58
+msgid "Ei hakutuloksia"
+msgstr ""
+
+#: search.php:59
+msgid "Valitettavasti hakusi ei tuottanut tuloksia. Kokeile eri hakusanoja tai selaa palveluitamme."
+msgstr ""
+
+#: search.php:62
+msgid "Suosittelemme:"
+msgstr ""
+
+#: search.php:64
+msgid "Kaikki palvelut"
+msgstr ""
+
+#: search.php:65
+msgid "Rengasmerkit"
+msgstr ""
+
+#: search.php:66
+msgid "Yhteystiedot"
+msgstr ""
+
+#: 404.php:8
+msgid "404"
+msgstr ""
+
+#: 404.php:9
+msgid "Sivua ei löytynyt"
+msgstr ""
+
+#: 404.php:10
+msgid "Valitettavasti etsimääsi sivua ei löytynyt. Se on saattanut siirtyä tai poistua."
+msgstr ""
+
+#: 404.php:13
+msgid "Etusivulle"
+msgstr ""
+
+#: 404.php:14
+msgid "Palvelut"
+msgstr ""
+
+#: 404.php:15
+msgid "Yhteystiedot"
+msgstr ""
+
+#: 404.php:19
+msgid "Etsi sivustolta"
+msgstr ""
+
+#: 404.php:24
+msgid "Suosittelemme:"
+msgstr ""
+
+#: 404.php:28
+msgid "Tutustu kattaviin rengaspalveluihimme"
+msgstr ""
+
+#: 404.php:29
+msgid "Katso palvelut"
+msgstr ""
+
+#: 404.php:33
+msgid "Laaja valikoima laadukkaita rengasmerkkejä"
+msgstr ""
+
+#: 404.php:34
+msgid "Katso merkit"
+msgstr ""
+
+#: 404.php:38
+msgid "Ota yhteyttä ja varaa aika palveluun"
+msgstr ""
+
+#: 404.php:39
+msgid "Ota yhteyttä"
+msgstr ""
+
+#: comments.php:18
+msgid "Yksi kommentti \"%2$s\""
+msgstr ""
+
+#: comments.php:20
+msgid "%1$s kommentti \"%2$s\""
+msgid_plural "%1$s kommenttia \"%2$s\""
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:35
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:37
+msgid "← Vanhemmat kommentit"
+msgstr ""
+
+#: comments.php:38
+msgid "Uudemmat kommentit →"
+msgstr ""
+
+#: comments.php:44
+msgid "Kommentit on suljettu."
+msgstr ""
+
+#: comments.php:49
+msgid "Jätä kommentti"
+msgstr ""
+
+#: comments.php:50
+msgid "Vastaa %s"
+msgstr ""
+
+#: comments.php:51
+msgid "Peruuta vastaus"
+msgstr ""
+
+#: comments.php:52
+msgid "Lähetä kommentti"
+msgstr ""
+
+#: comments.php:53
+msgid "Kommentti"
+msgstr ""
+
+#: comments.php:53
+msgid "Kirjoita kommenttisi tähän..."
+msgstr ""
+
+#: single.php:20
+msgid "Blogi"
+msgstr ""
+
+#: single.php:42
+msgid "Sivut:"
+msgstr ""
+
+#: single.php:50
+msgid "← Edellinen"
+msgstr ""
+
+#: single.php:55
+msgid "Seuraava →"
+msgstr ""
+
+#: page-contact.php:15
+msgid "Ota yhteyttä"
+msgstr ""
+
+#: page-contact.php:16
+msgid "Varaa aika"
+msgstr ""
+
+#: page-contact.php:25
+msgid "Yhteystiedot"
+msgstr ""
+
+#: page-contact.php:40
+msgid "Osoite"
+msgstr ""
+
+#: page-contact.php:47
+msgid "Puhelin"
+msgstr ""
+
+#: page-contact.php:54
+msgid "Sähköposti"
+msgstr ""
+
+#: page-contact.php:61
+msgid "Aukioloajat"
+msgstr ""
+
+#: page-contact.php:62
+msgid "Maanantai - Perjantai: 8:00 - 17:00"
+msgstr ""
+
+#: page-contact.php:63
+msgid "Lauantai: 9:00 - 15:00"
+msgstr ""
+
+#: page-contact.php:64
+msgid "Sunnuntai: Suljettu"
+msgstr ""
+
+#: page-contact.php:69
+msgid "Lähetä viesti"
+msgstr ""
+
+#: page-contact.php:72
+msgid "Nimi *"
+msgstr ""
+
+#: page-contact.php:77
+msgid "Sähköposti *"
+msgstr ""
+
+#: page-contact.php:82
+msgid "Puhelin"
+msgstr ""
+
+#: page-contact.php:87
+msgid "Aihe"
+msgstr ""
+
+#: page-contact.php:92
+msgid "Viesti *"
+msgstr ""
+
+#: page-contact.php:96
+msgid "Lähetä viesti"
+msgstr ""
+
+#: page-contact.php:103
+msgid "Sijaintimme"
+msgstr ""
+
+#: index.php:8
+msgid "Read More"
+msgstr ""
+
+#: index.php:25
+msgid "Previous"
+msgstr ""
+
+#: index.php:26
+msgid "Next"
+msgstr ""
+
+#: index.php:32
+msgid "No posts found"
+msgstr ""
+
+#: index.php:33
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr ""
+
+#: footer.php:25
+msgid "Palvelut"
+msgstr ""
+
+#: footer.php:42
+msgid "Rengasmerkit"
+msgstr ""
+
+#: footer.php:59
+msgid "Yhteystiedot"
+msgstr ""
+
+#: footer.php:62
+msgid "Puhelin:"
+msgstr ""
+
+#: footer.php:66
+msgid "Sähköposti:"
+msgstr ""
+
+#: footer.php:70
+msgid "Osoite:"
+msgstr ""
+
+#: footer.php:75
+msgid "Varaa aika"
+msgstr ""
+
+#: footer.php:85
+msgid "Kaikki oikeudet pidätetään."
+msgstr ""
+
+#: single-services.php:12
+msgid "Kaikki palvelut"
+msgstr ""
+
+#: single-services.php:13
+msgid "Ota yhteyttä"
+msgstr ""
+
+#: single-services.php:25
+msgid "Ammattipalvelu"
+msgstr ""
+
+#: single-services.php:35
+msgid "Hinta"
+msgstr ""
+
+#: single-services.php:50
+msgid "Palvelun sisältö"
+msgstr ""
+
+#: single-services.php:65
+msgid "Varaa aika"
+msgstr ""
+
+#: single-services.php:66
+msgid "Varaa aika palveluun verkossa tai ota yhteyttä"
+msgstr ""
+
+#: single-services.php:69
+msgid "Varaa aika verkossa"
+msgstr ""
+
+#: single-services.php:71
+msgid "Soita nyt"
+msgstr ""
+
+#: single-services.php:78
+msgid "Muut palvelumme"
+msgstr ""
+
+#: single-services.php:95
+msgid "Lue lisää"
+msgstr ""
+
+#: archive-services.php:8
+msgid "Kattavat rengaspalvelut"
+msgstr ""
+
+#: archive-services.php:9
+msgid "Tarjoamme ammattitaitoista palvelua kaikille ajoneuvoille - henkilöautot, pakettiautot ja kuorma-autot"
+msgstr ""
+
+#: archive-services.php:12
+msgid "Katso palvelut"
+msgstr ""
+
+#: archive-services.php:13
+msgid "Ota yhteyttä"
+msgstr ""
+
+#: archive-services.php:20
+msgid "Ammattipalvelu"
+msgstr ""
+
+#: archive-services.php:26
+msgid "Ammattitaitoiset rengaspalvelut"
+msgstr ""
+
+#: archive-services.php:27
+msgid "Tarjoamme edulliset, laadukkaat ja ammattitaitoiset rengaspalvelut kaikille ajoneuvoille. Palveluihimme kuuluvat renkaiden vaihdot, tasapainotukset, paikkaukset sekä asiantunteva neuvonta."
+msgstr ""
+
+#: archive-services.php:35
+msgid "Hinta:"
+msgstr ""
+
+#: archive-services.php:47
+msgid "Lue lisää"
+msgstr ""
+
+#: archive-services.php:55
+msgid "Rengashotelli"
+msgstr ""
+
+#: archive-services.php:56
+msgid "Turvallinen säilytys renkaillesi vaihtokauden ajaksi. Rengashotelli tarjoaa optimaaliset olosuhteet renkaiden säilyttämiseen."
+msgstr ""
+
+#: archive-services.php:58
+msgid "Turvallinen säilytys"
+msgstr ""
+
+#: archive-services.php:59
+msgid "Optimaaliset olosuhteet"
+msgstr ""
+
+#: archive-services.php:60
+msgid "Vaihtokauden palvelu"
+msgstr ""
+
+#: archive-services.php:61
+msgid "Rengasrekisteri"
+msgstr ""
+
+#: archive-services.php:66
+msgid "Renkaanvaihto"
+msgstr ""
+
+#: archive-services.php:67
+msgid "Täydellinen renkaanvaihtopalvelu, joka sisältää renkaiden pesun, paineiden tarkistuksen ja lisäyksen sekä ammattitaitoisen asennuksen alle."
+msgstr ""
+
+#: archive-services.php:69
+msgid "Renkaiden pesu ja puhdistus"
+msgstr ""
+
+#: archive-services.php:70
+msgid "Paineiden tarkistus ja säätö"
+msgstr ""
+
+#: archive-services.php:71
+msgid "Ammattitaitoinen asennus"
+msgstr ""
+
+#: archive-services.php:72
+msgid "Venttiilien vaihto tarvittaessa"
+msgstr ""
+
+#: archive-services.php:77
+msgid "Henkilöautojen renkaat"
+msgstr ""
+
+#: archive-services.php:78
+msgid "Laaja valikoima kesä-, talvi- ja kausirenkaita henkilöautoihin. Kaikki suosituimmat merkit ja koot saatavilla kilpailukykyiseen hintaan."
+msgstr ""
+
+#: archive-services.php:80
+msgid "Kesä- ja talvirenkaat"
+msgstr ""
+
+#: archive-services.php:81
+msgid "Kausirenkaat"
+msgstr ""
+
+#: archive-services.php:82
+msgid "Runflat-renkaat"
+msgstr ""
+
+#: archive-services.php:83
+msgid "Kaikki suosituimmat merkit"
+msgstr ""
+
+#: archive-services.php:88
+msgid "Renkaan paikkaus ja korjaus"
+msgstr ""
+
+#: archive-services.php:89
+msgid "Renkaan paikkaus tehdään ammattitaidolla ja laadukkailla materiaaleilla. Hyvin paikattu rengas pidentää renkaan käyttöikää ja säästää rahaa."
+msgstr ""
+
+#: archive-services.php:91
+msgid "Ammattitaitoinen paikkaus"
+msgstr ""
+
+#: archive-services.php:92
+msgid "Laadukkaat korjausmateriaalit"
+msgstr ""
+
+#: archive-services.php:93
+msgid "Käyttöiän pidentäminen"
+msgstr ""
+
+#: archive-services.php:94
+msgid "Kustannustehokas ratkaisu"
+msgstr ""
+
+#: archive-services.php:99
+msgid "Tasapainoitukset"
+msgstr ""
+
+#: archive-services.php:100
+msgid "Ammattilaisen tekemä tasapainoitus turvaa ajomukavuuden ja ohjattavuuden. Tarkka tasapainoitus poistaa tärinät ja parantaa ajokokemusta."
+msgstr ""
+
+#: archive-services.php:102
+msgid "Tarkka tasapainoitus"
+msgstr ""
+
+#: archive-services.php:103
+msgid "Ajomukavuuden parantaminen"
+msgstr ""
+
+#: archive-services.php:104
+msgid "Tärinöiden poisto"
+msgstr ""
+
+#: archive-services.php:105
+msgid "Renkaiden tasainen kuluminen"
+msgstr ""
+
+#: archive-services.php:110
+msgid "Rengaspainevalvonta"
+msgstr ""
+
+#: archive-services.php:111
+msgid "TPMS-järjestelmän toiminnan tarkastus, tarvittaessa korjaus ja rikkinäisten antureiden vaihto. Säännöllinen painevalvonta turvaa turvallisuuden."
+msgstr ""
+
+#: archive-services.php:113
+msgid "TPMS-järjestelmän tarkistus"
+msgstr ""
+
+#: archive-services.php:114
+msgid "Antureiden korjaus ja vaihto"
+msgstr ""
+
+#: archive-services.php:115
+msgid "Painevalvonta"
+msgstr ""
+
+#: archive-services.php:116
+msgid "Turvallisuuden varmistaminen"
+msgstr ""
+
+#: archive-services.php:125
+msgid "Kilpailukykyiset hinnat"
+msgstr ""
+
+#: archive-services.php:140
+msgid "Hinta pyydettäessä"
+msgstr ""
+
+#: archive-services.php:148
+msgid "Alkaen 5€/kpl"
+msgstr ""
+
+#: archive-services.php:149
+msgid "Turvallinen säilytys vaihtokauden ajaksi"
+msgstr ""
+
+#: archive-services.php:154
+msgid "Alkaen 15€/kpl"
+msgstr ""
+
+#: archive-services.php:155
+msgid "Sisältää pesun, paineiden tarkistuksen ja asennuksen"
+msgstr ""
+
+#: archive-services.php:160
+msgid "Alkaen 10€/kpl"
+msgstr ""
+
+#: archive-services.php:161
+msgid "Tarkka tasapainoitus ammattilaisella"
+msgstr ""
+
+#: archive-services.php:168
+msgid "* Hinnat sisältävät ALV:n. Tarkat hinnat pyydettäessä."
+msgstr "" 
