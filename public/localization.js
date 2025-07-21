@@ -63,6 +63,16 @@ const LOCALIZATION = {
       professionalTireServices: "Ammattitaitoiset rengaspalvelut",
       servicesIntro:
         "Tarjoamme edulliset, laadukkaat ja ammattitaitoiset rengaspalvelut kaikille ajoneuvoille. Palveluihimme kuuluvat renkaiden vaihdot, tasapainotukset, paikkaukset sekä asiantunteva neuvonta.",
+      passengerSuvVanTiresDesc:
+        "Laaja valikoima kesä-, talvi- ja kausirenkaita henkilöautoihin, SUV-ajoneuvoihin ja pakettiautoihin. Kaikki suosituimmat merkit ja koot saatavilla kilpailukykyiseen hintaan.",
+      passengerSuvVanTires: {
+        item1: "Henkilöautojen renkaat",
+        item2: "SUV-ajoneuvojen renkaat",
+        item3: "Pakettiautojen renkaat",
+        item4: "Kesä-, talvi- ja kausirenkaat",
+        item5: "Runflat-renkaat",
+        item6: "Kaikki suosituimmat merkit",
+      },
       competitivePrices: "Kilpailukykyiset hinnat",
       pricingNote:
         "* Hinnat sisältävät ALV:n. Tarkat hinnat riippuvat rengasmerkistä, koosta ja palvelun laajuudesta. Pyydä henkilökohtainen tarjous!",
@@ -161,6 +171,7 @@ const LOCALIZATION = {
       tireHotel: "Rengashotelli",
       tireChange: "Renkaanvaihto",
       passengerCarTires: "Henkilöautojen renkaat",
+      passengerSuvVanTires: "Henkilö-SUV-Pakettiautojen renkaat",
       tireRepair: "Renkaan paikkaus",
       balancing: "Tasapainoitus",
       vanTires: "Pakettiautojen renkaat",
@@ -229,6 +240,16 @@ const LOCALIZATION = {
       professionalTireServices: "Professional Tire Services",
       servicesIntro:
         "We offer affordable, quality and professional tire services for all vehicles. Our services include tire changes, balancing, repairs and expert consultation.",
+      passengerSuvVanTiresDesc:
+        "Wide selection of summer, winter and all-season tires for passenger cars, SUVs and vans. All popular brands and sizes available at competitive prices.",
+      passengerSuvVanTires: {
+        item1: "Passenger car tires",
+        item2: "SUV tires",
+        item3: "Van tires",
+        item4: "Summer, winter and all-season tires",
+        item5: "Runflat tires",
+        item6: "All popular brands",
+      },
       competitivePrices: "Competitive Prices",
       pricingNote:
         "* Prices include VAT. Exact prices depend on tire brand, size and scope of service. Request a personal quote!",
@@ -326,6 +347,7 @@ const LOCALIZATION = {
       tireHotel: "Tire Hotel",
       tireChange: "Tire Change",
       passengerCarTires: "Passenger Car Tires",
+      passengerSuvVanTires: "Passenger-SUV-Van Tires",
       tireRepair: "Tire Repair",
       balancing: "Balancing",
       vanTires: "Van Tires",
