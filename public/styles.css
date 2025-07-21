@@ -392,6 +392,123 @@ body {
   color: var(--color-text-primary);
 }
 
+/* Transition Notice Section */
+.transition-notice {
+  padding: 4rem 0;
+  background: linear-gradient(
+    135deg,
+    var(--color-brand-primary-extra-light) 0%,
+    #f1f5f9 100%
+  );
+  position: relative;
+  overflow: hidden;
+}
+
+.transition-notice::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="tire-pattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="2" fill="%23e2e8f0" opacity="0.3"/></pattern></defs><rect width="100" height="100" fill="url(%23tire-pattern)"/></svg>');
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.transition-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.transition-notice h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-brand-primary);
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.transition-intro {
+  font-size: 1.125rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 2rem;
+  font-weight: 500;
+  text-align: left;
+}
+
+.transition-info {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.transition-info h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-brand-primary);
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.transition-info h4:first-of-type {
+  margin-top: 0;
+}
+
+.transition-info p {
+  font-size: 1rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.brand-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.brand-list li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: var(--color-text-primary);
+}
+
+.brand-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--color-brand-primary);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.brand-note {
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  font-style: italic;
+}
+
+.transition-cta {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 32px var(--color-shadow);
+  border: 1px solid var(--color-border);
+}
+
+.transition-cta p {
+  font-size: 1.125rem;
+  color: var(--color-text-primary);
+  font-weight: 500;
+  margin: 0;
+}
+
 /* Page Header - Alternative to hero for content pages */
 .page-header {
   background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
@@ -2134,6 +2251,31 @@ body {
 
   .wheels-partner {
     padding: 1.25rem;
+  }
+
+  /* Mobile Transition Notice */
+  .transition-notice {
+    padding: 3rem 0;
+  }
+
+  .transition-notice h3 {
+    font-size: 2rem;
+  }
+
+  .transition-intro {
+    font-size: 1rem;
+  }
+
+  .brand-list {
+    margin: 1rem 0;
+  }
+
+  .transition-cta {
+    padding: 1.5rem;
+  }
+
+  .transition-cta p {
+    font-size: 1rem;
   }
 }
 
