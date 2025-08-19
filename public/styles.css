@@ -509,6 +509,119 @@ body {
   margin: 0;
 }
 
+/* Announcement Notice Section */
+.announcement-notice {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.announcement-notice::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="alert-pattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="2" fill="%23f59e0b" opacity="0.2"/></pattern></defs><rect width="100" height="100" fill="url(%23alert-pattern)"/></svg>');
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.announcement-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.announcement-notice h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #d97706;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.announcement-intro {
+  font-size: 1.125rem;
+  color: #92400e;
+  margin-bottom: 2rem;
+  font-weight: 500;
+  text-align: left;
+}
+
+.announcement-info {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.announcement-info h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #d97706;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.announcement-info h4:first-of-type {
+  margin-top: 0;
+}
+
+.announcement-info p {
+  font-size: 1rem;
+  color: #92400e;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.action-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.action-list li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #92400e;
+}
+
+.action-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #059669;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.assurance-note {
+  font-size: 0.875rem;
+  color: #92400e;
+  font-style: italic;
+}
+
+.announcement-cta {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 32px rgba(217, 119, 6, 0.1);
+  border: 1px solid #fbbf24;
+}
+
+.announcement-cta p {
+  font-size: 1.125rem;
+  color: var(--color-text-primary);
+  font-weight: 500;
+  margin: 0;
+}
+
 /* Page Header - Alternative to hero for content pages */
 .page-header {
   background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
