@@ -2240,12 +2240,22 @@ body {
     grid-template-columns: 1fr;
     gap: 2rem;
     padding: 6rem 1rem 3rem;
+    overflow: visible;
+  }
+
+  .hero-image {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
   }
 
   .hero-car-image {
-    height: 500px;
+    display: block;
     width: 100%;
-    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    box-sizing: border-box;
   }
 
   .hero-overlay {
