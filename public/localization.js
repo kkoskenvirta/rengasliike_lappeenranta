@@ -16,9 +16,13 @@ const LOCALIZATION = {
       title: "Laadukkaat renkaat, vanteet ja ammattitaitoinen palvelu",
       subtitle:
         "Rengasliike Lappeenranta tarjoaa laajan valikoiman renkaita ja ammattitaitoista palvelua kaikille ajoneuvoille",
-      viewServices: "Katso palvelut",
+      viewServices: "Katso palvelut →",
+      bookAppointment: "Varaa aika →",
       contactUs: "Ota yhteyttä",
-      tiresAndWheels: "Renkaat ja Vanteet",
+      contactUsHero: "Ota yhteyttä →",
+      tiresAndWheels: "Renkaat ja Vanteet →",
+      heroHyvitysAlt:
+        "Goodyear-kampanja: jopa 100 € hyvitys 18 tuumaa tai suuremmista kesärenkaista",
       professionalService: "Ammattitaitoinen palvelu",
       whyChooseUs: "Miksi valita Rengasliike Lappeenranta?",
       wideSelection: "Laaja valikoima",
@@ -85,6 +89,8 @@ const LOCALIZATION = {
         "Rengasliike Lappeenranta - luotettava kumppani rengasasioissa yli 20 vuoden kokemuksella",
       readMore: "Lue lisää",
       contactUs: "Ota yhteyttä",
+      heroGoodyearAlt:
+        "Goodyear 100 % tyytyväisyystakuu, vuoden rengasrikkoturva ja 14 päivän palautusoikeus",
       yearsExperience: "20+ vuotta",
       ourStory: "Meidän tarinamme",
       story1:
@@ -194,9 +200,13 @@ const LOCALIZATION = {
       title: "Quality tires, wheels and professional service",
       subtitle:
         "Rengasliike Lappeenranta offers a wide selection of tires and professional service for all vehicles",
-      viewServices: "View Services",
+      viewServices: "View Services →",
+      bookAppointment: "Book an appointment →",
       contactUs: "Contact Us",
-      tiresAndWheels: "Tires and Wheels",
+      contactUsHero: "Contact us →",
+      tiresAndWheels: "Tires and Wheels →",
+      heroHyvitysAlt:
+        "Goodyear campaign: up to €100 credit when you buy a set of 18\" or larger summer tires",
       professionalService: "Professional Service",
       whyChooseUs: "Why Choose Rengasliike Lappeenranta?",
       wideSelection: "Wide Selection",
@@ -262,6 +272,8 @@ const LOCALIZATION = {
         "Rengasliike Lappeenranta - a reliable partner in tire matters with over 20 years of experience",
       readMore: "Read More",
       contactUs: "Contact Us",
+      heroGoodyearAlt:
+        "Goodyear 100% satisfaction guarantee with one-year tire puncture protection and 14-day return policy",
       yearsExperience: "20+ Years",
       ourStory: "Our Story",
       story1:
@@ -400,6 +412,8 @@ function updatePageContent() {
 
     if (element.tagName === "INPUT" || element.tagName === "TEXTAREA") {
       element.placeholder = text;
+    } else if (element.tagName === "IMG") {
+      element.alt = text;
     } else {
       // Check if text contains HTML tags
       if (text.includes("<br>") || text.includes("<") || text.includes(">")) {
