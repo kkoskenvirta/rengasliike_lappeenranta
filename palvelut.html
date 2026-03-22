@@ -8,6 +8,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="top-bar">
+        <div class="top-bar-inner">
+            <div class="top-bar-left">
+                <a href="tel:0440323388">
+                    <svg class="top-bar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    044 032 3388
+                </a>
+                <a href="mailto:myynti@acrengas.com">
+                    <svg class="top-bar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                    myynti@acrengas.com
+                </a>
+            </div>
+            <div class="top-bar-right">
+                <span>Ma-Pe 9:00-17:00</span>
+                <span>Ratakatu 28, Lappeenranta</span>
+            </div>
+        </div>
+    </div>
+
     <header class="header">
         <nav class="navbar">
             <div class="navbar-container">
@@ -32,11 +51,13 @@
                         <a href="yhteystiedot.html" class="navbar-link" data-i18n="nav.contact">Yhteystiedot</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="https://kcenterprise.compilator.com/public/cms?Id=1&CompanyId=1ad3de4c-f732-4e45-b9ec-9145822c9db3&branchId=1" target="_blank" rel="noopener noreferrer" class="navbar-link" data-i18n="nav.bookAppointment">Varaa aika</a>
+                        <a href="https://kcenterprise.compilator.com/public/cms?Id=1&CompanyId=1ad3de4c-f732-4e45-b9ec-9145822c9db3&branchId=1" target="_blank" rel="noopener noreferrer" class="navbar-link cta-link" data-i18n="nav.bookAppointment">Varaa aika</a>
                     </li>
                     <li class="navbar-item mobile-contact">
                         <a href="tel:0440323388" class="navbar-link contact-link">
-                            <span class="contact-icon">📞</span>
+                            <span class="contact-icon">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            </span>
                             <div class="contact-content">
                                 <span class="contact-cta" data-i18n="nav.callNow">Soita nyt</span>
                                 <span class="contact-detail">044 032 3388</span>
@@ -45,7 +66,9 @@
                     </li>
                     <li class="navbar-item mobile-contact">
                         <a href="mailto:myynti@acrengas.com" class="navbar-link contact-link">
-                            <span class="contact-icon">📧</span>
+                            <span class="contact-icon">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                            </span>
                             <div class="contact-content">
                                 <span class="contact-cta" data-i18n="nav.sendMessage">Lähetä viesti</span>
                                 <span class="contact-detail">myynti@acrengas.com</span>
@@ -72,24 +95,21 @@
     <main>
         <section class="hero-section">
             <div class="hero">
-            <div class="hero-content">
-                <h2 data-i18n="services.title">Kattavat rengaspalvelut</h2>
-                <p data-i18n="services.subtitle">Tarjoamme ammattitaitoista palvelua kaikille ajoneuvoille - henkilöautot, pakettiautot ja kuorma-autot</p>
-                <div class="hero-buttons">
-                    <a href="#services" class="btn btn-primary" data-i18n="services.viewServices">Katso palvelut</a>
-                    <a href="yhteystiedot.html#contact" class="btn btn-secondary" data-i18n="services.contactUs">Ota yhteyttä</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <img src="https://images.unsplash.com/photo-1486006920555-c77dcf18193c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Ammattitaitoinen autopalvelu" class="hero-car-image">
-                <div class="hero-overlay">
-                    <div class="tire-badge">
-                        <span class="tire-icon">🔧</span>
-                        <span class="tire-text" data-i18n="services.professionalServices">Ammattipalvelu</span>
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                        Ammattitaitoinen palvelu
+                    </div>
+                    <h2 data-i18n="services.title">Kattavat rengaspalvelut</h2>
+                    <p data-i18n="services.subtitle">Tarjoamme ammattitaitoista palvelua kaikille ajoneuvoille - henkilöautot, pakettiautot ja kuorma-autot</p>
+                    <div class="hero-buttons">
+                        <a href="#services" class="btn btn-primary" data-i18n="services.viewServices">Katso palvelut</a>
+                        <a href="yhteystiedot.html#contact" class="btn btn-secondary" data-i18n="services.contactUs">Ota yhteyttä</a>
                     </div>
                 </div>
-            </div>
-            </div>
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1486006920555-c77dcf18193c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Ammattitaitoinen autopalvelu" class="hero-car-image">
+                </div>
             </div>
         </section>
 
@@ -99,8 +119,10 @@
                 <p class="services-intro" data-i18n="services.servicesIntro">Tarjoamme edulliset, laadukkaat ja ammattitaitoiset rengaspalvelut kaikille ajoneuvoille. Palveluihimme kuuluvat renkaiden vaihdot, tasapainotukset, paikkaukset sekä asiantunteva neuvonta.</p>
                 
                 <div class="services-grid">
-                    <div class="service-card">
-                        <div class="service-icon">🏨</div>
+                    <div class="service-card reveal">
+                        <div class="service-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9h18v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9Z"/><path d="m3 9 2.45-4.9A2 2 0 0 1 7.24 3h9.52a2 2 0 0 1 1.8 1.1L21 9"/><path d="M12 3v6"/></svg>
+                        </div>
                         <h3>Rengashotelli</h3>
                         <p>Turvallinen säilytys renkaillesi vaihtokauden ajaksi. Rengashotelli tarjoaa optimaaliset olosuhteet renkaiden säilyttämiseen.</p>
                         <ul>
@@ -111,8 +133,10 @@
                         </ul>
                     </div>
 
-                    <div class="service-card">
-                        <div class="service-icon">🔄</div>
+                    <div class="service-card reveal reveal-delay-1">
+                        <div class="service-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/></svg>
+                        </div>
                         <h3>Renkaanvaihto</h3>
                         <p>Täydellinen renkaanvaihtopalvelu, joka sisältää renkaiden pesun, paineiden tarkistuksen ja lisäyksen sekä ammattitaitoisen asennuksen alle.</p>
                         <ul>
@@ -123,8 +147,10 @@
                         </ul>
                     </div>
 
-                    <div class="service-card">
-                        <div class="service-icon">🚗</div>
+                    <div class="service-card reveal reveal-delay-2">
+                        <div class="service-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+                        </div>
                         <h3 data-i18n="serviceNames.passengerSuvVanTires">Henkilö-SUV-Pakettiautojen renkaat</h3>
                         <p data-i18n="services.passengerSuvVanTiresDesc">Laaja valikoima kesä-, talvi- ja kausirenkaita henkilöautoihin, SUV-ajoneuvoihin ja pakettiautoihin. Kaikki suosituimmat merkit ja koot saatavilla kilpailukykyiseen hintaan.</p>
                         <ul>
@@ -137,8 +163,10 @@
                         </ul>
                     </div>
 
-                    <div class="service-card">
-                        <div class="service-icon">🔧</div>
+                    <div class="service-card reveal">
+                        <div class="service-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                        </div>
                         <h3>Renkaan paikkaus ja korjaus</h3>
                         <p>Renkaan paikkaus tehdään ammattitaidolla ja laadukkailla materiaaleilla. Hyvin paikattu rengas pidentää renkaan käyttöikää ja säästää rahaa.</p>
                         <ul>
@@ -149,8 +177,10 @@
                         </ul>
                     </div>
 
-                    <div class="service-card">
-                        <div class="service-icon">⚖️</div>
+                    <div class="service-card reveal reveal-delay-1">
+                        <div class="service-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M8 8l4-5 4 5"/><circle cx="12" cy="13" r="4"/></svg>
+                        </div>
                         <h3>Tasapainoitukset</h3>
                         <p>Ammattilaisen tekemä tasapainoitus turvaa ajomukavuuden ja ohjattavuuden. Tarkka tasapainoitus poistaa tärinät ja parantaa ajokokemusta.</p>
                         <ul>
@@ -161,8 +191,10 @@
                         </ul>
                     </div>
 
-                    <div class="service-card">
-                        <div class="service-icon">📊</div>
+                    <div class="service-card reveal reveal-delay-2">
+                        <div class="service-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                        </div>
                         <h3>Rengaspainevalvonta</h3>
                         <p>TPMS-järjestelmän toiminnan tarkastus, tarvittaessa korjaus ja rikkinäisten antureiden vaihto. Säännöllinen painevalvonta turvaa turvallisuuden.</p>
                         <ul>
@@ -175,45 +207,6 @@
                 </div>
             </div>
         </section>
-
-        <!-- <section class="pricing">
-            <div class="container">
-                <h3 data-i18n="services.competitivePrices">Kilpailukykyiset hinnat</h3>
-                <div class="pricing-grid">
-                    <div class="pricing-card">
-                        <h4 data-i18n="serviceNames.tireHotel">Rengashotelli</h4>
-                        <div class="price">Alkaen [HINTA]€/kpl</div>
-                        <p>Turvallinen säilytys vaihtokauden ajaksi</p>
-                    </div>
-                    <div class="pricing-card">
-                        <h4 data-i18n="serviceNames.tireChange">Renkaanvaihto</h4>
-                        <div class="price">Alkaen [HINTA]€/kpl</div>
-                        <p>Sisältää pesun, paineiden tarkistuksen ja asennuksen</p>
-                    </div>
-                    <div class="pricing-card">
-                        <h4 data-i18n="serviceNames.passengerCarTires">Henkilöautojen renkaat</h4>
-                        <div class="price">Alkaen [HINTA]€/kpl</div>
-                        <p>Kesä- ja talvirenkaat kaikille henkilöautoille</p>
-                    </div>
-                    <div class="pricing-card">
-                        <h4 data-i18n="serviceNames.tireRepair">Renkaan paikkaus</h4>
-                        <div class="price">Alkaen [HINTA]€/kpl</div>
-                        <p>Laadukkailla materiaaleilla tehty paikkaus</p>
-                    </div>
-                    <div class="pricing-card">
-                        <h4 data-i18n="serviceNames.balancing">Tasapainoitus</h4>
-                        <div class="price">Alkaen [HINTA]€/kpl</div>
-                        <p>Ammattitaitoinen tasapainoitus tarkkuuslaiteella</p>
-                    </div>
-                    <div class="pricing-card">
-                        <h4 data-i18n="serviceNames.vanTires">Pakettiautojen renkaat</h4>
-                        <div class="price">Alkaen [HINTA]€/kpl</div>
-                        <p>Kestävät renkaat pakettiautoihin</p>
-                    </div>
-                </div>
-                <p class="pricing-note" data-i18n="services.pricingNote">* Hinnat sisältävät ALV:n. Tarkat hinnat riippuvat rengasmerkistä, koosta ja palvelun laajuudesta. Pyydä henkilökohtainen tarjous!</p>
-            </div>
-        </section> -->
     </main>
 
     <footer class="footer">
@@ -227,10 +220,9 @@
                 </div>
                 <div class="footer-section">
                     <h4>Yhteystiedot</h4>
-                    <p><a href="tel:0440323388" class="footer-link">📞 044 032 3388</a></p>
-                    <p><a href="mailto:myynti@acrengas.com" class="footer-link">📧 myynti@acrengas.com</a></p>
-                    <p><a href="https://www.google.com/maps?q=Ratakatu+28,+53100+Lappeenranta,+Finland" target="_blank" rel="noopener noreferrer" class="footer-link">📍 Ratakatu 28, 53100 Lappeenranta</a></p>
-                    <p>🌐 www.rengasliikelappeenranta.fi</p>
+                    <p><a href="tel:0440323388" class="footer-link">044 032 3388</a></p>
+                    <p><a href="mailto:myynti@acrengas.com" class="footer-link">myynti@acrengas.com</a></p>
+                    <p><a href="https://www.google.com/maps?q=Ratakatu+28,+53100+Lappeenranta,+Finland" target="_blank" rel="noopener noreferrer" class="footer-link">Ratakatu 28, 53100 Lappeenranta</a></p>
                 </div>
                 <div class="footer-section">
                     <h4>Aukioloajat</h4>
@@ -250,4 +242,4 @@
     <script src="prices.js"></script>
     <script src="script.js"></script>
 </body>
-</html> 
+</html>

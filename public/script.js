@@ -1,15 +1,11 @@
-// Typography toggle functionality
+// Typography toggle (preserved for compatibility)
 let currentTypography = localStorage.getItem("typography") || "outfit";
 
 function initTypography() {
   const themeToggle = document.getElementById("themeToggle");
-
   if (themeToggle) {
-    // Load initial typography (Goodyear theme is now default)
     loadTypography(currentTypography);
     updateTypographyButton(currentTypography);
-
-    // Typography toggle event listener
     themeToggle.addEventListener("click", () => {
       currentTypography = currentTypography === "outfit" ? "inter" : "outfit";
       localStorage.setItem("typography", currentTypography);
@@ -21,8 +17,8 @@ function initTypography() {
 
 function updateTypographyButton(typography) {
   const themeToggle = document.getElementById("themeToggle");
+  if (!themeToggle) return;
   const themeText = themeToggle.querySelector(".theme-text");
-
   if (typography === "inter") {
     themeText.textContent = "Outfit";
     themeToggle.classList.add("active");
@@ -33,154 +29,121 @@ function updateTypographyButton(typography) {
 }
 
 function loadTypography(typography) {
-  const existingTypography = document.getElementById("typography-theme");
-
+  const existing = document.getElementById("typography-theme");
   if (typography === "inter") {
-    if (!existingTypography) {
+    if (!existing) {
       const link = document.createElement("link");
       link.id = "typography-theme";
       link.rel = "stylesheet";
       link.href = "typography-theme.css";
       document.head.appendChild(link);
     }
-  } else {
-    if (existingTypography) {
-      existingTypography.remove();
-    }
+  } else if (existing) {
+    existing.remove();
   }
 }
 
-// Mobile menu functionality
+// Mobile menu
 const navbarToggle = document.querySelector(".navbar-toggle");
 const navbarMenu = document.querySelector(".navbar-menu");
 
-navbarToggle.addEventListener("click", () => {
-  navbarToggle.classList.toggle("active");
-  navbarMenu.classList.toggle("active");
-});
-
-// Close mobile menu when clicking on a link
-document.querySelectorAll(".navbar-link").forEach((link) => {
-  link.addEventListener("click", () => {
-    navbarToggle.classList.remove("active");
-    navbarMenu.classList.remove("active");
+if (navbarToggle && navbarMenu) {
+  navbarToggle.addEventListener("click", () => {
+    navbarToggle.classList.toggle("active");
+    navbarMenu.classList.toggle("active");
+    document.body.style.overflow = navbarMenu.classList.contains("active") ? "hidden" : "";
   });
-});
 
-// Smooth scrolling for anchor links
+  document.querySelectorAll(".navbar-link").forEach((link) => {
+    link.addEventListener("click", () => {
+      navbarToggle.classList.remove("active");
+      navbarMenu.classList.remove("active");
+      document.body.style.overflow = "";
+    });
+  });
+}
+
+// Smooth scrolling
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
     const target = document.querySelector(this.getAttribute("href"));
     if (target) {
-      target.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
+      const headerOffset = 80;
+      const elementPosition = target.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+      window.scrollTo({ top: offsetPosition, behavior: "smooth" });
     }
   });
 });
 
-// Add scroll effect to header
+// Header scroll effect
+const header = document.querySelector(".header");
+let lastScroll = 0;
+
 window.addEventListener("scroll", () => {
-  const header = document.querySelector(".header");
-  if (window.scrollY > 100) {
-    header.style.background = "rgba(255, 255, 255, 0.95)";
-    header.style.backdropFilter = "blur(10px)";
+  const currentScroll = window.pageYOffset;
+  if (currentScroll > 10) {
+    header.classList.add("scrolled");
   } else {
-    header.style.background = "#fff";
-    header.style.backdropFilter = "none";
+    header.classList.remove("scrolled");
   }
-});
+  lastScroll = currentScroll;
+}, { passive: true });
 
-// Add active class to current nav link
-const currentLocation = location.pathname;
-document.querySelectorAll(".navbar-link").forEach((link) => {
-  if (link.getAttribute("href") === currentLocation) {
-    link.classList.add("active");
-  }
-});
-
-// Simple animation on scroll
-const observerOptions = {
-  threshold: 0.1,
-  rootMargin: "0px 0px -50px 0px",
-};
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.style.opacity = "1";
-      // entry.target.style.transform = "translateY(0)";
-    }
-  });
-}, observerOptions);
-
-// Contact form handling with mailto
-document.addEventListener("DOMContentLoaded", () => {
-  // Initialize typography
-  initTypography();
-
-  // Contact form submission
-  const contactForm = document.getElementById("contactForm");
-  if (contactForm) {
-    contactForm.addEventListener("submit", function (e) {
-      e.preventDefault();
-
-      // Get form data
-      const formData = {
-        name: document.getElementById("name").value,
-        email: document.getElementById("email").value,
-        phone: document.getElementById("phone").value,
-        subject: document.getElementById("subject").value,
-        message: document.getElementById("message").value,
-      };
-
-      // Generate mailto URL with form content as template
-      const mailtoUrl = generateMailtoUrl(formData);
-
-      // Open default email client
-      window.location.href = mailtoUrl;
+// Scroll reveal animation
+const revealObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        revealObserver.unobserve(entry.target);
+      }
     });
-  }
+  },
+  { threshold: 0.1, rootMargin: "0px 0px -40px 0px" }
+);
 
-  // Function to generate mailto URL with form content
-  function generateMailtoUrl(formData) {
+// Contact form (mailto)
+function initContactForm() {
+  const contactForm = document.getElementById("contactForm");
+  if (!contactForm) return;
+
+  contactForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+    const formData = {
+      name: document.getElementById("name").value,
+      email: document.getElementById("email").value,
+      phone: document.getElementById("phone").value,
+      subject: document.getElementById("subject").value,
+      message: document.getElementById("message").value,
+    };
+
     const to = "myynti@acrengas.com";
     const subject = formData.subject
       ? `Rengasliike - ${formData.subject}`
       : "Rengasliike - Yhteydenotto";
 
-    // Create email body template
     let body = `Hei Rengasliike,\n\n`;
     body += `Olen kiinnostunut rengaspalveluistanne.\n\n`;
     body += `Yhteystietoni:\n`;
     body += `Nimi: ${formData.name}\n`;
     body += `Sähköposti: ${formData.email}\n`;
-    if (formData.phone) {
-      body += `Puhelin: ${formData.phone}\n`;
-    }
-    if (formData.subject) {
-      body += `Aihe: ${formData.subject}\n`;
-    }
+    if (formData.phone) body += `Puhelin: ${formData.phone}\n`;
+    if (formData.subject) body += `Aihe: ${formData.subject}\n`;
     body += `\nViesti:\n${formData.message}\n\n`;
     body += `Ystävällisin terveisin,\n${formData.name}`;
 
-    // Encode parameters for URL
-    const encodedSubject = encodeURIComponent(subject);
-    const encodedBody = encodeURIComponent(body);
+    window.location.href = `mailto:${to}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  });
+}
 
-    return `mailto:${to}?subject=${encodedSubject}&body=${encodedBody}`;
-  }
+// Initialize
+document.addEventListener("DOMContentLoaded", () => {
+  initTypography();
+  initContactForm();
 
-  // Observe elements for animation
-  const animateElements = document.querySelectorAll(
-    ".feature-card, .brand-item"
-  );
-  animateElements.forEach((el) => {
-    el.style.opacity = "0";
-    el.style.transform = "translateY(20px)";
-    el.style.transition = "opacity 0.6s ease, transform 0.6s ease";
-    observer.observe(el);
+  document.querySelectorAll(".reveal").forEach((el) => {
+    revealObserver.observe(el);
   });
 });
