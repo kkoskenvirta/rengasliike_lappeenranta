@@ -6,9 +6,27 @@
     <title data-i18n="home.title">Rengasliike Lappeenranta - Laadukkaat renkaat ja palvelut</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="top-bar">
+        <div class="top-bar-inner">
+            <div class="top-bar-left">
+                <a href="tel:0440323388">
+                    <svg class="top-bar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    044 032 3388
+                </a>
+                <a href="mailto:myynti@acrengas.com">
+                    <svg class="top-bar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                    myynti@acrengas.com
+                </a>
+            </div>
+            <div class="top-bar-right">
+                <span>Ma-Pe 9:00-17:00</span>
+                <span>Ratakatu 28, Lappeenranta</span>
+            </div>
+        </div>
+    </div>
+
     <header class="header">
         <nav class="navbar">
             <div class="navbar-container">
@@ -33,12 +51,14 @@
                         <a href="yhteystiedot.html" class="navbar-link" data-i18n="nav.contact">Yhteystiedot</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="https://kcenterprise.compilator.com/public/cms?Id=1&CompanyId=1ad3de4c-f732-4e45-b9ec-9145822c9db3&branchId=1" target="_blank" rel="noopener noreferrer" class="navbar-link" data-i18n="nav.bookAppointment">Varaa aika</a>
+                        <a href="https://kcenterprise.compilator.com/public/cms?Id=1&CompanyId=1ad3de4c-f732-4e45-b9ec-9145822c9db3&branchId=1" target="_blank" rel="noopener noreferrer" class="navbar-link cta-link" data-i18n="nav.bookAppointment">Varaa aika</a>
                     </li>
                     
                     <li class="navbar-item mobile-contact">
                         <a href="tel:0440323388" class="navbar-link contact-link">
-                            <span class="contact-icon">📞</span>
+                            <span class="contact-icon">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            </span>
                             <div class="contact-content">
                                 <span class="contact-cta" data-i18n="nav.callNow">Soita nyt</span>
                                 <span class="contact-detail">044 032 3388</span>
@@ -47,7 +67,9 @@
                     </li>
                     <li class="navbar-item mobile-contact">
                         <a href="mailto:myynti@acrengas.com" class="navbar-link contact-link">
-                            <span class="contact-icon">📧</span>
+                            <span class="contact-icon">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                            </span>
                             <div class="contact-content">
                                 <span class="contact-cta" data-i18n="nav.sendMessage">Lähetä viesti</span>
                                 <span class="contact-detail">myynti@acrengas.com</span>
@@ -60,7 +82,6 @@
                             <button class="lang-btn" onclick="changeLanguage('en')">EN</button>
                         </div>
                     </li>
-                  
                 </ul>
                 
                 <button class="navbar-toggle" aria-label="Toggle navigation">
@@ -75,50 +96,31 @@
     <main>
         <section class="hero-section">
             <div class="hero">
-            <div class="hero-content">
-                <h2 data-i18n="home.title">Laadukkaat renkaat, vanteet ja ammattitaitoinen palvelu</h2>
-                <p data-i18n="home.subtitle">Rengasliike Lappeenranta tarjoaa laajan valikoiman renkaita, vanteita ja ammattitaitoista palvelua kaikille ajoneuvoille</p>
-                <div class="hero-buttons">
-                    <a href="https://kcenterprise.compilator.com/public/cms?Id=1&CompanyId=1ad3de4c-f732-4e45-b9ec-9145822c9db3&branchId=1" target="_blank" rel="noopener noreferrer" class="btn btn-primary" data-i18n="home.bookAppointment">Varaa aika →</a>
-                    <a href="palvelut.html#services" class="btn btn-secondary" data-i18n="home.viewServices">Katso palvelut →</a>
-                    <a href="#appointment" class="btn btn-secondary" data-i18n="home.tiresAndWheels">Renkaat ja Vanteet →</a>
-                    <a href="yhteystiedot.html#contact" class="btn btn-secondary" data-i18n="home.contactUsHero">Ota yhteyttä →</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <img src="images/goodyear-hyvitys.jpeg" alt="Goodyear-kampanja: jopa 100 € hyvitys 18 tuumaa tai suuremmista kesärenkaista" class="hero-car-image" data-i18n="home.heroHyvitysAlt">
-                <div class="hero-overlay">
-                    <div class="tire-badge">
-                        <span class="tire-icon">🛞</span>
-                        <span class="tire-text" data-i18n="home.professionalService">Ammattitaitoinen palvelu</span>
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                        Virallinen Goodyear-jälleenmyyjä
+                    </div>
+                    <h2 data-i18n="home.title">Laadukkaat renkaat, vanteet ja ammattitaitoinen palvelu</h2>
+                    <p data-i18n="home.subtitle">Rengasliike Lappeenranta tarjoaa laajan valikoiman renkaita, vanteita ja ammattitaitoista palvelua kaikille ajoneuvoille</p>
+                    <div class="hero-buttons">
+                        <a href="https://kcenterprise.compilator.com/public/cms?Id=1&CompanyId=1ad3de4c-f732-4e45-b9ec-9145822c9db3&branchId=1" target="_blank" rel="noopener noreferrer" class="btn btn-primary" data-i18n="home.bookAppointment">Varaa aika →</a>
+                        <a href="palvelut.html#services" class="btn btn-secondary" data-i18n="home.viewServices">Katso palvelut →</a>
                     </div>
                 </div>
-            </div>
+                <div class="hero-image">
+                    <img src="images/goodyear-hyvitys.jpeg" alt="Goodyear-kampanja: jopa 100 € hyvitys 18 tuumaa tai suuremmista kesärenkaista" class="hero-car-image" data-i18n="home.heroHyvitysAlt">
+                </div>
             </div>
         </section>
-
-        <!-- <section class="announcement-notice">
-            <div class="container">
-                <div class="announcement-content">
-                    <h3>Tärkeä ilmoitus!</h3>
-                    <p class="announcement-intro">19.8.2025 teknisestä päivityksestä johtuen on osalle asiakkaillemme tapahtunut laskujen uudelleenlähetys. Pahoittelemme hämmennystä.</p>
-                    <div class="announcement-cta">
-                        <p>Asiaa selvitetään!</p>
-                    </div>
-                </div>
-            </div>
-        </section> -->
 
         <section class="transition-notice">
             <div class="container">
                 <div class="transition-content">
                     <h3>Rengasmarket-ketjun toiminta päättyy</h3>
-                    <p class="transition-intro">Rengasmarket-ketjun toiminta on päättynyt kesäkuun lopussa 2025. Kiitämme lämpimästi yhteistyöstä!</p>
+                    <p class="transition-intro">Rengasmarket-ketjun toiminta on päättynyt kesäkuun lopussa 2025. Toimintamme jatkuu Lappeenrannassa itsenäisenä rengas- ja autohuoltoliikkeenä - laajemmalla valikoimalla ja joustavammalla palvelulla.</p>
                     
                     <div class="transition-info">
-                        <h4>Toimintamme jatkuu itsenäisenä liikkeenä</h4>
-                        <p>Toimintamme jatkuu Lappeenrannassa itsenäisenä rengas- ja autohuoltoliikkeenä. Tämä mahdollistaa laajemman valikoiman rengasmerkkejä ja joustavamman palvelun juuri sinun tarpeisiisi.</p>
-                        
                         <h4>Päämerkkimme ovat edelleen:</h4>
                         <ul class="brand-list">
                             <li>Goodyear</li>
@@ -131,30 +133,34 @@
                     </div>
                     
                     <div class="transition-cta">
-                        <p>Tervetuloa asioimaan Lappeenrannan omaan rengasliikkeeseen – olitpa sitten uusien renkaiden tarpeessa tai huoltamassa autoasi!</p>
+                        <p>Tervetuloa asioimaan Lappeenrannan omaan rengasliikkeeseen!</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        
-
         <section class="features">
             <div class="container">
                 <h3 data-i18n="home.whyChooseUs">Miksi valita Rengasliike Lappeenranta?</h3>
                 <div class="features-grid">
-                    <div class="feature-card">
-                        <div class="feature-icon">🚗</div>
+                    <div class="feature-card reveal">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                        </div>
                         <h4 data-i18n="home.wideSelection">Laaja valikoima</h4>
                         <p data-i18n="home.wideSelectionDesc">Renkaat kaikille ajoneuvoille - henkilöautot, pakettiautot</p>
                     </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">🔧</div>
+                    <div class="feature-card reveal reveal-delay-1">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                        </div>
                         <h4 data-i18n="home.professionalServiceTitle">Ammattitaitoinen palvelu</h4>
                         <p data-i18n="home.professionalServiceDesc">Kokenut henkilökunta auttaa löytämään juuri sinulle sopivat renkaat</p>
                     </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">💰</div>
+                    <div class="feature-card reveal reveal-delay-2">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                        </div>
                         <h4 data-i18n="home.competitivePrices">Kilpailukykyiset hinnat</h4>
                         <p data-i18n="home.competitivePricesDesc">Laadukkaat renkaat edulliseen hintaan</p>
                     </div>
@@ -178,22 +184,22 @@
             <div class="container">
                 <h3 data-i18n="home.popularBrands">Suosituimmat rengasmerkit</h3>
                 <div class="brands-grid">
-                    <div class="brand-item">
+                    <div class="brand-item reveal">
                         <img src="images/goodyear.png" alt="Goodyear" class="brand-logo">
                     </div>
-                    <div class="brand-item">
+                    <div class="brand-item reveal reveal-delay-1">
                         <img src="images/michelin.png" alt="Michelin" class="brand-logo">
                     </div>
-                    <div class="brand-item">
+                    <div class="brand-item reveal reveal-delay-2">
                         <img src="images/bridgestone.png" alt="Bridgestone" class="brand-logo">
                     </div>
-                    <div class="brand-item">
+                    <div class="brand-item reveal reveal-delay-3">
                         <img src="images/continental.png" alt="Continental" class="brand-logo">
                     </div>
-                    <div class="brand-item">
+                    <div class="brand-item reveal reveal-delay-4">
                         <img src="images/hankook.png" alt="Hankook" class="brand-logo">
                     </div>
-                    <div class="brand-item">
+                    <div class="brand-item reveal reveal-delay-4">
                         <img src="images/nokian.png" alt="Nokian" class="brand-logo">
                     </div>
                 </div>
@@ -205,7 +211,7 @@
                 <div class="goodyear-showcase-content">
                     <div class="goodyear-showcase-text">
                         <div class="goodyear-badge">
-                            <span class="goodyear-icon">🛞</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/></svg>
                             <span data-i18n="home.goodyearBadge">Virallinen Goodyear-jälleenmyyjä</span>
                         </div>
                         <h3 data-i18n="home.goodyearTitle">Goodyearin laadukkaat renkaat</h3>
@@ -215,13 +221,10 @@
                             <span class="feature-tag" data-i18n="home.winterTires">✓ Talvirenkaat</span>
                             <span class="feature-tag" data-i18n="home.allSeasonTires">✓ Ympärivuotiset</span>
                         </div>
-                    </div>
-                    <div class="goodyear-showcase-visual">
-                        <div class="goodyear-showcase-button">
-                            <a href="https://www.goodyear.eu/fi_fi/consumer/all-dealers/lappeenranta/rengasliike-lappeenrantaac-rengas-21447.html" target="_blank" rel="noopener noreferrer" class="btn btn-goodyear">
-                                <span class="btn-text" data-i18n="home.viewGoodyearSelection">Katso Goodyearin valikoima →</span>
-                            </a>
-                        </div>
+                        <a href="https://www.goodyear.eu/fi_fi/consumer/all-dealers/lappeenranta/rengasliike-lappeenrantaac-rengas-21447.html" target="_blank" rel="noopener noreferrer" class="btn-goodyear">
+                            <span data-i18n="home.viewGoodyearSelection">Katso Goodyearin valikoima</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -232,7 +235,7 @@
                 <div class="wheels-showcase-content">
                     <div class="wheels-showcase-text">
                         <div class="wheels-badge">
-                            <span class="wheels-icon">⚙️</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
                             <span data-i18n="home.wheelsBadge">Laadukkaat vanteet</span>
                         </div>
                         <h3 data-i18n="home.wheelsTitle">Kestävät ja näyttävät vanteet</h3>
@@ -245,25 +248,25 @@
                     </div>
                     <div class="wheels-showcase-visual">
                         <div class="wheels-partners">
-                            <div class="wheels-partner">
+                            <div class="wheels-partner reveal">
                                 <h4>Alcar-vanteet</h4>
                                 <p>ALCAR kehittää ja valmistaa tyylikkäitä teräs-, alumiini- ja offroad-vanteita kaikenlaisiin ajoneuvoihin.</p>
-                                <a href="https://www.alcar.fi" target="_blank" rel="noopener noreferrer" class="btn btn-wheels">
-                                    <span class="btn-text">www.alcar.fi →</span>
+                                <a href="https://www.alcar.fi" target="_blank" rel="noopener noreferrer" class="btn-wheels">
+                                    www.alcar.fi →
                                 </a>
                             </div>
-                            <div class="wheels-partner">
+                            <div class="wheels-partner reveal reveal-delay-1">
                                 <h4>Rautamo-vanteet</h4>
                                 <p>Rautamo tuo maahan BBS, Vossen, R-Series, Rial, GMP, Brock, Spath, Alutec, Arcasting, Stance, Vertini, Oxigin, ST ja KW -vanteita.</p>
-                                <a href="https://www.rautamo.fi/fi" target="_blank" rel="noopener noreferrer" class="btn btn-wheels">
-                                    <span class="btn-text">www.rautamo.fi →</span>
+                                <a href="https://www.rautamo.fi/fi" target="_blank" rel="noopener noreferrer" class="btn-wheels">
+                                    www.rautamo.fi →
                                 </a>
                             </div>
-                            <div class="wheels-partner">
+                            <div class="wheels-partner reveal reveal-delay-2">
                                 <h4>Special Wheels-vanteet</h4>
                                 <p>Pohjoismaiden suurin itsenäisen vannetoimittajan. Valikoimasta löytyy laatuvanteita kaikenlaisiin autoihin.</p>
-                                <a href="https://www.erikoisvanteet.fi" target="_blank" rel="noopener noreferrer" class="btn btn-wheels">
-                                    <span class="btn-text">www.erikoisvanteet.fi →</span>
+                                <a href="https://www.erikoisvanteet.fi" target="_blank" rel="noopener noreferrer" class="btn-wheels">
+                                    www.erikoisvanteet.fi →
                                 </a>
                             </div>
                         </div>
@@ -276,7 +279,7 @@
             <div class="container">
                 <h3 data-i18n="home.customerExperiences">Asiakkaidemme kokemukset</h3>
                 <div class="testimonials-grid">
-                    <div class="testimonial-card">
+                    <div class="testimonial-card reveal">
                         <div class="testimonial-stars">★★★★★</div>
                         <p class="testimonial-text">"Pihalta löytyy parkkipaikkaa ja ulkona oli selkeä opastus sisäänkäynnille. Ystävällinen ja mukava asiakaspalvelu, (nais)asiakasta kohdattiin arvostavasti ja ammattimaisesti."</p>
                         <div class="testimonial-author">
@@ -284,51 +287,19 @@
                             <span class="review-source">Google</span>
                         </div>
                     </div>
-                    <div class="testimonial-card">
+                    <div class="testimonial-card reveal reveal-delay-1">
                         <div class="testimonial-stars">★★★★★</div>
-                        <p class="testimonial-text">"Hyvä ja tehokas palvelu. Ajan saaminen sesonkiaikana voi olla haastavaa, mutta onnistuu helposti netissä."</p>
-                        <div class="testimonial-author">
-                            <span class="author-name">Akseli K.</span>
-                            <span class="review-source">Google</span>
-                        </div>
-                    </div>
-                    <div class="testimonial-card">
-                        <div class="testimonial-stars">★★★★★</div>
-                        <p class="testimonial-text">"Matkailuautosta hajosi rengas kesken reissun ja tarvittiin kiireesti uudet kumit alle. Monesta paikasta kyseltiin ja kaikilla tuntui olevan vain ei oota ja ei ole. Tässä paikassa auttoivat heti!"</p>
+                        <p class="testimonial-text">"Matkailuautosta hajosi rengas kesken reissun ja tarvittiin kiireesti uudet kumit alle. Tässä paikassa auttoivat heti!"</p>
                         <div class="testimonial-author">
                             <span class="author-name">Pia S.</span>
                             <span class="review-source">Google</span>
                         </div>
                     </div>
-                    <div class="testimonial-card">
-                        <div class="testimonial-stars">★★★★☆</div>
-                        <p class="testimonial-text">"Hyvä rengasliike. Ripeää toimintaa. Palvelu hyvää ja asiallista. Hinnat ok. Jos renkaat tarviit niin tää on oikea paikka. Siistit tilat ja sijainti hyvien yhteyksien lähellä. Tilaa pysäköidä liikkeen sisäpihalle. Vahva suositus."</p>
+                    <div class="testimonial-card reveal reveal-delay-2">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">"Hyvä rengasliike. Ripeää toimintaa. Palvelu hyvää ja asiallista. Hinnat ok. Siistit tilat ja sijainti hyvien yhteyksien lähellä. Vahva suositus."</p>
                         <div class="testimonial-author">
                             <span class="author-name">Markku M.</span>
-                            <span class="review-source">Google</span>
-                        </div>
-                    </div>
-                    <div class="testimonial-card">
-                        <div class="testimonial-stars">★★★★★</div>
-                        <p class="testimonial-text">"Edelleen huipputason palvelu ja kilpailukykyiset hinnat. Vanhan auton arvo nousi kesäkumien verran. Kiitos!"</p>
-                        <div class="testimonial-author">
-                            <span class="author-name">Erika N.</span>
-                            <span class="review-source">Google</span>
-                        </div>
-                    </div>
-                    <div class="testimonial-card">
-                        <div class="testimonial-stars">★★★★★</div>
-                        <p class="testimonial-text">"Joka kerta on ollut hyvä palvelu ja renkaissa kilpailukykyiset hinnat."</p>
-                        <div class="testimonial-author">
-                            <span class="author-name">Timo L.</span>
-                            <span class="review-source">Google</span>
-                        </div>
-                    </div>
-                    <div class="testimonial-card">
-                        <div class="testimonial-stars">★★★★★</div>
-                        <p class="testimonial-text">"Ystävällinen ja asiallinen! Kävin kypsymässä neuvoa! Positiivinen suhtautuminen!! :) Suosittelen vanhemmillekin immeisille!"</p>
-                        <div class="testimonial-author">
-                            <span class="author-name">Riitta R.</span>
                             <span class="review-source">Google</span>
                         </div>
                     </div>
@@ -354,7 +325,7 @@
                     <iframe 
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d482.81250556925994!2d28.196878669750593!3d61.05010369846833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4690957602b52b41%3A0xff39d0ade9cda645!2sRengasliike%20Lappeenranta!5e0!3m2!1sen!2sfi!4v1752240516909!5m2!1sen!2sfi" 
                         width="100%" 
-                        height="450" 
+                        height="400" 
                         style="border:0;" 
                         allowfullscreen="" 
                         loading="lazy" 
@@ -376,10 +347,9 @@
                 </div>
                 <div class="footer-section">
                     <h4 data-i18n="footer.contactInfo">Yhteystiedot</h4>
-                    <p><a href="tel:0440323388" class="footer-link">📞 044 032 3388</a></p>
-                    <p><a href="mailto:myynti@acrengas.com" class="footer-link">📧 myynti@acrengas.com</a></p>
-                    <p><a href="https://www.google.com/maps?q=Ratakatu+28,+53100+Lappeenranta,+Finland" target="_blank" rel="noopener noreferrer" class="footer-link">📍 Ratakatu 28, 53100 Lappeenranta</a></p>
-                    <p>🌐 www.rengasliikelappeenranta.fi</p>
+                    <p><a href="tel:0440323388" class="footer-link">044 032 3388</a></p>
+                    <p><a href="mailto:myynti@acrengas.com" class="footer-link">myynti@acrengas.com</a></p>
+                    <p><a href="https://www.google.com/maps?q=Ratakatu+28,+53100+Lappeenranta,+Finland" target="_blank" rel="noopener noreferrer" class="footer-link">Ratakatu 28, 53100 Lappeenranta</a></p>
                 </div>
                 <div class="footer-section">
                     <h4 data-i18n="footer.openingHours">Aukioloajat</h4>
@@ -398,4 +368,4 @@
     <script src="localization.js"></script>
     <script src="script.js"></script>
 </body>
-</html> 
+</html>
