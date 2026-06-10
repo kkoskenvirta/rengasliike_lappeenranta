@@ -175,7 +175,6 @@ const LOCALIZATION = {
       monFri: "Ma-Pe: 9:00-17:00",
       sat: "La: (9:00-13:00 sesonkiaikana)",
       sun: "Su: Suljettu",
-      branchOffice: "Sivutoimipaikka",
       copyright:
         "© 2024 Rengasliike Lappeenranta / AC Rengas. Kaikki oikeudet pidätetään.",
     },
@@ -365,7 +364,6 @@ const LOCALIZATION = {
       monFri: "Mon-Fri: 9:00-17:00",
       sat: "Sat: (9:00-13:00 seasonal)",
       sun: "Sun: Closed",
-      branchOffice: "Branch Office",
       copyright:
         "© 2024 Rengasliike Lappeenranta / AC Rengas. All rights reserved.",
     },
