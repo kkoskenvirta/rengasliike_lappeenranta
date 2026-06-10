@@ -12,6 +12,13 @@ const LOCALIZATION = {
       sendMessage: "Lähetä viesti",
     },
 
+    topBar: {
+      openingHours: "Aukioloajat",
+      monFri: "Maanantai - Perjantai: 9:00 - 17:00",
+      sat: "Lauantai: (9:00 - 13:00 sesonkiaikana)",
+      sun: "Sunnuntai: Suljettu",
+    },
+
     // Home page
     home: {
       title: "Laadukkaat renkaat, vanteet ja ammattitaitoinen palvelu",
@@ -195,6 +202,13 @@ const LOCALIZATION = {
       bookAppointment: "Book an appointment",
       callNow: "Call Now",
       sendMessage: "Send Message",
+    },
+
+    topBar: {
+      openingHours: "Opening Hours",
+      monFri: "Monday - Friday: 9:00 - 17:00",
+      sat: "Saturday: (9:00 - 13:00 seasonal)",
+      sun: "Sunday: Closed",
     },
 
     // Home page

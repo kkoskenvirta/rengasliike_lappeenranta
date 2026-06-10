@@ -100,11 +100,19 @@ a { color: inherit; }
 
 .top-bar-inner {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.35rem;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0.5rem 1.5rem;
+  padding: 0.45rem 1.5rem 0.5rem;
+}
+
+.top-bar-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
 }
 
 .top-bar-left {
@@ -113,10 +121,34 @@ a { color: inherit; }
   gap: 1.5rem;
 }
 
-.top-bar-right {
+.top-bar-hours {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-top: 0.35rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.top-bar-hours-title {
+  color: var(--color-brand-secondary);
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.top-bar-hours-details {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 0.25rem 1rem;
+  margin-left: auto;
+  text-align: right;
+}
+
+.top-bar-location {
+  white-space: nowrap;
+  text-decoration: none;
 }
 
 .top-bar a {
@@ -238,7 +270,10 @@ a { color: inherit; }
   transform: translateY(-1px);
 }
 
-.mobile-contact { display: none; }
+.mobile-contact,
+.mobile-hours {
+  display: none;
+}
 
 /* Language Switcher */
 .language-switcher {
@@ -435,7 +470,8 @@ a { color: inherit; }
 }
 
 .hero-car-image {
-  width: 100%;
+  width: auto;
+  max-width: 100%;
   max-height: 420px;
   object-fit: contain;
   border-radius: var(--radius-lg);
@@ -1806,7 +1842,37 @@ a { color: inherit; }
 
 @media (max-width: 768px) {
   /* Top bar */
-  .top-bar-right { display: none; }
+  .top-bar-inner {
+    gap: 0.35rem;
+    padding: 0.45rem 1rem;
+  }
+
+  .top-bar-main {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.35rem 0.75rem;
+  }
+
+  .top-bar-left {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+  }
+
+  .top-bar-hours {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+    font-size: 0.75rem;
+  }
+
+  .top-bar-hours-details {
+    justify-content: center;
+    margin-left: 0;
+    text-align: center;
+    gap: 0.25rem 0.6rem;
+  }
 
   /*
    * Mobile nav: .header uses backdrop-filter on desktop, which creates a containing
@@ -1875,6 +1941,48 @@ a { color: inherit; }
   }
 
   .mobile-contact { display: block; }
+
+  .mobile-hours {
+    display: block;
+    padding: 0.5rem 1rem 0.25rem;
+  }
+
+  .mobile-hours-card {
+    display: flex;
+    gap: 0.75rem;
+    padding: 0.875rem 1rem;
+    border: 1px solid rgba(0, 78, 168, 0.12);
+    border-radius: var(--radius-md);
+    background: linear-gradient(135deg, var(--color-brand-primary-extra-light), #fff);
+  }
+
+  .mobile-hours-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    flex: 0 0 34px;
+    border-radius: 999px;
+    background: var(--color-brand-primary);
+    color: white;
+  }
+
+  .mobile-hours-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.125rem;
+    font-size: 0.8125rem;
+    line-height: 1.35;
+    color: var(--color-text-secondary);
+  }
+
+  .mobile-hours-title {
+    margin-bottom: 0.125rem;
+    color: var(--color-brand-primary);
+    font-size: 0.875rem;
+    font-weight: 700;
+  }
 
   .contact-link {
     display: flex;
@@ -1945,8 +2053,16 @@ a { color: inherit; }
   .hero-content h2 { font-size: 2rem; }
   .hero-content p { font-size: 1rem; }
 
-  .hero-image { max-width: 100%; }
-  .hero-car-image { max-height: 300px; }
+  .hero-image {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero-car-image {
+    width: 100%;
+    max-height: none;
+    height: auto;
+  }
 
   .hero-buttons { flex-direction: column; }
   .hero-buttons .btn { text-align: center; justify-content: center; }
