@@ -23,7 +23,7 @@ const LOCALIZATION = {
       contactUsHero: "Ota yhteyttä →",
       tiresAndWheels: "Renkaat ja Vanteet →",
       heroHyvitysAlt:
-        "Goodyear-kampanja: jopa 100 € hyvitys 18 tuumaa tai suuremmista kesärenkaista",
+        "Goodyear Eagle F1 Asymmetric 6 - kun suorituskyky kohtaa tyylin",
       professionalService: "Ammattitaitoinen palvelu",
       whyChooseUs: "Miksi valita Rengasliike Lappeenranta?",
       wideSelection: "Laaja valikoima",
@@ -208,7 +208,7 @@ const LOCALIZATION = {
       contactUsHero: "Contact us →",
       tiresAndWheels: "Tires and Wheels →",
       heroHyvitysAlt:
-        "Goodyear campaign: up to €100 credit when you buy a set of 18\" or larger summer tires",
+        "Goodyear Eagle F1 Asymmetric 6 - when performance meets style",
       professionalService: "Professional Service",
       whyChooseUs: "Why Choose Rengasliike Lappeenranta?",
       wideSelection: "Wide Selection",
