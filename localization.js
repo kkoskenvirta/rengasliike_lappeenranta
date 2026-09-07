@@ -30,7 +30,7 @@ const LOCALIZATION = {
       contactUsHero: "Ota yhteyttä →",
       tiresAndWheels: "Renkaat ja Vanteet →",
       heroHyvitysAlt:
-        "Goodyear Eagle F1 Asymmetric 6 - kun suorituskyky kohtaa tyylin",
+        "Kesärenkaiden poistomyynti nyt käynnissä - Rengasliike Lappeenranta",
       professionalService: "Ammattitaitoinen palvelu",
       whyChooseUs: "Miksi valita Rengasliike Lappeenranta?",
       wideSelection: "Laaja valikoima",
@@ -221,7 +221,7 @@ const LOCALIZATION = {
       contactUsHero: "Contact us →",
       tiresAndWheels: "Tires and Wheels →",
       heroHyvitysAlt:
-        "Goodyear Eagle F1 Asymmetric 6 - when performance meets style",
+        "Summer tire clearance sale now on - Rengasliike Lappeenranta",
       professionalService: "Professional Service",
       whyChooseUs: "Why Choose Rengasliike Lappeenranta?",
       wideSelection: "Wide Selection",
