@@ -30,7 +30,7 @@ const LOCALIZATION = {
       contactUsHero: "Ota yhteyttä →",
       tiresAndWheels: "Renkaat ja Vanteet →",
       heroHyvitysAlt:
-        "Kesärenkaiden poistomyynti nyt käynnissä - Rengasliike Lappeenranta",
+        "Jopa 100 € hyvitys Goodyear-talvirenkaista - Rengasliike Lappeenranta",
       professionalService: "Ammattitaitoinen palvelu",
       whyChooseUs: "Miksi valita Rengasliike Lappeenranta?",
       wideSelection: "Laaja valikoima",
@@ -221,7 +221,7 @@ const LOCALIZATION = {
       contactUsHero: "Contact us →",
       tiresAndWheels: "Tires and Wheels →",
       heroHyvitysAlt:
-        "Summer tire clearance sale now on - Rengasliike Lappeenranta",
+        "Up to €100 rebate on Goodyear winter tires - Rengasliike Lappeenranta",
       professionalService: "Professional Service",
       whyChooseUs: "Why Choose Rengasliike Lappeenranta?",
       wideSelection: "Wide Selection",
